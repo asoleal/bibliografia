@@ -1,0 +1,610 @@
+Journal of Insects as Food and Feed, 2022; 8 (2): 113-127 Wageningen Academic
+Publishers
+ISSN 2352-4588 online, DOI 10.3920/JIFF2021.0038 113
+1. Introduction
+Recycling and upcycling of nutrients in agri-food byproducts is important for sustainable waste management in food systems (Willett et al., 2019). Currently, several agri-food by-products are only partially utilised, leading to nutrients and resources being discarded as waste and
+potentially causing adverse environmental impacts (Chen et al., 2020; Gustavsson et al., 2011). An emerging approach to upcycling of agri-food by-products is their conversion into insect biomass to be used as raw materials for food and feed (Barragán-Fonseca et al., 2017), biotechnology (Hahn et al., 2019), cosmetics (Almeida et al., 2020), and pharmaceutical (Vilcinskas, 2013) productions.
+Effects of rearing system and microbial inoculation on black soldier fly larvae growth
+and microbiota when reared on agri-food by-products
+M. Gold1,2#, T. Fowles3#, J.D. Fernandez-Bayo4, L. Palma Miner4, C. Zurbrügg2, C. Nansen3, H.N. Bischel5 and A. Mathys1*
+1ETH Zurich, Sustainable Food Processing, Schmelzbergstrasse 9, 8092 Zurich, Switzerland; 2Eawag, Department of Sanitation, Water and Solid Waste for Development (Sandec), Überlandstrasse 133, 8600 Dübendorf, Switzerland; 3University of California, Department of Entomology and Nematology, Briggs Hall, Davis, CA 95616, USA; 4University of California, Davis, Department of Biological and Agricultural Engineering, Bainer Hall, Davis, CA 95616, USA; 5University of California, Department of Civil and Environmental Engineering, Ghausi Hall, Davis, CA 95616, USA; alexander.mathys@hest.ethz.ch; # these authors contributed equally to this work
+Received: 26 February 2021 / Accepted: 6 May 2021 © 2021 Wageningen Academic Publishers
+RESEARCH ARTICLE
+Abstract
+Black soldier fly larvae (BSFL) are widely used in recycling and upcycling of nutrients in agri-food by-products, but low and inconsistent BSFL rearing performance (i.e. larval growth, bioconversion rate, and substrate reduction) has been identified as a key challenge. The aims of this research were two-fold: (1) validate an existing closed rearing system design; and (2) assess whether a microbial inoculum derived from the rearing residue increases rearing performance. In controlled bench-scale experiments, BSFL were reared on tomato pomace (TP) and white wine pomace (WWP), along with food waste as control substrate. The two aims were assessed based on the following response variables: larval mass, substrate reduction, residue properties (i.e. pH, temperature, moisture content), and larval intestinal and residue microbiota. Higher BSFL mass (by 5.1 mg dry mass) at harvest on WWP and substrate reduction on TP (by 11.7% dry mass) in the closed system compared to the open system confirmed the potential of closed systems for rearing performance improvements of agri-food by-products. The rearing system also affected the residual moisture content and temperature, but only had a small effect on microbiota. Performance improvements by the closed rearing system design may be outweighed by insufficient aeration with pasty substrates and higher operational efforts for aeration and larval separation from the high-moisture residues. In contrast to the rearing system design, addition of the residue-derived microbial inoculum did not result in improved performance, nor did it alter intestinal and residue microbiota. Missing performance improvements could have been due to absent or low numbers of probiotic bacteria. The success of microbial substrate supplementation could be improved by studying effects of larval-associated microbes and developing cultivation methods that selectively amplify the beneficial (yet unknown) members of the microbial community. Our investigations aimed to increase the valorisation of low-value agri-food by-products in BSFL rearing.
+Keywords: Hermetia illucens, bioconversion, feed, food waste, microbiota
+OPEN ACCESS
+
+
+M. Gold et al.
+114 Journal of Insects as Food and Feed 8 (2)
+The black soldier fly (BSF), Hermetia illucens L. (Diptera: Stratiomyidae) is a promising insect species for nutrient recycling and upcycling (Gold et al., 2018). However, studies involving the rearing of BSF larvae (BSFL) on some of the most abundant and affordable agri-food by-products (e.g. damaged and discarded fruits and vegetables, fruit and vegetable pomace, maize straw, and almond hulls) showed low or inconsistent rearing performance (i.e. larval growth, bioconversion rate, and substrate reduction) (Gold et al., 2018; Lalander et al., 2019, Palma et al., 2018). The performance determines the affordability and environmental impacts of BSFL rearing systems (Smetana et al., 2019). Thus, further innovations and insights into specific aspects of BSFL rearing are urgently needed to increase rearing performance and promote the adoption of insect-based bioconversion of agri-food by-products.
+Previous studies improved rearing by optimising the nutrient provision, larval densities, feeding rate, and feeding regime (e.g. one-time vs multiple) (Barragán-Fonseca et al., 2018; Diener et al., 2009; Gold et al., 2020a). Palma et al. (2018) introduced the first method for BSFL cultivation in closed containers with forced aeration. This system design supported BSFL growth, but they did not establish whether such a system is comparable or superior to existing rearing methods in open beds, buckets, or bins. Altered exchange of water, air, and volatile organic compounds between open and closed systems could influence larval behaviour, microbiota, and residue temperature and pH. These parameters are generally considered influential for the rearing performance (Callegari et al., 2020; Meneguz et al., 2018; Raimondi et al., 2020).
+Rearing performance has also been improved by inoculating substrates with pure-culture bacteria (Kooienga et al., 2020; Rehman et al., 2019; Somroo et al., 2019; Yu et al., 2011) or defined bacterial mixtures (Callegari et al., 2020; Mazza et al., 2020). Certain fly-, soil-, or manure-associated bacteria (e.g. Bacillus natto, Bacillus subtilis, Lactobacillus buchneri, and Kocuria marina) reduced the development time and increased the larval growth and substrate reduction. However, the cultivation of pure bacterial cultures alongside insect rearing is practically challenging because of the required laboratory capacities. A simpler method is to use the previously converted residue or residue-concentrate as the inoculum. During growth, some bacteria are excreted by larvae, becoming more abundant in the residue (i.e. substrate and frass) (Gold et al., 2020c; Raimondi et al., 2020). It is hypothesised that these microbes contribute to the substrate decomposition and larval growth (Bruno et al., 2019; Chen et al., 2017; Gold et al., 2020c). Consequently, similar to the fermentation of foods (e.g. sauerkraut and sourdough (Kim et al., 2018), the addition of microbes to the substrate of the next rearing cycle could improve the rearing performance.
+The aims of this research were to validate the rearing system design proposed by Palma et al. (2018) and assess whether a microbial inoculum derived from the rearing residue increases rearing performance. These aims address the possible solutions for the low or variable performance of BSFL reared on many agri-food byproducts. We hypothesised that: the rearing system alters the residue properties and microbiota, thereby altering the performance; and residue-derived inoculums increase the rearing performance. In controlled feeding experiments, BSFL were reared on tomato pomace (TP) and white wine pomace (WWP), and the larval mass, substrate reduction, residue properties (i.e. pH, temperature, and moisture content), and microbiota were determined. By investigating rearing conditions and inoculating substrates with microbes, this research sought to increase the valorisation of low-value agri-food by-products in BSFL rearing.
+2. Materials and methods
+Agri-food by-products
+BSFL were reared on two agri-food by-products prevalent in the California Central Valley, USA, along with one control substrate. TP consists mainly of crushed skins and seeds, and was collected from the Campbell Soup Supply Company (Dixon, CA, USA). WWP mainly comprised unfermented skins, pulp, seeds, and stems, and was collected from the UC Davis Teaching and Research Winery (Davis, CA, USA). As BSFL usually grow best on food waste (Gold et al., 2020a; Lalander et al., 2019), digested food waste (DFW) collected from supermarkets and enzymatically digested by California Safe Soils (Sacramento, CA, USA) (Jinno et al., 2018) was used as a high-performance control. Following their collection in non-sterile containers, all substrates were frozen and stored at -20 °C until the start of the feeding experiments.
+Prior to feeding experiments, the wastes were thawed at 4 °C for 24 h and Milli-Q water was added to elevate the substrate’s moisture content to the typical range (60-80%) for BSFL digestion (Dortmans et al., 2017; Gold et al., 2020a). Milli-Q quantities (0.45 ml/g TP; 0.35 ml/g WWP) were selected based on the perceived absorption capacity of the substrate. The moisture content was increased from 63 to 71% for TP and 60 to 65% for WWP. The DFW had a moisture content of 68%. WWP was also homogenised with a kitchen blender to increase the palatability by BSFL.
+The substrate’s gross nutrient composition, moisture content, and pH were determined using standard procedures (AOAC, 1997, 2005, 2006; see Supplementary material and methods for detailed method references). The pH was determined in a solution with 1 g of sample and 9 ml of Milli-Q water (Millipore Sigma, Bedford, MA, USA). Moisture content was determined as the gravimetric loss while drying at
+
+
+Effects of rearing system and microbial inoculation on BSFL
+Journal of Insects as Food and Feed 8 (2) 115
+80 °C for 24 h. Nitrogen was determined by combustion and the protein was estimated by multiplying the nitrogen value with waste-specific factors. Based on a review of the factors by Mariotti et al. (2008), a factor of 4.4 was used for both TP and WWP based on the results for vegetables and mushrooms, and that of 5.4 was used for DFW based on the results for meat, fish, cereals and vegetables. The lipids were estimated by extraction with ethyl ether. Fibre fractions, including amylase-treated neutral (NDF) and acid detergent fibre (ADF), were assessed by treating samples with neutral and acid detergents. Hemicelluloses were estimated as the difference between NDF and ADF, and ADF was assumed to be a reliable estimate of cellulose and lignin content. Ash was determined based on the gravimetric loss during combustion at 550 °C for at least 3 h.
+Experiments
+Two experiments were conducted to assess the influence of the rearing system (Experiment 1) and the addition of a residue-derived inoculum (Experiment 2). In the first experiment, BSFL were reared on each substrate in parallel in the open (Gold et al., 2020a) and closed rearing systems (Palma et al., 2018). The open rearing system comprised of a plastic container (diameter: 9 cm; height: 14 cm) covered with a paper towel. The closed rearing system comprised a sealed plastic bag (approximately 1,500 ml) supplied with compressed humidified air at 40 ml/min, or 0.7 ml/min/g dry mass (DM).
+In the second experiment, BSFL were reared on substrates that included a microbial inoculum produced from the residue of the first experiment. In preliminary experiments, we observed that addition of the raw residue to the substrate without amplification resulted in no process improvements (data not shown). BSFL were also reared in parallel in the open and closed systems to validate the results of the first experiment. DFW was excluded from the second experiment as the first experiment confirmed the satisfactory performance of larvae reared on this substrate and did not require further improvement.
+The production of the microbial inoculum followed an approach similar to that commonly used for producing pure bacterial cultures. Three to ten grams of residue from the experiment was stored at 4 °C for 24 h and mixed with 40 ml sterile phosphate buffered saline (PBS) in a 50 ml falcon tube at room temperature (21 °C) for 20 min. Large particles were removed with a 40 μM sterile cell strainer (Corning, New York, NY, USA), and the filtrate was diluted 100fold. Three replicates of the filtrate (1 ml) were incubated at 30 °C overnight in a sterile nutrient broth (5 ml, Difco Nutrient Broth, Becton, Dickinson and Company, Le Pont de Claix, France) accompanied by continuous shaking (120 rpm; Max4000, Thermo Scientific, Waltham, MA, USA). One millilitre of this culture was added to 9 ml of
+nutrient broth and incubated for another 4 h. Triplicate cultures were pooled and the total viable counts (TVC) were enumerated by a single dilution series on triplicate agar plates as described below.
+The microbial inoculum (109 TVC/ml) was added to each substrate with the Milli-Q water used to increase palatability (see description of the rearing substrates) immediately prior to the feeding experiments with BSFL. The inoculum was dosed in TP at 3 ml/100 g DM for TP. Based on these results, the dose was increased to 10 ml/100 g DM for WWP. In the control group, the inoculum was sterilised by autoclaving before its addition to the substrates.
+Fly larva rearing
+The BSFL used in the two experiments were obtained from a colony operated at UC Davis since April 2018. The hatched larvae were fed ad libitum with poultry feed (60% moisture content; Purina Mills LLC, Purina Layena Pellets and Crumbles, Grey Summit, MI, USA) to 0.8-1.1 mg DM/larva. Thereafter, the larvae were manually separated from the poultry feed residue. Three to four replicates were prepared for each treatment (i.e. rearing system and microbial inoculum) with approximately 200 larvae per replicate. At the beginning of the feeding experiment, BSFL were placed on 60 g DM substrate and reared in an incubator (Isotemp 637D, Fisher Scientific, Waltham, MA, USA) at 28 °C. The rearing duration was selected based on the larval mass on DFW. As the larvae on WWP were considerably smaller when harvesting those on DFW, the rearing duration was extended to facilitate the larval-residue separation and accurate determination of the performance metrics. BSFL were reared for 6 days on TP and DFW, and 9-10 days on WWP. Temperature was automatically recorded every 10 min in the substrate/residue (DS1922L iButton, Maxim Integrated, San Jose, CA, USA). At the end of the experiment, containers/bags were removed from the incubators, and a residue sample was collected to measure the pH, TVC, and moisture content. Larvae were manually separated from the residue, rinsed with tap water, and counted. Larvae were stored at -20 °C before the determination of larval dry mass and DNA-based identification of residue and intestinal bacterial communities.
+Rearing performance metrics
+Larval mass and substrate reduction were evaluated as the rearing performance metrics. Larval DM was determined for each biological replicate by dividing the DM of all larvae by the larval number. Substrate reduction was determined for each biological replicate using Equation 1, as the ratio of residual DM (residuemass) to that of the total substrate DM (substratemass) provided at the beginning of the experiment.
+Substrate reduction (% DM) = (1- rrrrrrrrrrrrrrmmmmmmmm (gg DDDD)
+rrrrssrrssrrssssrrmmmmmmmm (gg DDDD)) × 100 ((11))
+
+
+M. Gold et al.
+116 Journal of Insects as Food and Feed 8 (2)
+The residual DM was determined by correcting the residue mass removed from each biological replicate by the moisture content. Larval DM and residue moisture content were determined after drying in a laboratory oven at 80 °C for 24-48 h.
+Microbial numbers and bacterial communities
+TVC was estimated in the substrates, residues, and inoculums using the spread plate method. In situ bacteria were eluted from solids, and serial dilutions (depending on the type of sample: 10-10-8) were prepared using the same procedure as the inoculant preparation. One hundred microlitres of each dilution was spread in triplicate on Petri dishes with standard agar (Difco Nutrient Agar, Becton, Dickinson and Company) and incubated at 30 °C for 24-36 h. As we partially recorded colonies within the representative range of 20-250 for different dilutions and replicate plates, counts were calculated using Equation 2 (Maturin and Peeler, 2001). Here, ∑ci is the number of colonies on i plates, V is the volume added to each plate (0.1 ml), ni is the number of plates counted in the ith dilution, d1 is the first dilution, and E is the eluent concentration (i.e. the ratio of sample mass and PBS volume).
+ubstrate reduction (% DM) = (1- rrrrrrrrrrrrrrmmmmmmmm (gg DDDD)
+rrrrssrrssrrssssrrmmmmmmmm (gg DDDD)) × 100 (1)
+TTTTTT ( ccccrrccssrr
+gg rrssssssssrr) = ∑cii
+V × (∑ 10ii−1 xx ccii) × rr1
+×1
+EE (2)(2)
+Bacterial communities were characterised by highthroughput 16S rRNA gene sequencing. Total genomic DNA was extracted from 0.2 g of substrate (duplicate), larval digestive tract (triplicate per treatment), and residue (triplicate per treatment) samples using the DNeasy PowerSoil Kit (Qiagen, Hilden, Germany). Samples of the digestive tract were BSFL after the removal of the exoskeleton with micro scissors and tweezers (Bonelli et al., 2019; Gold et al., 2020b). The utensils were treated with 70% ethanol between dissections. DNA purity (Nanodrop ND 1000 Spectrophotometer, Thermo Scientific, Wilmington, MA, USA) and concentration (Qubit dsDNA HR Assay Kit on a Spark 10 M microplate reader, Tecan, Männedorf, Switzerland) of the extracted DNA were determined. Library preparation followed the two-step protocol described by Gold et al. (2020c), wherein the prokaryotic V3-V4 hypervariable region was amplified using the primer pair 341F (5′- CCT ACG GGN GGC WGC AG 3′) and 806R (5′- GGA CTA CNV GGG TWT CTA AT -3′). PCR conditions were as follows: initial denaturation at 95 °C for 300 s, 1 cycle at 98 °C for 60 s, 26 cycles (for the substrate and residue samples), and 33 cycles (for larval samples) at 98 °C for 20 s, 51 °C for 20 s, and 72 °C for 12 s, and a final extension at 72 °C for 120 s (Hugerth et al., 2014). Index PCR conditions were as follows: initial denaturation at 95 °C for 180 s, 10 cycles at 95 °C for 30 s, 55 °C for 30 s, and 72 °C for 30 s, and a final extension at 72 °C for 300 s. Molecular grade water was used as a no-template control. A bacterial community
+standard (Zymo D6311, Zymo Research, Irvine, CA, USA) was used as the template DNA for the positive control. Paired-end sequencing was conducted on the library according to the manufacturer’s instructions using the MiSeq Illumina platform (Illumina Inc., San Diego, CA, USA). Bioinformatics were completed using the protocol described by Gold et al. (2020c). High-quality reads were clustered into zero-radius operational taxonomic units (ZOTUs), and their taxonomic origin was determined using Silva 16S (V128) as the reference database. Taxonomic assignments were considered to be reliable when the bootstrap confidence values exceeded 0.85.
+Downstream data analyses
+Data were analysed in R (version 3.6.2; R Core Team, 2020). The hourly mean was calculated from the raw temperature readings of the residue. Statistical analyses among the different treatments for all parameters were not performed due to the small number of biological replicates (n=3-4). Instead, we analysed the results and calculated descriptive statistics (e.g. median, mean, and standard deviation). Heatmaps of bacterial communities were created in ‘ampvis2’ (Andersen et al., 2018) after the conversion of reads into percent abundance per sample. Alpha diversity (i.e. Chao1 and Shannon index) and beta diversity were calculated using ‘phyloseq’ (McMurdie and Holmes, 2013). The unweighted pair group method with arithmetic averages (UPGMA) using weighted UniFrac distances of ZOTUs was applied to cluster samples based on the (dis)similarity of bacterial communities. Robust clusters of similar residue/intestinal bacterial communities were identified using the three-step protocol proposed by García-Jiménez et al. (2019). First, the number of clusters with the highest silhouette width score was identified using the ‘fviz_nbclust’ function in ‘factoextra’ package (Kassambara and Mundt, 2020). Second, the robustness of this clustering was confirmed using the ‘prediction strength’ function in the ‘fpc’ package (threshold >0.80; Hennig, 2020). Third, the Jaccard score was calculated using the ‘clusterboot’ function (threshold >0.75). The UPGMA-UniFrac clustering was visualised in a twodimensional plane after the principal coordinate analysis (PCoA) of bacterial communities.
+3. Results
+Effect of rearing system (Experiment 1)
+Considering the mean and standard deviation, the closed rearing system had a better performance in terms of the larval growth on WWP and the substrate reduction on TP (Figure 1). Larval mass on WWP in the closed and open systems were 20.4 (0.5) and 15.3 (0.4) mg DM, respectively. Substrate reduction on TP were 58.6 (1.7) and 46.9 (0.8) % DM in the closed and open systems, respectively. In two
+
+
+Effects of rearing system and microbial inoculation on BSFL
+Journal of Insects as Food and Feed 8 (2) 117
+replicates, DFW reduction was notably lower in the closed system compared to the open system.
+The rearing system also seemingly affected the residual moisture content (Figure 2) and temperature (Figure 3). Considering the results for both experiments, the mean residue moisture content at larval harvest was 7.5-12.5% higher in the closed system for TP, 25.6-50.4% higher for WWP, and 17.1% higher for DFW. The residue temperature was higher in the open system compared to the closed system for DFW and TP, but not WWP. The median temperatures in the open and closed systems were 34.8 and 30.8 °C for DFW and 35.3 and 31.2 °C for TP, respectively.
+Microbiota associated with larvae and rearing residues can influence the growth and substrate reduction. To evaluate the impact of the rearing system on these performance metrics, we determined the intestinal and residual bacterial
+communities. Considering all samples, sequencing using extracted DNA produced 9,439,368 reads, with an average of 86,600 reads/sample and 2,204 ZOTUs. Rarefaction curves (Figure S1) demonstrate that the samples were sequenced to an extent sufficient to approximate the true diversity. As these results do not provide any precise information about the microbial numbers, the TVC in the residue was additionally estimated, which was similar between systems (Table 1).
+Alpha diversity metrics (i.e. Chao 1 and Shannon Index) show a similar species richness and evenness of the intestinal and residual bacterial communities between the two systems (Figure 4). Small differences in the mean species richness and evenness (i.e. Shannon Index) between systems were measured for the intestinal bacterial community on TP (Figure 4A), and the residual bacterial community on TP and DFW (Figure 4B). (Dis)similarities
+●●
+●●
+●●●
+●●●●
+●
+●
+●
+● ●●●
+●
+●●●
+●●● ●●●●
+●
+● ●●
+Substrate reduction (% DM) Residue pH (−)
+DFW TP WWP DFW TP WWP DFW TP WWP
+7.0
+7.5
+8.0
+8.5
+9.0
+40
+50
+60
+20
+30
+40
+50
+Larval mass (mg DM)
+Figure 1. Effect of the rearing system on the larval mass, substrate reduction and residue pH (Experiment 1). Means (horizontal lines), standard deviations, and results per biological replicate (n=3-4, filled circles = closed system, hollow circles = open system) are displayed. DFW = digested food waste; TP = tomato pomace; WWP = white wine pomace.
+Experiment 1 Experiment 2
+DFW TP WWP
+80
+60
+40
+Moisture content (%)
+80
+60
+40
+TP (+) TP (o) WWP (+) WWP (o)
+Moisture content (%)
+Figure 2. Effect of the rearing system (Experiments 1 and 2) and microbial inoculation (Experiment 2, o = sterile inoculum; + = inoculum) on the residue moisture content at larval harvest. Means (horizontal lines), standard deviations, and results per biological replicate (n=3-4, filled circles = closed system, hollow circles = open system) are displayed. DFW = digested food waste; TP = tomato pomace; WWP = white wine pomace.
+
+
+M. Gold et al.
+118 Journal of Insects as Food and Feed 8 (2)
+in the bacterial community between the open and closed systems were further explored by hierarchical clustering (UPGMA) and multidimensional scaling (PCoA) using weighted UniFrac distances to account for the phylogenetic relatedness between ZOTUs. These analyses showed separate clusters between the open and closed rearing systems for the intestinal bacterial community on DFW (Figure 4A) and the residue bacterial community on DFW and WWP (Figure 4B). Overall, the distance between clusters, indicating the dissimilarity between bacterial communities of the open and closed systems, was small. The largest difference between the systems was observed in the intestinal bacterial community on DFW. When the microbial inoculums were added to the substrate (Experiment 2), no effect of the rearing system on the process performance, residue temperature (Figure S2), and bacterial community was observed.
+Effect of residue-derived bacterial inoculums (Experiment 2)
+The inoculums derived from the residue of the first experiment had a much lower bacterial community richness than the residue from the first experiment. The mean community richness decreased from the residue to the inoculum, from 963 to 310 for TP and from 292 to 189 for WWP. The bacterial community was dominated (relative abundance >5%) by members of the genera Acinetobacter, Lysinibacillus, Myroides, and Vagococcus in the TP inoculum, and Acinetobacter and members of the family Enterobacteriaceae in the WWP inoculum (Figure 5).
+The addition of the residue-derived inoculum to the substrate did not influence the rearing performance or residue properties compared to the addition of the sterile inoculum (Figure 2 and Figure 6). Moreover, the inoculum did not influence the bacterial numbers and diversity; the richness and community (Figure 7). TVC (n is the number for biological replicates with countable plates) in the treatment (microbial inoculum) and control (autoclaved microbial inoculum) were 8.5 (n=1) and 9.0 (0.5) log10/g (n=4) for TP, and 9.1 (0.1) (n=4) and 9.5 (0.0) log10/g (n=2) for WWP, respectively. Our clustering approach identified two clusters, all TP and WWP samples. The distance of samples demonstrates that addition of the inoculum to the substrate increased the bacterial community variability among samples of the same treatment and rearing system type compared to the first experiment (Figure 7).
+DFW TP WWP
+0 2 4 0 2 4 0 2 5 8 10
+30
+35
+40
+Rearing duration (days)
+Residue temperature (°C)
+Rearing system open closed
+Figure 3. Effect of the rearing system on the residue temperature over the entire rearing duration (Experiment 1). Horizontal lines represent the median temperatures for all replicates between the open and closed system. DFW = digested food waste; TP = tomato pomace; WWP = white wine pomace.
+Table 1. Total viable counts (log10/g) in the residues from the
+open and closed rearing systems.1
+Open system Closed system
+Tomato pomace 8.0 (0.3) n=4 7.9 (0.1) n=4 White wine pomace >9.5 (0.0)2 n=2 9.4 (0.2) n=2 Digested food waste 7.8 (0.1) n=3 7.7 (0.4) n=3
+1 In parenthesis: standard deviation for samples where n≥3 and differences between analyses where n=2.
+2 Counts above countable range.
+
+
+Effects of rearing system and microbial inoculation on BSFL
+Journal of Insects as Food and Feed 8 (2) 119
+Effect of the substrate
+The substrate type had a considerably larger influence on all metrics measured in this study than the rearing system and residue-derived microbial inoculation to the substrate. DFW and TP were the most abundant in protein and lipids, and had similar microbial numbers (Table 2). DFW had the lowest cellulose and lignin content, and TP contained little ash. WWP had the lowest pH, and much lower microbial numbers than TP and DFW.
+Low microbial numbers in WWP presumably resulted in very few reads from gene sequencing to estimate the
+bacterial communities in the substrate before BSFL rearing. TP and DFW differed in terms of the community richness and composition (Figure 8). TP had a rich and diverse community dominated by species from nine bacterial classes. In contrast, few highly abundant genera (i.e. Bacillus, Lactobacillus and Leuconostoc) characterised DFW.
+TP had a rearing performance comparable to that of DFW. Larval mass and substrate reduction (pooled results for both rearing systems) were 44.3 (1.7) mg DM and 52.8 (6.4) % DM for TP, and 50.6 (4.7) mg DM and 52.0 (5.3) % DM for DFW. Despite the longer rearing duration, the
+Chao1
+Axis.2 [24.5%] Axis.2 [21%]
+Axis.1 [57.3%]
+Axis.1 [64.8%]
+-0.25 0.00 0.25 0.50
+-0.2 0.0 0.2 0.4
+A
+Shannon
+Shannon
+700
+600
+0.3
+0.2
+0.1
+0.0
+-0.1
+-0.2
+0.2
+0.1
+0.0
+-0.1
+-0.2
+-0.3
+500
+400
+300
+200
+1000
+800
+600
+400
+4.0
+3.5
+DFW TP WP
+DFW TP WP
+3.0
+2.5
+5.0
+4.5
+4.0
+3.5
+3.0
+Cluster
+DFW
+DFW
+WWP
+WWP
+TP
+TP
+Rearing system closed open
+1
+2
+3
+4
+Cluster
+Rearing system closed open
+1
+2
+3
+4
+5
+B Chao1
+Figure 4. Effect of the rearing system on the (A) intestinal and (B) residual bacterial community alpha and beta diversity metrics. Beta diversity is illustrated by the Principal coordinate analysis (PCoA) of bacterial communities based on the weighted UniFrac dissimilarity. Samples (n=3-4) were clustered with the unweighted pair group method with arithmetic averages (UPGMA). DFW: digested food waste; TP: tomato pomace; WWP: white wine pomace.
+
+
+M. Gold et al.
+120 Journal of Insects as Food and Feed 8 (2)
+Acinetobacter
+Xylella
+Glutamicibacter
+Taibaiella
+f__Enterobacteriaceae_ZOTU66
+f__Rhodobacteriaceae_ZOTU24
+f__Enterobacteriaceae_ZOTU48
+Dysgonomonas
+f__Enterobacteriaceae_ZOTU144
+f__Brucellaceae_ZOTU53
+f__Enterobacteriaceae_ZOTU50
+f__Enterobacteriaceae_ZOTU91
+Paenibacillus
+f__Enterobacteriaceae_ZOTU180
+f__Enterobacteriaceae_ZOTU76
+Acinetobacter
+Brevundimonas
+f__Brucellaceae_ZOTU16
+Lysinibacillus
+Myroides
+Sphingobacterium
+f__Brucellaceae_ZOTU65
+Vagococcus
+Leucobacter
+Paracoccus
+Bdellovibrio
+Chitinophaga
+Devosia
+Paenibacillus
+f__Promicromonosporaceae_ZOTU124
+AB
+Residue
+Inoculant
+Residue
+Inoculant
+32.1
+0.4
+0
+14.4
+13.5
+0.2
+0.1
+8.8
+0.5
+0
+0
+0
+0
+0
+0
+0.1
+1.0
+10.0
+Relative abundance 55.4
+0
+0
+0.1
+5.8
+0
+6.5
+0.2
+0.2
+0
+4.1
+4.1
+0
+0.1
+2.3
+12.7
+10.2
+19.9
+7.1
+2
+1.1
+1.4
+4
+4
+4
+1.4
+1.6
+1.2
+2.9
+0.8
+30.3
+0
+0.1
+0.2
+6.8
+0
+9.6
+0.2
+1
+0.2
+8.7
+4.9
+0
+0.8
+6.7
+12.2
+20.5
+0.5
+5
+2
+9.4
+0.5
+3.4
+2.8
+3.2
+0.4
+1.3
+5.5
+1.9
+0.1
+Closed
+8.2
+10.8
+6.3
+0.6
+0.6
+4.5
+3.8
+0.5
+3.2
+3.1
+3.1
+2.7
+2.6
+2.5
+2.2
+Residue
+Inoculant
+Closed Open
+Figure 5. Bacterial communities of (A) TP and (B) WWP bacterial inoculums and residues used for their production. Heatmaps of the top 15 genera of grouped samples based on the relative abundance of ZOTUs. Relative abundances are the mean of replicate samples (n=3-4 for the residue, n=2 for the inoculum), rounded off to one digit. If no clear assignment to a genus was possible, the family assignment is shown along with the ZOTU. DFW: digested food waste; TP: tomato pomace; WWP: white wine pomace.
+●●
+● ●
+● ●
+●●
+●
+●
+●
+● ●
+●
+Residue pH (−)
+Larval mass (mg DM) Substrate reduction (% DM)
+Rearing system ● closed open
+TP (+) TP (o) WWP (+) WWP (o)
+TP (+) TP (o) WWP (+) WWP (o) TP (+) TP (o) WWP (+) WWP (o)
+30
+35
+40
+45
+20
+30
+40
+50
+7.6
+8.0
+8.4
+8.8
+Figure 6. Effect of the bacterial inoculation (+ = inoculum; o = sterile inoculum) on the larval mass, substrate reduction, and residue pH (Experiment 2). Means, standard deviations, and results per biological replicate (n=3-4) are displayed. DFW: digested food waste; TP: tomato pomace; WWP: white wine pomace.
+
+
+Effects of rearing system and microbial inoculation on BSFL
+Journal of Insects as Food and Feed 8 (2) 121
+600
+A Chao1
+B Chao1
+Axis.1 [64.1%]
+0.2
+TP
+WWP
+0.2 0.4
+-0.2
+-0.2
+-0.1
+TP
+WWP
+0.0
+0.1
+-0.3
+-0.4 -0.2 0.0 0.2
+-0.2
+0.0
+0.0
+Axis.2 [13.3%]
+Shannon
+Shannon
+400
+200
+4.0
+3.6
+3.2
+2.8
+750
+500
+250
+5
+4
+3
+TP (+) TP (o) WP (+) WP (o)
+TP (+) TP (o) WP (+) WP (o)
+Rearing system ● closed open
+Cluster
+1
+2
+Axis.1 [70.4%]
+Axis.2 [12.6%]
+Rearing system ● closed open
+Cluster
+1
+2
+Figure 7. Effect of the microbial inoculation (o = sterile inoculum; + = inoculum) on (A) intestinal and (B) residual bacterial community alpha and beta diversity metrics. Beta diversity is illustrated by the Principal coordinate analysis (PCoA) of bacterial communities based on weighted UniFrac dissimilarity. Samples (n=3-4) were clustered with the unweighted pair group method with arithmetic averages (UPGMA). DFW: digested food waste; TP: tomato pomace; WWP: white wine pomace.
+Table 2. Nutrient composition, pH, moisture content, and bacterial counts of the rearing substrates (n=1).
+pH Protein (%DM)
+Lipids (%DM)
+Ash (%DM)
+Cellulose and lignin (%DM)
+Hemicelluloses (%DM)
+Total viable counts (log10/g)
+Tomato pomace 5.8 15.7 14.1 3.2 44.8 1.6 8.4 White wine pomace 4.7 9.7 9.4 7.7 34.2 20.7 4.2 Digested food waste 5.8 33.8 12.1 24.6 11.5 57.7 7.0
+
+
+M. Gold et al.
+122 Journal of Insects as Food and Feed 8 (2)
+larval mass and substrate reduction were lower in WWP, showing values of 17.8 (2.8) mg DM and 36.1 (1.8) % DM, respectively.
+Considering the alpha and beta diversity metrics, the substrate affected the intestinal and residual bacterial richness and community. Similar to the substrate, the intestinal and residue bacterial communities were the richest when the substrate was TP. Community richness was comparable between WWP and DFW (Figure 4 and Figure 7). UniFrac distances and heatmaps demonstrate the unique bacterial communities between the larval intestine and process residue for the same substrate, sharing a few taxa at the family level (Figure 9A). Among the substrates, the intestinal and residual bacterial communities also differed, with few shared taxa at the genus level (Figure 9D). Intestinal samples shared members of Dysgonomonas, Enterococcaceae, and Enterococcus, and residue sample shared members of Glutamicibacter.
+4. Discussion
+The aim of this study was to explore potential solutions to increase the performance of BSFL on abundant and affordably sourced agri-food by-products that represent a challenge and opportunity in valorisation. Specifically, we aimed to: (1) validate whether the novel rearing system designed by Palma et al. (2018) for almond hulls is beneficial for BSFL rearing; and (2) assess whether a microbial inoculum derived from the rearing residue increases rearing performance. We hypothesised that both the rearing system and the introduction of residue-derived inoculums could increase the rearing performance.
+Effect of rearing system (Experiment 1)
+We found that the rearing system design influenced the performance (Figure 1). BSFL reared in the closed system on WWP were 5.1 mg DM heavier than those in the open system, and the TP reduction in the closed system was 11.7% DM higher than that in the open system. Surprisingly, higher WWP larval mass and TP substrate reduction did not result in a higher WWP substrate reduction and TP larval mass. An advantage of the closed system seems to be that the sealed bags and humidified airflow maintain a residual moisture content (Figure 2, 71-77% for TP and WWP) in the optimal range (70-80%) for BFSL (Dortmans et al., 2017). The slightly reduced larval mass on WWP in the open system could be due to the low residual moisture content (Figure 2, 42%), which decreased the WWP palatability by BSFL. The higher TP reduction in the closed system is surprising, as the median temperature in the residue was 4 °C lower (Figure 3) than that in the open system (Figure 3). The lower temperature in the closed system can be explained by the continuous forced aeration of the substrates with ambient temperature air. As an increase in the residual temperature presumably increases the activity of larval digestive enzymes (Bonelli et al., 2019), one could expect higher TP reduction in the open system. A possible explanation for the higher TP reduction in the closed system could be the increased aeration compared to the open system, resulting in enhanced larval/bacterial substrate decomposition (Palma et al., 2018). It remains unclear, however, as to why this effect in the substrate reduction between systems was not observed on WWP or when the residue-derived inoculum was added to the TP substrate (Figure 6). A disadvantage of the closed system is the insufficient aeration of pasty substrates, such as DFW. This was indicated by the increase in anaerobic bacteria of the family Peptostreptococcaceae (Slobodkin, 2014) in the intestinal bacterial community accompanied by a septic smell. This could explain the notably lower substrate reduction in two of the three replicates for the closed system compared to the open system. Considering these drawbacks and the higher operational resource requirements (e.g. aeration, closing of containers, harvesting), the industrial applicability of the closed system remains unclear.
+Effect of residue-derived bacterial inoculums (Experiment 2)
+Our method of incorporating the residue-derived inoculums back into the substrate did not improve the rearing performance. This is in contrast with previous studies that showed clear improvement in rearing efficiencies with the addition of pure-culture bacteria or defined bacterial mixtures (Kooienga et al., 2020; Rehman et al., 2019; Somroo et al., 2019; Xiao et al., 2018; Yu et al., 2011), and even the rudimentary use of fermentate is ubiquitous in accelerating the fermentation of foods. A possible explanation for this result is that the residues
+0
+12
+0
+18.9
+64.4
+0.3
+8
+0
+0
+0
+0.1 0.1
+0
+20.9
+63.2
+8.4
+0
+0
+0
+0.3
+0
+2.3
+4.3
+7.7
+8.6
+3.9
+6.8
+4.7
+0.8
+6.6
+8.1 5.6
+2.9
+6.9
+13.2
+10.7
+9
+6.5
+1.2
+7.8
+3.3
+DFW TP
+Aneurinibacillus
+Xylella
+Enterococcus
+Weissella
+Paenibacillus
+Brevibacillus
+Streptomyces
+Leuconostoc
+Lactobacillus
+Bacillus
+0.1
+1.0
+10.0
+Relative abundance
+12
+Figure 8. Digested food waste (DFW) and tomato pomace (TP) bacterial community. Heatmaps of the top 10 genera in both substrates based on the relative abundance of ZOTUs rounded off to one digit.
+
+
+Effects of rearing system and microbial inoculation on BSFL
+Journal of Insects as Food and Feed 8 (2) 123
+did not include probiotic bacteria. We expected that flyassociated bacteria from the genera Lactobacillus, Bacillus, Dysgonomonas, Morganella, Proteus and/or Enterococcus were abundant in the residues on all substrates (Ao et al., 2020; Bruno et al., 2019; Gold et al., 2020c). Typical intestinal bacteria belonging to Enterococcus were indeed present in the DFW residue, and Dysgonomonas and Providencia were present in WWP residues along with the family Enterobacteriaceae, to which the Proteus spp. and Morganella spp. belong (Figure 5). However, the abundance of these genera was <6%, being absent in the TP residue in either system. Previous researchers have also reported variable bacterial communities in residues and the abundance of intestinal bacteria (Wynants et al., 2019), that were attributed to different initial substrate bacterial communities and nutrient contents, as well as
+operating parameters (e.g. feeding rate; Gold et al., 2020c; Wynants et al., 2019). A further possible explanation for our results is the insufficient replication of the residual bacterial community by the applied cultivation method. For example, Dysgonomonas considered supporting the hemicellulose digestion was reduced in abundance (Bruno et al., 2019). Bacterial abundance in the TP (Acinetobacter, Lysinibacillus, Myroies, Vagococcus) and WP (Acinetobacter, Enterobacteriaceae) inoculums (Figure 5) did not elicit any apparent positive effect on the larval growth and substrate reduction (Figure 6).
+Even though our addition of the residue-derived inoculum resulted in no apparent increase in the performance, our results are not completely unexpected. Performance improvements in BSFL rearing have also been absent or
+A
+C
+B
+D
+Larvae
+Larvae
+66.4
+14.5
+9.4
+9.8
+77.1
+6.1
+11.3
+5.5
+11.6
+41.6
+43.9
+DFW TP WWP DFW TP WWP
+Firmicutes
+Dyngonomonas f__Enterococcaceae_ZOTU4 Paenibacillus f__Peptostreptococcaceae_ZOTU21 Campylobacter Actinomyces Morganella Brevibacillus Enterococcus Bacillus Rummeliibacillus Providencia Tumebacillus f__Enterococcaceae Aneurinibacillus
+Actinobacter Corynebacterium Xylella Glutamicibacter Sporosarcina Brevundimonas Atopostipes Enterococcus f__Brucellaceae_ZOTU16 Paenibacillus Taibaiella f__Bacillaceae_ZOTU193 Bacillus Pseudomonas Dysgonomonas
+Porphyromonadaceae Enterococcaceae Enterobacteriaceae Bacillaceae Paenibacillaceae Planococcaceae Corynebacteriaceae Xanthomonadaceae Brucellaceae Peptostreptococcaceae
+Proteobacteria
+Bacteriodetes
+Actinobacteria
+72.7
+5.2
+0
+22
+21.1
+52.4
+9.7
+16.8
+4.3
+68.8
+11.6
+2.8
+Residue
+Residue
+2.8
+DFW TP WWP DFW TP WWP
+DFW TP WWP DFW TP WWP
+Larvae Residue
+9.3 30.9 0.8 5.2 0 1.9 3.8 0.3 0 16.6
+0 10.6 0.1 32.7 0 12.3 20.5 4 0 1.2
+0 15.6 0 0.9 11 0 8.6 5.7 0 0 0 4.8 1.2 0 0
+5.9 0.3 0.7 1.1 0 10.2 0 1.6 5.4 3.3 0.4 0 3.3 4.3 0.9
+12.5 0 14.3 12.2 0 0 0 0.2 0.9 2.9 6.2 0 0 0.2 3.8
+0.9 2.7 0.3 3.6 7.1 2.7 0.9 1.7 10.9 0
+3.8 0.2 22.4 0 3.6 0 0 15.9 5 0
+11.3 4.4 3.2 7.9 34.3 12.8 0 0.5 0.1 0.1
+43.1 5.6 30.7 0.1 3.9 0 0 0.9 4.5 0
+9.3 21.1 0 15.3 12.7 6 0.2 0 3.8 2.3 0 0.1 0 4.4 0
+11.3 1.4 16.6 0 2.2 5.3 1.4 11.1 1.7 6.9 8.8 0.7 5.1 0.3 4.3
+43.1 0.8 3.7 0 0 0 9.7 0 4.1 0.1 0 4.9 0 0 0
+Relative abundance 10
+0.1
+1.0
+Figure 9. Bacterial communities in larvae and residues reared on DFW, TP, and WWP on the (A) phylum, (B) family, and (C, D) genus levels. Heatmaps of the most abundant ZOTUs among the grouped samples. Relative abundances are the mean of replicate samples (n=3-4) rounded off to one digit. If no clear assignment to a genus was possible, the family assignment is shown along with the ZOTU. DFW: digested food waste; TP: tomato pomace; WWP: white wine pomace.
+
+
+M. Gold et al.
+124 Journal of Insects as Food and Feed 8 (2)
+minimal in other studies. Callegari et al. (2020) isolated intestinal bacteria and showed a positive influence on the larval growth after the addition of Escherichia coli and Bacillus licheniformis to the substrate, but not Stenotrophomonas maltophilia. Similarly, Kooienga et al. (2020) observed that the growth rate increased with Arthrobacter AK19 and Rhodococcus rhodochrous 21198, but the addition of Bifidobacterium breve to the substrate had adverse effects. Similarly, Mazza et al. (2020) inoculated chicken manure with pure-culture bacteria and bacterial mixtures isolated from eggs and digestive tracts. Four out of seven bacteria influenced the larval mass by less than ±2%, and three out of nine bacterial mixtures decreased the larval mass. Several questions remain regarding how the inoculation of substrates can reliably improve the rearing performance; however, variable results can be partially explained by the different digestive/metabolic capacities of microbes and variable nutritional requirements of BSFL depending on the operational rearing parameters. It remains to be confirmed as to which of the added bacteria colonise the residue or digestive tract, and whether viable bacteria are responsible for the reported improvements. Kooienga et al. (2020) recently showed that despite the growth improvements by R. rhodochrous 21198 and Arthrobacter AK19, only the latter colonised the larval digestive tract. Our study was the first to use sterile inoculums instead of sterile water as a negative control. Autoclaving the bacterial inoculum could have increased the digestibility by BSFL and could explain the higher larval mass of the control compared to the TP treatment. Future studies should isolate members of the potentially beneficial taxon (i.e. Lactobacillus, Bacillus, Dysgonomonas, Morganella, Proteus and/or Enterococcus) and elucidate their true potential to influence the mass-rearing performance in bench and industrial-scale experiments. All previous studies on the substrate inoculation in BSFL rearing have focused on pureculture bacteria or defined bacterial mixtures. Recirculating the bacteria using the residue could be improved by optimising the cultivation conditions (e.g. medium and oxygen conditions) and doses.
+Effect of the substrate
+Our results show that the substrate type, namely, the substrate composition, including the nutrients, pH, bacterial numbers, and community, as well as metrics of palatability not quantified in this study, had a larger effect on BSFL rearing than the rearing system (Figure 1) or the addition of residue-derived inoculums (Figure 6). The nutrient composition (i.e. protein and lipid contents, Table 2) and rearing performance metrics confirmed that despite the enzymatic digestion process, DFW is a high-performing BSFL substrate. This was expected, as DFW was known to be promising as pig feed (Jinno et al., 2018). Additionally, DFW was high in Lactobacillus and Bacillus, which previously had positive effects on the larval growth (i.e. B. natto,
+B. subtilis, L. buchneri; Rehman et al., 2019; Somroo et al., 2019; Xiao et al., 2018; Yu et al., 2011). Despite a much lower nutrient content than DFW, and with a high content of cellulose and lignin (44.8% DM, Table 2), TP showed a rearing performance comparable to that of DFW (Figure 1). Food wastes, such as DFW, frequently have the highest BSFL rearing performance (Gold et al., 2020a; Lalander et al., 2019). The low rearing performance of WWP could be due to the low protein (9.7% DM, Table 2) and high fibre (34.2% DM) contents. Additionally, potential insecticidal and bactericidal properties of secondary metabolites in WWP (i.e. phenolic acids; Katalinić et al., 2010) could have also affected the larval growth and microbiota (Isibika et al., 2019; Pavela, 2011). Finally, pasteurising prior to BSFL rearing by the companies providing the DFW and TP substrates could have also increased the digestibility of DFW and TP by BSFL (Jinno et al., 2018). In comparison, WWP that was mechanically pressed at a winery was not subjected to heat treatment prior to use. However, despite the pasteurisation, both substrates had high microbial numbers and bacterial community richness (Table 2, Figure 8).
+5. Conclusions
+Efficient rearing of BSFL on agri-food by-products requires solutions to improve the performance. This study examined whether the rearing system and the addition of residue-derived inoculums increased the performance of TP and WWP. The closed rearing system had an equal or superior performance compared to the conventional open system. Research on the sufficient aeration of pasty rearing substrates and the efficient larval harvest from high-moisture residues is indispensable before the onset of industrial BSFL rearing in closed systems. Returning potentially beneficial microbes with an inoculum made from the residue did not impact the performance, residue properties, and microbiota. This approach could be improved by studying the effects of larval-associated microbes and developing cultivation methods that selectively amplify the beneficial members of the microbial community.
+Acknowledgements
+Essential services such as nutritional and microbial analyses, salary, greenhouse facilities, and supplies were provided from partial funding through the United States Department of Agriculture’s (USDA) program for Western Sustainable Agriculture Research and Education (WSARE) (sub-award: 200592-446), as well as partial funding from the U.S. Department of Agriculture’s (USDA) Agricultural Marketing Service through grant 18-00001-028-SC. The research was also partially funded by the Sawiris Foundation for Social Development (Engineering for Development (E4D) Scholarship Program), Eawag, the ETH Zurich Foundation, ETH Global and Bühler AG. DNA extraction
+
+
+Effects of rearing system and microbial inoculation on BSFL
+Journal of Insects as Food and Feed 8 (2) 125
+and amplicon sequencing was performed by the Host Microbe Systems Biology Core, Department of Medical Microbiology and Immunology at UC Davis. Bioinformatic analyses of metagenomics data were completed by JeanClaude Walser at the Genetic Diversity Centre (GDC) at ETH Zurich. The research execution was supported by Michelle Clauzel and Abby Shibiru from UC Davis. The research contents are solely the responsibility of the authors and do not necessarily represent the official views of the USDA. Feeding substrates were generously provided by the Campbell’s Company with help from the California Tomato Research Institute (CTRI), as well as, California Safe Soil, and the UC Davis Teaching and Experimental Winery.
+Conflict of interest
+The authors declare no conflict of interest.
+Supplementary material
+Supplementary material can be found online at https://doi. org/10.3920/JIFF2021.0038.
+Figure S1. Rarefaction curves of all substrate, residue and BSFL intestinal samples.
+Figure S2. Effect of inoculant addition to the rearing substrate on the residue temperature.
+Data availability statement
+All original data presented in the study is publicly available. This sequencing data can be found at: https://www.ncbi. nlm.nih.gov/sra/PRJNA728976. All other data and analyses can be found at: https://github.com/MoritzGold/BSFL_ agri_microbiota.
+References
+Almeida, C., Rijo, P. and Rosado, C., 2020. Bioactive compounds from Hermetia illucens larvae as natural ingredients for cosmetic application. Biomolecules 10: 976. Andersen, K.S., Kirkegaard, R.H., Albertsen, M., 2018. ampvis2: an R package to analyse and visualise 16S rRNA amplicon data. bioRxiv: 299537. https://doi.org/10.1101/299537 Ao, Y., Yang, C., Wang, S., Hu, Q., Yi, L., Zhang, J., Yu, Z., Cai, M. and Yu, C., 2020. Characteristics and nutrient function of intestinal bacterial communities in black soldier fly (Hermetia illucens L.) larvae in livestock manure conversion. Microbial Biotechnology 14: 886-896. Association of Official Analytical Chemists (AOAC), 1997. Official methods of analysis, 16th edition. AOAC, Gaithersburg, USA. Association of Official Analytical Chemists (AOAC), 2005. Official methods of analysis. AOAC, Gaithersburg, USA. Association of Official Analytical Chemists (AOAC), 2006. Official methods of analysis, 18th edition. AOAC, Gaithersburg, USA.
+Barragán-Fonseca, K.B., Dicke, M. and Van Loon, J.J.A., 2018. Influence of larval density and dietary nutrient concentration on performance, body protein, and fat contents of black soldier fly larvae (Hermetia illucens). Entomologia Experimentalis et Applicata 166: 761-770. Barragán-Fonseca, K.B., Dicke, M., Van Loon, J.J.A., 2017. Nutritional value of the black soldier fly (Hermetia illucens L.) and its suitability as animal feed – a review. Journal of Insects as Food and Feed 3: 105-120. Bonelli, M., Bruno, D., Caccia, S., Sgambetterra, G., Cappellozza, S., Jucker, C., Tettamanti, G., Casartelli, M., Genta, F.A. and Serrão, J.E., 2019. Structural and functional characterization of Hermetia illucens larval midgut. Frontiers in Physiology 10: 204. Bruno, D., Bonelli, M., De Filippis, F., Di Lelio, I., Tettamanti, G., Casartelli, M., Ercolini, D. and Caccia, S., 2019. The intestinal microbiota of Hermetia illucens larvae is affected by diet and shows a diverse composition in the different midgut regions. Applied Environmental Microbiology 85: e01864-18. Callegari, M., Jucker, C., Fusi, M., Leonardi, M.G., Daffonchio, D., Borin, S., Savoldelli, S. and Crotti, E., 2020. Hydrolytic profile of the culturable gut bacterial community associated with Hermetia illucens. Frontiers in Microbiology 11: 1965. Chen, C., Chaudhary, A. and Mathys, A., 2020. Nutritional and environmental losses embedded in global food waste. Resources, Conservation and Recycling 160: 104912. Chen, X., Zhao, G., Zhang, Y., Han, L. and Xiao, W., 2017. Nitrogento-protein conversion factors for crop residues and animal manure common in China. Journal of Agricultural and Food Chemistry 65: 9186-9190. Diener, S., Zurbrügg, C. and Tockner, K., 2009. Conversion of organic material by black soldier fly larvae: establishing optimal feeding rates. Waste Management & Research 27: 603-610. Dortmans, B., Diener, S., Verstappen, B.M. and Zurbrügg, C., 2017. Black soldier fly biowaste processing: a step-by-step guide. Swiss Federal Institute of Aquatic Science and Technology (Eawag), Dübendorf, Switzerland. García-Jiménez, B. and Wilkinson, M., 2019. Robust and automatic definition of microbiome states. PeerJ 7: e6657. Gold, M., Cassar, C.M., Zurbrügg, C., Kreuzer, M., Boulos, S., Diener, S. and Mathys, A., 2020a. Biowaste treatment with black soldier fly larvae: increasing performance through the formulation of biowastes based on protein and carbohydrates. Waste Management 102: 319-329. Gold, M., Egger, J., Scheidegger, A., Zurbrügg, C., Bruno, D., Bonelli, M., Tettamanti, G., Casartelli, M., Schmitt, E., Kerkaert, B., De Smet, J., Van Campenhout, L. and Mathys, A., 2020b. Estimating black soldier fly larvae biowaste conversion performance by simulation of midgut digestion. Waste Management 112: 40-51. Gold, M., Tomberlin, J.J.K., Diener, S., Zurbrügg, C. and Mathys, A., 2018. Decomposition of biowaste macronutrients, microbes, and chemicals in black soldier fly larval treatment: a review. Waste Management 82: 302-318. Gold, M., Von Allmen, F., Zurbrügg, C., Zhang, J. and Mathys, A., 2020c. Identification of bacteria in two food waste black soldier fly larvae rearing residues. Frontiers in Microbiology 11: 2897.
+
+
+M. Gold et al.
+126 Journal of Insects as Food and Feed 8 (2)
+Gustavsson, J., Cederberg, C., Sonesson, U., Van Otterdijk, R. and Meybeck, A., 2011. Global food losses and food waste: extent, causes and prevention. FAO, Rome, Italy. Hahn, T., Roth, A., Ji, R., Schmitt, E., Zibek, S., 2019. Chitosan production with larval exoskeletons derived from the insect protein production. Journal of Biotechnology 310: 62-67. Hennig, C., 2020. fpc: flexible procedures for clustering. R package version 2.2-7. Available at: https://cran.r-project.org/package=fpc. Hugerth, L.W., Wefer, H.A., Lundin, S., Jakobsson, H.E., Lindberg, M., Rodin, S., Engstrand, L. and Andersson, A.F., 2014. DegePrime, a program for degenerate primer design for broad-taxonomicrange PCR in microbial ecology studies. Applied Environmental Microbiology 80: 5116-5123. Isibika, A., Vinnerås, B., Kibazohi, O., Zurbrügg, C. and Lalander, C., 2019. Pre-treatment of banana peel to improve composting by black soldier fly (Hermetia illucens (L.), Diptera: Stratiomyidae) larvae. Waste Management 100: 151-160. Jinno, C., He, Y., Morash, D., McNamara, E., Zicari, S., King, A., Stein, H.H. and Liu, Y., 2018. Enzymatic digestion turns food waste into feed for growing pigs. Animal Feed Science and Technology 242: 48-58. Kassambara, A. and Mundt, F., 2020. factoextra: extract and visualize the results of multivariate data analyses. R package version 1.0.7. Available at: https://cran.r-project.org/package=factoextra. Katalinić, V., Možina, S.S., Skroza, D., Generalić, I., Abramovič, H., Miloš, M., Ljubenkov, I., Piskernik, S., Pezo, I., Terpinc, P. and Boban, M., 2010. Polyphenolic profile, antioxidant properties and antimicrobial activity of grape skin extracts of 14 Vitis vinifera varieties grown in Dalmatia (Croatia). Food Chemistry 119: 715-723. Kim, D.H., Jeong, D., Song, K.Y. and Seo, K.H., 2018. Comparison of traditional and backslopping methods for kefir fermentation based on physicochemical and microbiological characteristics. LWT Food Science and Technology 97: 503-507. Kooienga, E.M., Baugher, C., Currin, M., Tomberlin, J.K. and Jordan, H.R., 2020. Effects of bacterial supplementation on black soldier fly growth and development at benchtop and industrial scale. Frontiers in Microbiology 11: 587979. Lalander, C., Diener, S., Zurbrügg, C. and Vinnerås, B., 2019. Effects of feedstock on larval development and process efficiency in waste treatment with black soldier fly (Hermetia illucens). Journal of Cleaner Production 208: 211-219. Mariotti, F., Tomé, D. and Mirand, P.P., 2008. Converting nitrogen into protein – beyond 6.25 and Jones’ factors. Critical Reviews in Food Science and Nutrition 48: 177-184. Maturin, L. and Peeler, J.T., 2001. Bacteriological analytical manual: aerobic plate count. US Food and Drug Administration, Silver Spring, MD, USA. Mazza, L., Xiao, X., ur Rehman, K., Cai, M., Zhang, D., Fasulo, S., Tomberlin, J.K., Zheng, L., Soomro, A.A., Yu, Z. and Zhang, J., 2020. Management of chicken manure using black soldier fly (Diptera: Stratiomyidae) larvae assisted by companion bacteria. Waste Management 102: 312-318. McMurdie, P.J. and Holmes, S., 2013. Phyloseq: an R package for reproducible interactive analysis and graphics of microbiome census data. PLoS ONE 8: e61217.
+Meneguz, M., Gasco, L. and Tomberlin, J.K., 2018. Impact of pH and feeding system on black soldier fly (Hermetia illucens, L; Diptera: Stratiomyidae) larval development. PLoS ONE 13: e0202591. Palma, L., Ceballos, S.J., Johnson, P.C., Niemeier, D., Pitesky, M. and Vandergheynst, J.S., 2018. Cultivation of black soldier fly larvae on almond byproducts: impacts of aeration and moisture on larvae growth and composition. Journal of the Science of Food and Agriculture 98: 5893-5900. Pavela, R., 2011. Insecticidal properties of phenols on Culex quinquefasciatus Say and Musca domestica L. Parasitology Research 109: 1547-1553. R Core Team, 2020. R: a language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. Available at: https://www.r-project.org/. Raimondi, S., Spampinato, G., Macavei, L.I., Lugli, L., Candeliere, F., Rossi, M., Maistrello, L. and Amaretti, A., 2020. Effect of rearing temperature on growth and microbiota composition of Hermetia illucens. Microorganisms 8: 902. Rehman, K. ur, Ur Rehman, R., Somroo, A.A., Cai, M., Zheng, L., Xiao, X., Ur Rehman, A., Rehman, A., Tomberlin, J.K., Yu, Z. and Zhang, J., 2019. Enhanced bioconversion of dairy and chicken manure by the interaction of exogenous bacteria and black soldier fly larvae. Journal of Environmental Management 237: 75-83. Slobodkin, A., 2014. The family Peptostreptococcaceae. In: Rosenberg, E., DeLong, E.F., Lory, S. and Stackebrandt, E. and Thompson, F. (eds.) The prokaryotes. Springer, Berlin/Heidelberg, Germany. Smetana, S., Schmitt, E. and Mathys, A., 2019. Sustainable use of Hermetia illucens insect biomass for feed and food: attributional and consequential life cycle assessment. Resources, Conservation and Recycling 144: 285-296. Somroo, A.A., ur Rehman, K., Zheng, L., Cai, M., Xiao, X., Hu, S., Mathys, A., Gold, M., Yu, Z. and Zhang, J., 2019. Influence of Lactobacillus buchneri on soybean curd residue co-conversion by black soldier fly larvae (Hermetia illucens) for food and feedstock production. Waste Management 86: 114-122. Vilcinskas, A., 2013. Yellow biotechnology I: insect biotechnologie in drug discovery and preclinical research. Springer, Berlin, Germany. Willett, W., Rockström, J., Loken, B., Springmann, M., Lang, T., Vermeulen, S., Garnett, T., Tilman, D., DeClerck, F., Wood, A., Jonell, M., Clark, M., Gordon, L.J., Fanzo, J., Hawkes, C., Zurayk, R., Rivera, J.A., De Vries, W., Majele Sibanda, L., Afshin, A., Chaudhary, A., Herrero, M., Agustina, R., Branca, F., Lartey, A., Fan, S., Crona, B., Fox, E., Bignet, V., Troell, M., Lindahl, T., Singh, S., Cornell, S.E., Srinath Reddy, K., Narain, S., Nishtar, S. and Murray, C.J.L., 2019. Food in the anthropocene: the EAT-Lancet Commission on healthy diets from sustainable food systems. Lancet 393: 447-492. Wynants, E., Frooninckx, L., Crauwels, S., Verreth, C., De Smet, J., Sandrock, C., Wohlfahrt, J., Van Schelt, J., Depraetere, S., Lievens, B., Van Miert, S., Claes, J. and Van Campenhout, L., 2019. Assessing the microbiota of black soldier fly larvae (Hermetia illucens) reared on organic waste streams on four different locations at laboratory and large scale. Microbial Ecology 77: 913-930.
+
+
+Effects of rearing system and microbial inoculation on BSFL
+Journal of Insects as Food and Feed 8 (2) 127
+Xiao, X., Mazza, L., Yu, Y., Cai, M., Zheng, L., Tomberlin, J.K., Yu, J., Van Huis, A., Yu, Z., Fasulo, S. and Zhang, J., 2018. Efficient coconversion process of chicken manure into protein feed and organic fertilizer by Hermetia illucens L. (Diptera: Stratiomyidae) larvae and functional bacteria. Journal of Environmental Management 217: 668-676.
+Yu, G., Cheng, P., Chen, Yanhong, Li, Y., Yang, Z., Chen, Yuanfeng and Tomberlin, J.K., 2011. Inoculating poultry manure with companion bacteria influences growth and development of black soldier fly (Diptera: Stratiomyidae) larvae. Environmental Entomology 40: 30-35.

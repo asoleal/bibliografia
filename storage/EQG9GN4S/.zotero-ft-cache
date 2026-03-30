@@ -1,0 +1,597 @@
+Page 1/22
+Black Soldier Fly Larvae Mitigate Greenhouse Gas Emissions from Domestic Biodegradable Waste through Carbon-Nitrogen Redistribution and Microbial Reconstruction
+FangMing Xiang
+Zhejiang University - Zijingang Campus: Zhejiang University
+LuYing Han
+Zhejiang University - Zijingang Campus: Zhejiang University
+ShuoYun Jiang
+Zhejiang University - Zijingang Campus: Zhejiang University
+Xinhua Xu
+Zhejiang University - Zijingang Campus: Zhejiang University
+Zhijian Zhang
+Zhejiang University https://orcid.org/0000-0002-4133-9620
+Research Article
+Keywords: Organic wastes, Microbiome, Insects, Greenhouse gas, Composting
+Posted Date: March 1st, 2024
+DOI: https://doi.org/10.21203/rs.3.rs-3903205/v1
+License:   This work is licensed under a Creative Commons Attribution 4.0 International License.
+Read Full License
+
+
+Page 2/22
+Abstract
+Black soldier y larvae (BSFL) have been proven to reduce greenhouse gas emissions in the treatment of
+organic waste (e.g., domestic biodegradable waste, DBW). However, the microbial mechanisms involved
+have not been fully understood. The current study mainly examined the dynamic changes of carbon and
+nitrogen, greenhouse gas emissions, the succession of microbial community structure, and changes in
+gene abundance in DBW under BSFL treatment (LT) and non-aeration composting (NC). We found that of
+the organic waste supplied, 29.9% carbon and 55.0% nitrogen were stored in BSFL. For every 1kg of dry
+matter of organic waste consumed, 655 g CO2, 0.80 mg CH4, and 2.26 mg N2O were emitted from LT,
+signi cantly lower than those from NC. 16S rRNA gene sequencing results showed that the BSFL
+increased the relative abundance of Methanophaga, Marinobacter, and Campylobacterduring the
+bioprocess, enhancing the consumption of CH4 and N2O. The metagenomic data showed that the BSFL
+reduced the ratio of (nirK+ nirS+ nor)/nosZin the residues, thereby reducing the emission of N2O. In
+addition, it increased the functional gene abundance of nirA, nirB, nirD, and nrfA, making nitrite more
+inclined to be reduced to ammonia. The BSFL mitigated greenhouse gas emissions by redistributing
+carbon and nitrogen and remodeling the community and function of microbiomes during the DBW
+bioconversion.
+1. Introduction
+Recently, black soldier y larvae (HermetiaillucensL., BSFL) bioconversion technology has been widely
+recognized as a promising biotechnology for the treatment of domestic biodegradable waste (DBW),
+livestock manure, and sewage sludge (Qin et al. 2022; Wang et al. 2022; Wang et al. 2023). This
+technology can not only convert organic waste into organic fertilizer (Xiang et al. 2022), but also harvest
+larvae for animal feed and biofuel production (Parodi et al. 2020). However, organic waste emits a large
+amount of greenhouse gases (CO2, CH4, and N2O) during the bioprocess, which is harmful to the
+environment (Akdeniz 2019). Studies have shown that BSFL bioconversion technology can signi cantly
+reduce greenhouse gas emissions compared to traditional composting (Pang et al. 2020). However, few
+studies have been focused on how BSFL reduce greenhouse gas emissions during organic waste
+treatment.
+Through the processes of nitri cation, denitri cation, and nitrogen xation, N2O was produced and
+emitted during bioconversion (He et al. 2021), and CH4 emissions also depended on CH4 production and
+oxidation (Sun et al. 2022). Thus, when assessing N2O and CH4 emissions, the nitrogen metabolism and
+methanogenesis functional microbial community should be fully considered. Researchers found that the
+emission intensity of N2O was positively correlated with the functional gene abundance of nirK, nirS, and
+nosZ. (Chen et al. 2023). In addition, methanosarcina, methanoculleus, and methanobacteriumwere the
+most abundant methanogenic genera in the aerobic composting of livestock manure (Sun et al. 2022).
+Many studies suggested reducing greenhouse gas emissions by adding additives (biochar, lime, etc.) and
+changing composting conditions (temperature, aeration, etc.), all of which without exception affected the
+
+
+Page 3/22
+microbial community structure (Chu et al. 2022; He et al. 2021; Sun et al. 2022; Zhang et al. 2023). The
+BSFL caused a signi cant impact on the microbial community in organic waste, and it also formed a
+unique microbial community in its own intestines (Zhan et al. 2020). Therefore, it is necessary to study
+whether the microbial community changes caused by BSFL alleviate greenhouse gas emissions during
+the BSFL bioconversion. The latest developments in metagenomics have promoted research on the study
+of non-culturable microorganisms (Xiang et al. 2024). Metagenomics can analyze microbial diversity and
+identify proteins, enzymes, and biochemical pathways related to nitrogen metabolism and
+methanogenesis process. The current study used metagenomic analysis to investigate the dynamic
+pro les of the functional structure of microbial communities in larval intestines and residues, which is
+important for understanding the emission mechanisms of CH4 and N2O during the process of BSFL
+bioconversion.
+In this study, we conducted two experiments in a full-scale project for DBW treatment, i.e., inclusion with
+BSFL (LT) or non-aeration composting (NC). The principal goals of this study are to (i) understand the
+redistributions of carbon and nitrogen in each component (i.e., larvae, residual material, and gaseous
+emissions), and use mass balance to calculate the ow direction of carbon and nitrogen; (ii) investigate
+the evolution of bacterial community structure through 16s rRNA analyses; (iii) reveal the dynamic
+changes in the functional structure of microbial communities in larval intestines and residues using
+metagenomics analyses. This study provides a new insight on understanding of greenhouse gas
+emissions during BSFL bioconversion for the treatment of organic waste.
+2. Materials and methods
+2.1. Experimental design
+The full-scale BSFL bioconversion project for DBW (food waste, kitchen waste, and fruit and vegetable
+waste, etc.) treatment established by the HangZhou GuSheng Biotechnology Co., Ltd. was in YuHang
+County (30°24′10.8′′ N, 120°09′43.3′′E), HangZhou City, ZheJiang Province, China (Deng et al. 2022). Raw
+DBW was collected from nearby villages and towns, including rural households, farm product markets,
+and food catering companies. After removing non-biodegradable substances (e.g., plastic, wood, and
+glass), a pulper was used to process the collected DBW into a slurry that was then passed through a 3.5
+mm sieve. Appropriate amounts of rice husk powder were added to adjust the moisture content of the
+slurry to ~ 75%.
+The BSFL bioconversion unit was housed within a plastic greenhouse featuring a sequence of
+bioconversion pools, measuring 14 m × 2 m × 30 cm (L×W×H). A continuous feeding strategy based on
+operational experience was applied to treat DBW. Brie y, 100 kg DBW was manually applied to each pool,
+and then four-day-old BSFL (2nd instar) were introduced into the pools to initiate the process of DBW
+bioconversion (i.e., LT). The inoculation intensity was equivalent to the emergence of larvae from 35
+grams of eggs per ton of DBW. Afterwards, the DBW was fed according to Fig. S1. Another pool was lled
+with the same amount of DBW without larvae added (non-aeration compost, i.e., NC). Commencing on
+
+
+Page 4/22
+November 9, 2020, the experiment spanned 14 days and was replicated three times for each treatment.
+DBW samples for both LT and NC were collected bi-daily starting from day 0 prior to feeding. Fresh BSFL
+samples were concurrently gathered from the larvae treatment every two days. Samples were temporarily
+stored in a portable refrigerator and transported to the laboratory within 4 hours. Fresh larvae samples
+were chilled on ice for dissection after surface sterilization twice using 70% ethanol and cleaned twice
+using sterile water. Based on methods described in (Gold et al. 2018), the midgut was dissected for
+subsequent DNA extraction (LI). Simply, the midgut is the part between the proventriculus (a valve with a
+potentially grinding function) and the Malpighian tubules (shaped as a slender tube). Fresh samples were
+either processed immediately or stored at -80°C before downstream analysis.
+2.2. Measurement of greenhouse gas uxes.
+In situ, reactor-atmosphere uxes of CO2, CH4, and N2O were measured using a static ux chamber. The
+chamber consisted of a polymethyl methacrylate (PMMA) box of 20 cm in height, 30 cm in length, and 25
+cm in width with a threaded access cap and a gas valve. The cap was tted with a gas-tight O-ring for
+installing a thermometer, and the gas valve was used for gas sampling. The top of the box was equipped
+with an axial fan to promote su cient mixing of internal gases. The chamber was connected to a
+stainless-steel base collar of the same size but only 5cm in height, which was used to reduce lateral gas
+ux before sampling. The stainless-steel base collar of the chamber was inserted into the DBW and left to
+equilibrate for roughly 30 min before sampling. The gas valve was closed and the axial fan was started.
+Gas measurements were taken at approximately 20-min intervals, for a total of ve measurements. For
+each measurement, 100 ml of gas was collected using an air pump and Te on FEP airbag (Te on® FEP,
+China). CO2, CH4, and N2O concentrations in samples were measured by gas chromatography as
+described by (Zeng et al. 2018). Concentrations were then converted to nmol/m3 at ambient pressure and
+temperature using the ideal gas law. Atmospheric ux (Jatm) was calculated from the concentration (C0)
+and rate change (dC/dt) at chamber deployment using a linear regression (Eq. 1) and an exponential
+model t (equations 2 and 3) (Bay et al. 2021) for each chamber measurement:
+1
+..............................................
+2
+........................
+3
+............................................
+Jatm = h ⋅ dC/dt
+C(t) = P /k + (C0 − P /k) ⋅ exp(−kt)
+Jatm = h(P − kC0)
+
+
+Page 5/22
+2.3. Waste reduction calculation and analysis of physicochemical parameters
+A real-time weighing and monitoring system was set for collections of daily input of DBW, residue mass,
+and fresh larvae yield. The reduction rate of DBW was calculated using the input and residue mass.
+Temperature, pH, and moisture were measured as described in our previous report (Tao et al. 2023). Total
+carbon (TC) was determined with a Elementar Vario El cube-type element analyzer (Elementar Vario EL
+Cube, Elementar, Germany). The total Kjeldahl nitrogen (KN) was tested according to the procedure of
+(Wang et al. 2023) after digesting the dry samples using the concentrated H2SO4–HClO4 acids. NO-3-N
+and NH + 4-N were analyzed using a continuous ow analytical system (Shimadzu, JAPAN) (Xu et al.
+2023). Levels of crude protein, crude fat and ash in samples were tested by standard methods coded as
+GB/T6432-1994, GB/T6433-2006 and GB/T6438-2007, respectively (Deng et al. 2022).
+2.4. Community DNA extraction
+For all samples (NC, LT, and LI), total community DNA was extracted using 0.25 g of DBW or intestinal
+tissue. Extractions were performed using the QIAamp® PowerFecal® DNA Kit (QIAGEN, Germany)
+according to the manufacturer’s instructions. To verify successful DNA extraction, the DNA concentration
+and purity were quanti ed with a TBS-380 uorometer (Turner Biosystems, Sunnyvale, CA, USA) and a
+NanoDrop 2000 spectrophotometer (Thermo Fisher Scienti c, Waltham, MA, USA), respectively.
+Electrophoresis was performed with 1% (w/v) agarose gels before the use of DNA extracts from the
+respective microbes.
+2.5. Marker-gene sequencing and analysis
+High-resolution marker-gene (16S rRNA) analysis was performed on an Illumina Novaseq PE250 platform
+for all samples. qPCR was used to estimate total bacterial and archaeal biomass. The primer pair 341F
+(CCTAYGGGRBGCASCAG) and 806R (GGACTACHVGGGTWTCTAA) was used to amplify the V3-V4
+regions of the bacterial 16S ribosomal RNA gene. 2% agarose gel electrophoresis of PCR products was
+carried out to test whether the products were ampli ed successfully. 2% agarose gel electrophoresis of
+PCR products was carried out to test whether the products were ampli ed successfully. The Illumina
+Novaseq PE250 platform was selected for double-end sequencing with an average of 30,000 raw reads.
+Pandaseq software was used to merge paired reads. Clean reads were obtained after quality ltering.
+Raw data for high-throughput sequencing are available at Mendeley Data
+(https://doi.org/10.17632/rxdgmvx4x9.1).
+2.6. Metagenomics sequence, assembly, and analysis
+All samples from LI and LT, as well as NC samples from days 0, 6, and 14, were chosen for shotgun
+metagenomic sequencing. The DNA was treated with Covaris M220 (Gene Company, Shanghai, China) to
+produce fragments of ~ 300 bp for paired-end library construction. Paired-end sequencing was performed
+on an Illumina HiSeq 4000 platform (Illumina, San Diego, CA, USA) at Majorbio Bio-Pharm Technology
+Co. (Shanghai, China). Low-quality reads (length < 50 bp or with a quality value < 20 or having N bases)
+
+
+Page 6/22
+were removed using Fastp v0.20.0 (https://github.com/OpenGene/fastp). The reads were then trimmed
+by removing host DNA (Hermetia illucens (L.)) with BWA v0.7.17 (https://github.com/sghignone/bwa). A
+total of 2,451,107,634 clean reads were generated with an average of 48,060,934 reads per sample. The
+metagenome was then assembled as contigs having a minimum length of 300 bp and open reading
+frames (ORFs) were predicted using MetaGene (http://metagene.cb.k.u-tokyo.ac.jp/). All predicted genes
+(90% sequence identity and 90% coverage) were clustered using CD-HIT
+(http://www.bioinformatics.org/cd-hit/). The longest genes in each cluster were chosen as representative
+sequences to construct a non-redundant gene catalog. The raw metagenomic data were deposited in the
+National Center for Biotechnology Information (NCBI) Sequence Read Archive (accession number:
+SUB13374969).
+2.7. Statistical analysis
+One-way analysis of variance (ANOVA) was performed using SPSS 22.0 and the results were tested for
+signi cance. A P-value of < 0.05 was considered statistically signi cant. The line chart, bar chart, and
+Sankey chart were created using Origin 2023b (OriginLab, Los Angeles, USA). For the exponential model,
+parameters P and k were tted via non-linear regression using the nls() function in R (Fig. S2, 3, and 4;
+Table S1), and h was denoted the effective chamber height in m. For taxonomic annotation, usearch
+(http://drive5.com/usearch/manual/dereplication.html) was used to determine data quality as well as
+identify and remove chimeric sequences. Operational taxonomic units (OTUs), obtained according to a
+97% similarity threshold, were compared with the Greengenes database
+(http://greengenes.secondgenome.com/) to obtain the bacterial community structure and composition
+information for the samples. For functional annotation, sequences were aligned to the KEGG database
+using BLASTP (BLAST Version 2.2.28+, http://blast.ncbi.nlm.nih.gov/Blast.cgi) searched with an e-value
+cutoff of 10− 5.
+3. Results and discussion
+3.1. Changes in carbon and nitrogen
+We measured the mass, moisture, temperature, and pH values of the residues to characterize the
+bioconversion process (Fig. S1), and the physical and chemical properties of inputs, residues, and larvae
+are shown in Table 1. The results showed that the degradation rate, temperature, and pH in the BSFL
+treatment (LT) were higher while the water content was lower, compared to the non-aeration compost
+(NC). The total carbon (TC) and total Kjeldahl nitrogen (KN) in the LT decreased by 13.9 g/kg and 2.76
+g/kg, respectively, which were 13.9 times and 3.70 times higher than those in the NC (Fig. 1a, b). This is
+attributed to the lack of aeration in the NC, resulting in low microbial activity (Rincon et al. 2019). On the
+contrary, the peristalsis of the larvae and their own respiration ensure the oxygen supply in LT, allowing
+for rapid degradation of TC and KN.
+
+
+Page 7/22
+Table 1 Physical and chemical properties of inputs, residues, and larvae
+Parameters DBW Input Fresh larvae Residues (NC) Residues (LT)
+Mass (kg) 2001 ± 4.42 398 ± 4.32 1797 ± 33.0 591.0 ± 11.5
+Moisture (%) 72.3 ± 0.95 61.2 ± 1.70 70.4 ± 1.16 55.6 ± 3.14
+KN (g/kg) 36.5 ± 2.55 62.2 ± 7.36 34.1 ± 1.35 21.3 ± 0.39
+TC (g/kg) 471 ± 13.4 505 ± 41.6 458 ± 7.43 279 ± 16.4
+Ash (%) 5.78 ± 1.42 2.45 ± 0.95 5.93 ± 1.78 20.9 ± 6.1
+Crude protein (%) 5.61 ± 1.76 13.7 ± 3.1 4.98 ± 1.09 7.41 ± 1.69
+Crude fat (%) 8.46 ± 0.85 11.5 ± 4.3 7.69 ± 0.23 1.48 ± 0.12
+Saltness (%) 1.15 ± 0.65 1.45 ± 0.53 1.22 ± 0.82 3.09 ± 0.78
+As two important processes, dynamic changes in ammonium (NH + 4-N) and nitrate (NO- 3-N) are crucial
+indicators of the nitrogen cycle, accurately re ecting the process from ammoni cation to
+nitri cation/denitri cation (Li et al. 2023). Due to the rapid degradation of organic nitrogen, the content of
+inorganic nitrogen in the residues rapidly increased. Inorganic nitrogen in the residues mainly existed as
+NH + 4-N and NO- 3-N, with NO- 3-N being the end-product of nitri cation (Ge et al. 2018). Speci cally,
+ammonia nitrogen and nitrate nitrogen in LT increased from 0.268 ± 0.021 g/kg and 40.9 ± 4.8 mg/kg,
+respectively, to 2.57 ± 0.32 g/kg and 150 ± 10 mg/kg, respectively (Fig. 1c, d). Compared with traditional
+composting, there was no phenomenon of NH + 4-N decreasing in the later stage (He et al. 2021). Excess
+NH + 4 was easily disposed of in the form of NH3 with increasing pH/temperature and the evaporation of
+water (Coskun et al. 2017). Compared to traditional composting, the highest temperature (< 55 °C) and
+nal pH (< 9) during larval treatment were lower (Fig. S1), which may reduce the conversion of NH + 4 into
+NH3 in the residues. In addition, nitri cation was mainly dominated by mesophiles during food-manure
+composting (Wang et al. 2022). The temperature in the LT on days 0–4 was more conducive to
+nitri cation, leading to a rapid increase in NO- 3-N (Fig. 1d).
+3.2. Nutrient balances and greenhouse gas emissions
+Based on the physicochemical properties of the materials and larvae (Table 1), we also calculate the
+ows of carbon and nitrogen in different treatments (Fig. 2). In the natural composting group, the
+reductions of carbon and nitrogen were entirely converted into gas emissions. During the two-week
+transformation, 6.68% of carbon and 12.6% of nitrogen were emitted in the form of gas (Fig. 2a and b),
+consistent with other studies (Parodi et al. 2021). The NC in this experiment was set for only 2 weeks,
+whereas traditional composting typically lasted 30 to 90 days (He et al. 2021; Li et al. 2023; Meng et al.
+2022; van den Bergh et al. 2023). Literature suggested that carbon losses during food waste composting
+ranged from 44.9–91.8%, and nitrogen losses ranged from 26.2–53.8% (Zhang and Matsuto 2010). The
+carbon and nitrogen entering the residues in the LT were 28.0% and 33.1%, respectively, which were only
+
+
+Page 8/22
+30.0% and 37.8% of those occurred in the NC. At the same time, the larvae recovered 29.9% of carbon and
+55.0% of nitrogen internally (Fig. 2c and d). On one hand, BSFL recovered carbon and nitrogen through
+their metabolism and storage of organic matter, resulting in losses of only 42.1% and 11.9%, signi cantly
+lower than losses during traditional composting (Zhang and Matsuto 2010). This is likely a key reason
+why BSFL bioconversion technology reduced greenhouse gas emissions in organic waste treatment. On
+the other hand, BSFL bioconversion technology had the advantage of short cycles (Singh et al. 2023). In
+this experiment, the degradation e ciency of carbon and nitrogen in NC was 0.48% per day and 0.90%
+per day, while these were found as was 5.14% per day and 4.78% per day in LT, indicating a signi cantly
+higher degradation e ciency with BSFL bioconversion technology.
+The CO2 and CH4 emission rates under all the treatments showed an upward trend, while the N2O
+emission rate showed a downward trend (Fig. 3a, b, and c). CO2 was the main gas produced during the
+bioconversion, much higher than CH4 and N2O emissions. CO2 emissions could re ect the metabolic
+activities of BSFL and microorganisms (Wang et al. 2018). BSFL increased CO2 emissions by 423%
+compared with incubating DBW without BSFL, indicating that the metabolic activity in the LT was
+signi cantly stronger than that in the NC. The emission of N2O in the LT was only 43.9% of that in the NC,
+although the degradation of KN in the LT was 5.33 times that in the NC. Denitri cation, which is
+traditionally considered as the main source of N2O, is an anoxic process carried out by denitri ers
+(Sanchez et al. 2015). Nevertheless, larvae movement and digestion facilitated air diffusion into the
+substrate, which destroyed the anaerobic regions and improved the process of ammoni cation and
+nitri cation (Pang et al. 2020). This can be con rmed by the accumulation of ammonia nitrogen and
+nitrate nitrogen in the residues (Fig. 1c, d). Although the intervention of BSFL increased CO2 and CH4
+emissions, it also accelerated the degradation of TC and KN (Fig. 1a and b). From the perspective of
+greenhouse gas emissions per unit TC/KN reduction, the LT produced 1.05–1.07 mg of CH4 and 0.312
+0.317 g of CO2 for every 1g of TC degradation, which were only 13.1% and 38.1% of that in the NC,
+respectively (Fig. 3d). The reason for this phenomenon is that the BSFL recycled 29.9% of TC (Fig. 2c).
+Similarly, due to the 55.0% recovery of KN by BSFL, the emission of N2O in the LT was lower. In addition,
+for every 1 mg of methane produced, approximately 100 mg of carbon dioxide was simultaneously
+released in the NC, while approximately 310 mg of carbon dioxide was released in the LT (Fig. 3d).
+Therefore, the limited organic carbon tended to be converted into carbon dioxide rather than methane
+during BSFL bioconversion.
+3.3. Changes in microbial community diversity
+DBW with and without BSFL were mainly dominated by Actinobacteria(60.0%), Firmicutes(22.4%),
+Bacteroidetes(10.3%), and Proteobacteria(6.75%) (Fig. 4a). These phyla affect mineralization and the
+carbon/nitrogen cycle (Huang et al. 2019). Among them, Firmicuteswere the most dominant bacteria in
+the NC (88.9–95.8%), consistent with traditional aerobic composting (He et al. 2021; Li et al. 2023). On
+the contrary, Firmicutessigni cantly decreased in the LT (3.67–19.3%) and LI (4.75–21.1%), while
+Actinobacteriabecame the most dominant bacteria (67.0-88.2% and 43.5–86.7%, respectively),
+
+
+Page 9/22
+consistent with our previous reporting (Jiang et al. 2019). In addition to Actinobacteriota, LT also
+contained a large amount of Proteobacteria(4.35–19.1%), while LI contained a large amount of
+Bacteroidetes(6.98–42.4%) (Fig. 4). Study showed that the percentage of N2O to total denitri cation
+activity (N2 + N2O) was lowest in the region of the eld with the highest relative abundance of
+Bacteroidetes(Graf et al. 2014). Therefore, the signi cant increase in the relative abundance of
+Bacteroidetesin the LT and LI, especially in the LI, may be a key reason for the decrease in N2O
+emissions.
+Compared to the phyla level, the genus level provided a better understanding of the functional
+microorganisms during mature composting (Li et al. 2023). The emission of CH4 was in uenced by the
+activity of methanogenic and methanotrophic communities (van den Bergh et al. 2023). According to the
+summary of the literature (Sun et al. 2022; van den Bergh et al. 2023; Zhang et al. 2023), all methanogens
+and methanotrophs detected in the current study are shown in Fig. 4b. The relative abundance of
+methanogens and methanotrophs detected was very low, which is consistent with the low methane
+emissions (Fig. 3). The dominant methanogens in the NC were Methanobrevibacter, Methanospaera, and
+Methanomassiliicoccus, which were signi cantly higher than those in the LI and LT. There was almost no
+detection of methanotrophs in the NC and LI, while the dominant methanotroph in the LT group was
+Methylophaga. This seems to indicate that the intervention of the BSFL made the microbial communities
+in DBW more inclined to oxidize methane rather than emit methane. Previous studies have generally
+considered most methanogens to be mesophilic, with optimal growth temperatures of 35–45 °C (Ren et
+al. 2016), while the temperature in the LT was more suitable for the metabolism of methanogens (Fig.
+S1). Therefore, it seems di cult to explain the differences in methane emissions between the NC and LT
+from the perspective of microbial communities. Based on previous research (Graf et al. 2014), the main
+denitrifying bacteria in the current study were identi ed (Fig. 4). Data showed that the conversion of NO
+2-N to NO catalyzed by nitrite reductase (Nir) was a key step of denitri cation. The Nir enzyme was
+reported with two types: cytochrome cd1 containing nitrite reductase (NirS) encoded by the nirSgene and
+copper-containing nitrite reductase (NirK) encoded by the nirKgene (Chu et al. 2022). In the current study,
+nirK-type denitrifying bacteria were dominant (Marinobacter, Psychrobacter, Idiomarina, and
+Bi dobacterium), 16.9 times higher than nirS-type denitrifying bacteria (Fig. 4c). Obviously, BSFL not only
+increased the relative abundance of Marinobacterin the residues (LT), but also enriched Psychrobacterin
+its own intestines (LI). Respiratory NO reduction to N2O in the denitri cation pathway was performed by
+two variants of the heme-copper oxidase type NO reductases in bacterial and archaeal denitri ers,
+encoded by the norgenes (norBand norC) (Graf et al. 2014). Similarly, nor-associated taxa
+(Campylobacter, Psychrobacter, and Idiomarina) in the LT and LI were signi cantly higher than those in
+the NC. Based on the increase of nirK-associated and nor-associated taxa, it seems that BSFL would
+increase the emission of N2O during the DBW bioconversion. However, the nal step of denitri cation was
+catalyzed by the nitrous oxide reductase (encoded by the nosZgene), which reduced nitrous oxide to
+nitrogen (Stein 2020). nosZ-associated taxa, Campylobacter, and Marinobacter, presented remarkably
+higher relative abundances in LT and LI, indicating that the intervention of BSFL promoted the entire
+denitri cation process. Previous reports have shown a positive correlation between N2O ux and the ratio
+
+
+Page 10/22
+of (nirS+ nirK+ nor)/nosZ(Chen et al. 2023). Therefore, we calculated this ratio by replacing the relative
+abundance of genes with the relative abundance of associated taxa. The results showed that the ratios
+of (nirS+ nirK+ nor)/nosZin the three groups were 3.13 (NC), 0.83 (LI), and 1.40 (LT), respectively.
+Apparently, the ratios of (nirS+ nirK+ nor)/nosZin LI and LT were remarkably higher than that of NC,
+indicating a potentially higher N2O reduction degree in the LI and LT. Therefore, the occurrence of a large
+reduction of N2O may be an important factor leading to lower N2O emissions in the BSFL bioconversion
+system. In summary, the intervention of the BSFL reconstructed the microbial community structure during
+DBW bioconversion, thereby mitigating greenhouse gas emissions. On the one hand, the decrease in the
+ratio of methanogens to methanotrophs decreased methane emissions, while a higher proportion of
+nosZ-associated taxa reduced nitrous oxide emissions.
+3.4. Pathways of nitrogen and methane metabolism
+Subsequently, the mechanisms of BSFL on CH4 and N2O emission mitigation were investigated at the
+level of biotic factors. Firstly, we summarized the functional genes related to methanogenesis and carbon
+metabolism and calculated the ratio of methane synthesis to carbon metabolism (Fig. S5a). The ratio of
+methanogenesis to carbon metabolism in LT and LI was signi cantly lower than that in NC group. This
+con rms the previous conclusion that BSFL reduced the proportion of organic carbon converted to
+methane. Then, the CH4 net emission depended on the intensity of CH4 production and CH4 oxidation
+(Sun et al. 2022). Therefore, we focused on four pathways for biogenic methane production, namely
+methanol to methane, acetate to methane, carbon dioxide to methane, and
+methylamine/dimethylamine/trimethylamine to methane (Fig. 5a). These four pathways all required
+methyl-CoM reductase (EC: 2.8.4.1) to catalyze the production of CH4 from acetic acid, which is a direct
+potential cause of CH4 emissions. In addition, particulate methane monooxygenase, soluble methane
+monooxygenase, and methanol dehydrogenase, encoded by pmoA, mmoX, and mxaF (EC: 1.14.13.25,
+and 1.14.18.3), were the main drivers of methane oxidation (Sun et al. 2022). Therefore, we summarized
+the gene abundance corresponding to the enzymes involved in methane production and oxidation in three
+groups (Fig. 5c). Among the four pathways for methanogenesis, the gene abundance of the pathway for
+methanogenesis form acetate is the highest. However, almost no genes related to methyl-CoM reductase
+was detected in all samples, which is consistent with the previous conclusion of low methane production
+(Fig. 3a). In addition, the gene for methane monooxygenase was not detected. Therefore, from the
+perspective of functional genes, it cannot explain the reduction of methane emissions by BSFL.
+Microbial-mediated denitri cation process was considered as the most important contributor to N2O
+production in bioconversion systems (Guo et al. 2020). During the reduction of nitrite, one part was
+reduced to ammonia (EC: 1.7.1.4, 1.7.7.1, 1.7.1.15, and 1.7.2.2) (He et al. 2021), while another part was
+rst reduced to nitric oxide (EC: 1.72.1) then further reduced to nitrous oxide (EC: 1.7.2.5 and 1.7.1.14),
+and nally was reduced to nitrogen gas (EC: 1.7.2.4) (Graf et al. 2014) (Fig. 5b). Therefore, we further
+depicted the signi cant differences in the proportions of enzymes associated with nitrogen metabolism
+between the NC, LI, and LT (Fig. 5d). The abundance of nitrite reductase in the LI (EC: 1.7.7.2) and LT (EC:
+1.7.1.15) was 5.69 times and 4.00 times higher than that in the NC, respectively. This suggests that
+
+
+Page 11/22
+microorganisms in the LI and LT were more inclined to reduce nitrite to ammonia. Meanwhile, the
+abundance of nitrous-oxide reductase (EC: 1.7.2.4) in LT and LI was signi cantly higher than that in NC
+(increased by 21.3 times and 5.13 times, respectively), which is likely one of the important reasons for the
+lower emissions of N2O in the LT (Fig. 3c). In addition, to further characterize the emission intensity of
+N2O, we calculated (nirK+ nirS+ nor)/nosZ(Chen et al. 2023). The ratio of (nirK+ nirS+ nor)/nosZ
+continuously decreased in all samples with the progress of bioconversion (Fig. S5b), which is consistent
+with the previous result of continuously decreasing emissions of N2O (Fig. 3c). Meanwhile, this ratio in
+the NC was similar to that in the LI and signi cantly higher than that in the LT, indicating that BSFL
+indeed reduced the emission of nitrous oxide by altering the abundance of functional genes in the
+material. The ratio of (nirK+ nirS+ nor)/ (nirA+ nirB+ nirD+ nrfA) was used to characterize the ratio of
+nitrite reduction to N2O and ammonia (He et al. 2021). Except for day 2 and day 4, the ratio in LI was
+signi cantly lower than that in NC and LT (Fig. S5c), indicating that more nitrite was converted into
+ammonia in the BSFL intestines, thus reducing the emission of N2O. Therefore, the intervention of the
+BSFL directly reduced the emission of N2O by reducing the ratio of (nirK+ nirS+ nor)/nosZin the material,
+and indirectly reduced the emission of N2O by increasing the ratio (nirK+ nirS+ nor)/ (nirA+ nirB+ nirD+
+nrfA) in the BSFL intestines. We constructed heatmaps by calculating the Spearman correlations between
+genes related to nitrogen reduction and denitrifying bacteria genera (Fig. 6). Marinobacterand
+Campylobacterwere strongly positively correlated with the abundance of genes encoding EC: 1.7.2.4,
+indicating that these two genera further reduced nitrous oxide to nitrogen, consistent with previous
+researches (Graf et al. 2014). Therefore, correlation analysis further proved that the BSFL enriched
+bacteria (e.g. Marinobacterand Campylobacter) to reduce nitrous oxide emissions by reducing nitrous
+oxide to nitrogen.
+4. Conclusions
+The current study indicated that BSFL reduced greenhouse gas emissions from the degradation of unit
+organic waste (CO2, CH4, and N2O decreased by 61.9%, 86.9%, and 94.8%, respectively). We found that of
+the organic waste, 29.9% of carbon and 55.0% of nitrogen were stored in BSFL body mass. Under the
+induction of BSFL, the relative abundance of methanotrophs (Methylophaga) and nosZ-associated taxa
+(Campylobacterand Marinobacter) were signi cantly increased. Metagenomics results revealed that the
+emission factor of N2O ((nirK+ nirS+ nor)/nosZ) was signi cantly reduced due to the intervention of
+BSFL. Additionally, the microbial community induced by BSFL decreased the proportion of nitrite
+reduction to N2O, instead, increased the proportion of nitrite reduction to ammonia. In summary, BSFL
+mitigated greenhouse gas emissions by carbon-nitrogen redistributions, as well as reshaping microbial
+communities and functional structures.
+Declarations
+Ethical Approval: This work does not carry out research on humans and animals, and does not involve the
+use of human subjects
+
+
+Page 12/22
+Consent to Participate: Not applicable
+Consent to Publish: Not applicable
+Author contributions ZhiJian Zhang: Conceptualization, Methodology, Resources, Data Curation, Writing 
+Review and Editing, Supervision, Project administration, Funding acquisition. XinHua
+Xu: Conceptualization, Methodology, Writing - Review and Editing, Supervision. FangMing
+Xiang: Software, Formal analysis, Investigation, Data Curation, Writing - Original Draft,
+Visualization. LuYing Han: Investigation, Writing - Original Draft. ShuoYun Jiang: Formal analysis,
+Visualization.
+Funding This work was supported by the National Natural Science Foundation of China (grant numbers
+42377002, 32171466).
+Competing interests: The authors declare no competing interests.
+References
+1. Akdeniz N (2019) A systematic review of biochar use in animal waste composting. Waste Manage
+88:291–300. https://doi.org/10.1016/j.wasman.2019.03.054
+2. Bay SK, Dong X, Bradley JA, Leung PM, Grinter R, Jirapanjawat T, Arndt SK, Cook PLM, Larowe DE,
+Nauer PA, Chiri E, Greening C (2021) Trace gas oxidizers are widespread and active members of soil
+microbial communities. Nat Microbiol 6(2):246–256. https://doi.org/10.1038/s41564-020-00811-w
+3. Chen X, Zhang S, Liu J, Wang J, Xin Y, Sun S, Xia X (2023) Tracing microbial production and
+consumption sources of N2O in rivers on the qinghai-tibet plateau via isotopocule and functional
+microbe analyses. Environ Sci Technol 57(18):7196–7205. https://doi.org/10.1021/acs.est.3c00950
+4. Chu Y, Wang J, Jiang L, Tian G, He R (2022) Intermittent aeration reducing N2O emissions from
+bioreactor land lls with gas-water joint regulation. Waste Manage 139:309–320.
+https://doi.org/10.1016/j.wasman.2021.12.041
+5. Coskun D, Britto DT, Shi W, Kronzucker HJ (2017) Nitrogen transformations in modern agriculture and
+the role of biological nitri cation inhibition. Nat Plants 3(6):17074.
+https://doi.org/10.1038/nplants.2017.74
+. Deng Y, Xiang F, Tao X, Jiang C, Zhang T, Zhang Z (2022) A full-scale black soldier y larvae
+(Hermetiaillucens) bioconversion system for domestic biodegradable wastes to resource. Waste
+Manage Res 41(1):143–154. https://doi.org/10.1177/0734242X221103936
+7. Ge J, Huang G, Li J, Sun X, Han L (2018) Multivariate and multiscale approaches for interpreting the
+mechanisms of nitrous oxide emission during pig manure-wheat straw aerobic composting. Environ
+Sci Technol 52(15):8408–8418. https://doi.org/10.1021/acs.est.8b02958
+. Gold M, Tomberlin JK, Diener S, Zurbrugg C, Mathys A (2018) Decomposition of biowaste
+macronutrients, microbes, and chemicals in black soldier y larval treatment: a review. Waste
+
+
+Page 13/22
+Manage 82:302–318. https://doi.org/10.1016/j.wasman.2018.10.022
+9. Graf DRH, Jones CM, Hallin S (2014) Intergenomic comparisons highlight modularity of the
+denitri cation pathway and underpin the importance of community structure for N2O emissions.
+PLoS ONE 9(12):e114118. https://doi.org/10.1371/journal.pone.0114118
+10. Guo H, Gu J, Wang X, Yu J, Nasir M, Zhang K, Sun W (2020) Microbial driven reduction of N2O and
+NH3 emissions during composting: effects of bamboo charcoal and bamboo vinegar. J Hazard
+Mater 390:121292. https://doi.org/10.1016/j.jhazmat.2019.121292
+11. He X, Yin H, Fang C, Xiong J, Han L, Yang Z, Huang G (2021) Metagenomic and q-PCR analysis
+reveals the effect of powder bamboo biochar on nitrous oxide and ammonia emissions during
+aerobic composting. Bioresour Technol 323:124567. https://doi.org/10.1016/j.biortech.2020.124567
+12. Huang W, Ngo H, Lin C, Vu C, Kaewlaoyoong A, Boonsong T, Tran H, Bui X, Vo T, Chen J (2019)
+Aerobic co-composting degradation of highly PCDD/F-contaminated eld soil. A study of bacterial
+community. Sci Total Environ 660:595–602. https://doi.org/10.1016/j.scitotenv.2018.12.312
+13. Jiang C, Jin W, Tao X, Zhang Q, Zhu J, Feng S, Xu X, Li H, Wang Z, Zhang Z (2019) Black soldier y
+larvae (Hermetiaillucens) strengthen the metabolic function of food waste biodegradation by gut
+microbiome. Microb Biotechnol 12(3):528–543. https://doi.org/10.1111/1751-7915.13393
+14. Li M, Li S, Meng Q, Chen S, Wang J, Guo X, Ding F, Shi L (2023) Feedstock optimization with rice husk
+chicken manure and mature compost during chicken manure composting: quality and gaseous
+emissions. Bioresour Technol 387:129694. https://doi.org/10.1016/j.biortech.2023.129694
+15. Meng L, Xu C, Wu F, Huhe (2022) Microbial co-occurrence networks driven by low-abundance
+microbial taxa during composting dominate lignocellulose degradation. Sci Total Environ
+845:157197. https://doi.org/10.1016/j.scitotenv.2022.157197
+1 . Pang W, Hou D, Chen J, Nowar EE, Li Z, Hu R, Tomberlin JK, Yu Z, Li Q, Wang S (2020) Reducing
+greenhouse gas emissions and enhancing carbon and nitrogen conversion in food wastes by the
+black soldier y. J Environ Manage 260:110066. https://doi.org/10.1016/j.jenvman.2020.110066
+17. Parodi A, De Boer IJM, Gerrits WJJ, Van Loon JJA, Heetkamp MJW, Van Schelt J, Bolhuis JE, Van
+Zanten HHE (2020) Bioconversion e ciencies, greenhouse gas and ammonia emissions during
+black soldier y rearing - a mass balance approach. J Clean Prod 271:122488.
+https://doi.org/10.1016/j.jclepro.2020.122488
+1 . Parodi A, Gerrits WJJ, Van Loon JJA, De Boer IJM, Aarnink AJA, Van Zanten HHE (2021) Black
+soldier y reared on pig manure: bioconversion e ciencies, nutrients in the residual material,
+greenhouse gas and ammonia emissions. Waste Manage 126:674–683.
+https://doi.org/10.1016/j.wasman.2021.04.001
+19. Qin W, Zhang J, Hou D, Li X, Jiang H, Chen H, Yu Z, Tomberlin JK, Zhang Z, Li Q (2022) Effects of
+biochar amendment on bioconversion of soybean dregs by black soldier y. Sci Total Environ
+829:154605. https://doi.org/10.1016/j.scitotenv.2022.154605
+20. Ren G, Xu X, Qu J, Zhu L, Wang T (2016) Evaluation of microbial population dynamics in the co
+composting of cow manure and rice straw using high throughput sequencing analysis. World J
+
+
+Page 14/22
+Microbiol Biotechnol 32(6):101. https://doi.org/10.1007/s11274-016-2059-7
+21. Rincon CA, De Guardia A, Couvert A, Soutrel I, Guezel S, Le Serrec C (2019) Odor generation patterns
+during different operational composting stages of anaerobically digested sewage sludge. Waste
+Manage 95:661–673. https://doi.org/10.1016/j.wasman.2019.07.006
+22. Sanchez A, Artola A, Font X, Gea T, Barrena R, Gabriel D, Sanchez-Monedero MA, Roig A, Cayuela ML,
+Mondini C (2015) Greenhouse gas emissions from organic waste composting. Environ Chem Lett
+13(3):223–238. https://doi.org/10.1007/s10311-015-0507-5
+23. Singh SK, Pawar L, Thomas AJ, Debbarma R, Biswas P, Ningombam A, Devi AG, Waikhom G, Patel
+AB, Meena DK, Chakraborty G (2023) The current state of research and potential applications of
+insects for resource recovery and aquaculture feed. Environ Sci Pollut Res.
+https://doi.org/10.1007/s11356-023-29068-6
+24. Stein LY (2020) The long-term relationship between microbial metabolism and greenhouse gases.
+Trends Microbiol 28(6):500–511. https://doi.org/10.1016/j.tim.2020.01.006
+25. Sun B, Bai Z, Li Y, Li R, Song M, Xu S, Zhang H, Zhuang X (2022) Emission mitigation of CH4 and N2O
+during semi-permeable membrane covered hyperthermophilic aerobic composting of livestock
+manure. J Clean Prod 379:134850. https://doi.org/10.1016/j.jclepro.2022.134850
+2 . Tao X, Xiang F, Khan FZA, Yan Y, Ma J, Xu B, Zhang Z (2023) Decomposition and humi cation
+process of domestic biodegradable waste by black soldier y (HermetiaillucensL.) Larvae from the
+perspective of dissolved organic matter. Chemosphere 317:137861.
+https://doi.org/10.1016/j.chemosphere.2023.137861
+27. van den Bergh SG, Chardon I, Meima-Franke M, Costa OYA, Korthals GW, de Boer W, Bodelier PLE
+(2023) The intrinsic methane mitigation potential and associated microbes add product value to
+compost. Waste Manage 170:17–32. https://doi.org/10.1016/j.wasman.2023.07.027
+2 . Wang F, Zhao Q, Zhang L, Chen J, Wang T, Qiao L, Zhang L, Ding C, Yuan Y, Qi Z, Chen T (2023) Co
+digestion of chicken manure and sewage sludge in black soldier y larvae bioconversion system:
+bacterial biodiversity and nutrients quality of residues for biofertilizer application. Environ Sci Pollut
+Res 30(57):119804–119813. https://doi.org/10.1007/s11356-023-30717-z
+29. Wang K, Gao P, Geng L, Liu C, Zhang J, Shu C (2022) Lignocellulose degradation in protaetia
+brevitarsis larvae digestive tract: re ning on a tightly designed microbial fermentation production
+line. Microbiome 10(1):90. https://doi.org/10.1186/s40168-022-01291-2
+30. Wang Q, Awasthi MK, Ren X, Zhao J, Li R, Wang Z, Wang M, Chen H, Zhang Z (2018) Combining
+biochar, zeolite and wood vinegar for composting of pig manure: the effect on greenhouse gas
+emission and nitrogen conservation. Waste Manage 74:221–230.
+https://doi.org/10.1016/j.wasman.2018.01.015
+31. Wang Y, Tang Y, Yuan Z (2022) Improving food waste composting e ciency with mature compost
+addition. Bioresour Technol 349:126830. https://doi.org/10.1016/j.biortech.2022.126830
+32. Wang Y, Wang J, Wu X, Zhao R, Zhang Z, Zhu J, Azeem M, Xiao R, Pan J, Zhang X, Li R (2023)
+Synergetic effect and mechanism of elementary sulphur, MgSO4 and KH2PO4 progressive
+
+
+Page 15/22
+reinforcement on pig manure composting nitrogen retention. Environ Pollut 331:121934.
+https://doi.org/10.1016/j.envpol.2023.121934
+33. Xiang F, Sheng J, Li G, Ma J, Wang X, Jiang C, Zhang Z (2022) Black soldier y larvae vermicompost
+alters soil biochemistry and bacterial community composition. Appl Microbiol Biotechnol
+106(11):4315–4328. https://doi.org/10.1007/s00253-022-11947-6
+34. Xiang F, Zhang Q, Xu X, Zhang Z (2024) Black soldier y larvae recruit functional microbiota into the
+intestines and residues to promote lignocellulosic degradation in domestic biodegradable waste.
+Environ Pollut 340:122676. https://doi.org/10.1016/j.envpol.2023.122676
+35. Xu Z, Li R, Zhang X, Liu J, Xu X, Wang S, Lan T, Zhang K, Gao F, He Q, Pan J, Quan F, Zhang Z (2023)
+Mechanisms and effects of novel ammonifying microorganisms on nitrogen ammoni cation in cow
+manure waste composting. Waste Manage 169:167–178.
+https://doi.org/10.1016/j.wasman.2023.07.009
+3 . Zeng J, Yin H, Shen X, Liu N, Ge J, Han L, Huang G (2018) Effect of aeration interval on oxygen
+consumption and GHG emission during pig manure composting. Bioresour Technol 250:214–220.
+https://doi.org/10.1016/j.biortech.2017.11.010
+37. Zhan S, Fang G, Cai M, Kou Z, Xu J, Cao Y, Bai L, Zhang Y, Jiang Y, Luo X, Xu J, Xu X, Zheng L, Yu Z,
+Yang H, Zhang Z, Wang S, Tomberlin JK, Zhang J, Huang Y (2020) Genomic landscape and genetic
+manipulation of the black soldier y Hermetiaillucens, a natural waste recycler. Cell Res 30(1):50
+60. https://doi.org/10.1038/s41422-019-0252-6
+3 . Zhang H, Matsuto T (2010) Mass and element balance in food waste composting facilities. Waste
+Manage 30(8–9):1477–1485. https://doi.org/10.1016/j.wasman.2010.02.029
+39. Zhang L, Shi T, Xu Z, Bao Z, Li J, Li G, Yuan J (2023) Effect of lime and calcium magnesium
+phosphate on gaseous emissions, maturity, and bacterial dynamics during food waste composting.
+Environ Technol Innov 32:103306. https://doi.org/10.1016/j.eti.2023.103306
+Figures
+
+
+Page 16/22
+Figure 1
+Dynamic changes in total carbon (TC) (a), Kjeldahl nitrogen (KN) (b), ammonium (NH+ 4-N) (c), and
+nitrate (NO- 3-N) (d) concentrations in residues during bioconversion
+
+
+Page 17/22
+Figure 2
+Carbon, and nitrogen balances. All balances are expressed in percentage of each output of the mean.
+Substrate was considered as the only input and larvae shows how much of each input was incorporated
+as larval biomass
+
+
+Page 18/22
+Figure 3
+Cumulative emission of methane (CH4) (a), carbon dioxide (CO2) (b), and nitrous oxide (N2O) (c), and
+CH4/CO2/N2O emissions per unit of TC/KN reduction (d)
+
+
+Page 19/22
+Figure 4
+Relative abundance at the phylum level (a), relative abundance of methane metabolism related
+microorganisms (b), and nitrogen metabolism related microorganisms (c)
+
+
+Page 20/22
+Figure 5
+Pathways diagram of methanogenesis (a) and nitrogen reduction (b); the abundance of genes related to
+methanogenesis (c) and nitrogen reduction (d)
+
+
+Page 21/22
+Figure 6
+Heatmaps of Spearman correlations between genes related to nitrogen reduction and denitrifying
+bacteria genera
+Supplementary Files
+
+
+Page 22/22
+This is a list of supplementary les associated with this preprint. Click to download.
+Supplementaryinformation2024126.docx

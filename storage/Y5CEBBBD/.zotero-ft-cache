@@ -1,0 +1,1122 @@
+April 2020
+Agriculture and
+climate change
+Reducing emissions through improved farming practices
+
+
+Copyright © 2020 McKinsey & Company. All rights reserved.
+This publication is not intended to be used as the basis for trading in the shares of any company or for undertaking any other complex or significant financial transaction without consulting appropriate professional advisers.
+No part of this publication may be copied or redistributed in any form without the prior written consent of McKinsey & Company.
+
+
+Authors
+Justin Ahmed
+Elaine Almeida
+Daniel Aminetzah
+Nicolas Denis
+Kimberly Henderson
+Joshua Katz
+Hannah Kitchel
+Peter Mannion
+Agriculture and
+climate change
+Reducing emissions through improved farming practices
+
+
+
+
+Contents
+Greenhouse gas–efficient farming practices: The global agriculture marginal abatement cost curve
+4
+9
+11
+23
+27
+28
+29
+Breaking down agriculture emissions: Today and in the future
+2 Introduction
+The 1.5°C pathway
+Beyond the farm: Food consumption, carbon sinks, and next-horizon technologies
+Conclusion
+Acknowledgments
+Technical appendix
+
+
+Introduction
+The agriculture sector’s role in greenhouse gas (GHG) emissions is widely known but not well understood. In truth, more than one-quarter of the world’s GHG emissions come from agriculture, forestry, and land-use change. And unless actively addressed, these emissions are likely to increase as more people populate the Earth and the need for food continues to grow.
+Global Warming of 1.5°C, the 2018 report by the Intergovernmental Panel on Climate Change (IPCC), makes clear that a “rapid and far-reaching” transition is required to limit the impact of climate change to 1.5 degrees Celsius.1 Doing so would require staying within the cumulative carbon budget of 570 gigatonnes of carbon dioxide (GtCO2),* reaching net-zero carbon dioxide emissions globally around 2050, and significantly reducing
+* For a two-thirds chance of limiting global mean surface temperature to 1.5°C above preindustrial levels.
+2 Agriculture and climate change
+
+
+* Calculated using 20-year global warming potential (GWP).
+the emissions of other gases—including methane and nitrous oxide. Limiting the impact of climate change to 1.5 degrees Celsius would mean major changes for agriculture—from how we farm, to how we eat and waste food, to how we manage our forests and natural carbon sinks.
+Achieving these major changes may be more challenging for agriculture than for other sectors. Though the pace of emissions reduction remains too slow across the board, other sectors have identified many of the technologies that could substantially reduce emissions. For example, in the electricity sector, it is possible to replace coal and gas with wind, solar, and storage. Such emissions-reduction-technology options do not necessarily exist in agriculture. Agriculture is also significantly less consolidated than other sectors; reducing emissions requires action by the more than two billion people employed in agriculture, or one-quarter of the global population. Finally, the agriculture sector has a complicated set of objectives to consider alongside climate goals, including biodiversity, nutritional need, food security, and the livelihood of farmers and farming communities.
+But it's not impossible. Throughout the course of human history, agriculture has responded to humanity’s greatest challenges. The sector has increased food production to a level that many believed impossible. The sector now has an opportunity to make yet another major contribution to humanity’s success during this crucial window for action.
+This report offers a perspective on how farming could change to reduce the emissions intensity of food production. Building on more than a decade of McKinsey analysis of GHG abatement, we have identified the top 25 measures to reduce on-farm emissions and organized them into a marginal abatement cost curve (MACC).2 These measures have the potential to abate up to a combined 4.6 GtCO2e* by 2050 compared with business-as-usual emissions—a reduction of about 20 percent of total emissions from agriculture, forestry, and land-use change. Moreover, the top 15 measures by abatement potential would contribute 85 percent of this emissions abatement and touch four major categories: energy, animal protein, crops, and rice cultivation. This analysis is distinctive in both its breadth and depth; our goal is to provide concrete guidance for policy makers, agriculture players, and academics alike to spur the necessary change in the agriculture sector.
+Agriculture and climate change 3
+
+
+Breaking down
+agriculture
+emissions: Today
+and in the future
+4 Agriculture and climate change
+
+
+Agriculture must play a critical role in limiting the impact of climate change as the sector accounts for a large, growing, and impactful share of global greenhouse gas (GHG) emissions.
+Note: Numbers do not sum to 100 due to rounding. 1 Including forestry, land use, fertilizer production, and electricity used in agriculture.
+Total GHG emissions by sector, %
+Agriculture, forestry, and land-use change 27
+Other 24
+Power and heat 18
+Industry 32
+Agriculture emissions contribute a large portion of total global emissions. When we look at this over a 20-year time frame, agriculture accounts for approximately 20 percent of global GHG emissions, while forestry and land-use change account for around 7 percent (see sidebar “Global warming potential in 20 years versus 100 years”). This means that agriculture is almost as big as industry as a source of emissions.
+1 Based on IPCC GHG inventory as submitted in 2019. Note that this inventory shows significantly lower emissions than in previous inventory, which showed emissions of approximately 3 GtCO2e for 100-year GWP and approximately 5 GtCO 2e for 20-year GWP.
+Cattle and dairy cows alone emit enough GHGs to put them on par with the highest-emitting nations.
+2016 GHG emissions by country (top three GHGs), GtCO 2e
+Total GHG emissions by sector, %
+China
+Cattle and dairy cows
+United States
+Russia1
+14
+8
+8
+3
+India 3
+Brazil 2
+Japan 1
+Germany 1
+To give a sense of the scale, direct emissions from cattle and dairy cows alone are greater than emissions from any single country other than China.
+Agriculture is larger than you think
+Agriculture and climate change 5
+
+
+Agriculture is responsible for highly impactful emissions
+Agriculture accounts for
+45% of CH4 emissions globally
+80% of N2O emissions globally
+Agriculture already plays a particularly important role in climate change due to the composition of emissions in the sector, which is heavily skewed to methane and nitrous oxide.
+— Agriculture accounts for an estimated 45 percent of total methane (CH4) emissions.5 About 80 percent of agricultural methane emissions
+Agriculture is growing faster than you realize
+Demand for agricultural production during the next 30 years will likely be shaped by two primary factors:
+Population reaching
+As a result, agriculture emissions are likely to increase.
+Per capita food consumption growth of
+~10 billion 8–12%
+A growing world population will result in a need for more food, including proportionally more proteinand, it follows, increased agriculture emissions.3
+Assuming current levels of production efficiency and the continuation of current deforestation rates, the business-as-usual outlook will see emissions increase by 15 to 20 percent by 2050 to about 23.4 GtCO2e.4
+Major contributors to agriculture emissions include: (2015, GtCO2e, 20-year GWP values)
+Synthetic fertilizers (0.6 GtCO2e)
+On-farm energy use (1.0 GtCO2e)
+Other (0.3 GtCO2e)
+Forestry and land-use change (5.2 GtCO2e)
+Rice cultivation (2.1 GtCO2e)
+Manure (1.8 GtCO2e)
+Enteric fermentation (8.3 GtCO2e)
+Burning of savanna (0.6 GtCO2e)
+Agriculture, forestry, and land use–change emissions are heavily concentrated in methane emissions from enteric fermentation, manure management, and rice cultivation. (See the technical appendix for our methodology to calculate the baseline.) Current emissions from agriculture, forestry, and land use change are estimated to be about 19.9 GtCO2e. In addition, nitrogen fertilizer production accounts for a further 0.4 GtCO2e of emissions.
+6 Agriculture and climate change
+
+
+more powerful than CO2 in forcing temperature increases over a span of 20 years.
+CH4 is N2O is
+84× 264×
+In other words, if methane emissions are substantially reduced now, the stock in the atmosphere will begin to decrease and the total impact of methane on warming will decline. This potential for shortterm impact is critical over the next 20 to 30 years to avoid irreversible environmental tipping points.
+Agriculture emissions are challenging to address
+There are billions of farmers to engage.
+Globally, one in four people are farmers.
+Reducing emissions from agriculture poses challenges due to the diffuse nature of farming and the critical role of agriculture in the life (and livelihoods) of billions. Reducing agriculture emissions requires action from the more than two billion people employed in agriculture, or one-quarter of the global population.
+New farm practices and technologies need to reach small-scale farms around the world.
+75% of farms are smaller than three soccer fields.
+The majority of farmers are employed on small farms in developing countries. In fact, farms of 2 hectares or smaller produce 30 to 34 percent of the food supply and account for about 75 percent of farms.9 This fragmentation contributes to the slow pace of change in agriculture, particularly when it comes to new technologies.10
+Agriculture is also central to sustaining livelihoods and supporting economic development. Globally, 65 percent of low-income working adults make a living through agriculture. The risk of failure or accepting lower yields in the short term—even for the sake of long-term gains—is thus untenable for many farmers.
+are from livestock production, including enteric fermentation and manure management.6 The secondlargest contributor of agricultural methane emissions is rice production, with the remaining emissions from the burning of savanna and the use of crop residues for agricultural purposes.
+— Agriculture accounts for 80 percent of total nitrous oxide (N2O) emissions, mainly from the application of fertilizers—both synthetic nitrogen and manure added to soils or left on pastures.7
+These gases are significantly more powerful than carbon dioxide in driving warming over a span of 20 years.8 However, methane has a much shorter lifetime in the atmosphere, lasting just 12 years. This short lifetime means that reducing methane emissions can help to limit temperature increases in the short term.
+Agriculture and climate change 7
+
+
+Global warming potential in 20 years versus 100 years
+For the purposes of policy discussion and target setting, greenhouse gases are generally measured by global warming potential (GWP), a measure of how much energy the emissions of one ton of gas will absorb during a given period, relative to the emissions of one ton of carbon dioxide.1 GWP is calculated for a specific time span, most commonly 100 years.
+But the lifetime for each greenhouse gas is different. As methane only lasts in the atmosphere for approximately 12 years, its GWP will differ depending on a given time span.2 One ton of methane has 28 times the effect of one ton of carbon dioxide when measured at a 100-year GWP but 84 times the effect at a 20-year GWP.3
+Given the importance of action and the short-term-gain potential of reducing agriculture’s methane emissions, our primary analysis is based on 20-year GWP values.
+1 “Understanding global warming potentials,” EPA, accessed February 25, 2020, epa.gov. 2 Climate change 2013: The physical science basis, Intergovernmental Panel on Climate Change, 2013, ipcc.ch. 3 This calculation is the standard set by the IPCC Fifth Assessment report (AR5), which summarizes the current knowledge about the science of climate change. For more, see AR5 Synthesis report: Climate change 2014, IPCC, 2014, ipcc.ch.
+Billions of people need to change their behavior.
+Almost
+of all food produced in the world is wasted.
+the recommended level.
+Average global consumption of ruminant animal protein (mostly beef and lamb) is
+3× 1/3
+Furthermore, achieving emissions-reduction goals is not feasible without billions of people materially changing their behavior, including reducing ruminant animal protein (mostly beef and lamb) consumption and food waste.
+Policy makers are not focused on agriculture emissions.
+of agriculture emissions are covered in nationally determined contributions (NDCs) under the Paris Agreement.
+Just 38%
+These challenges may be the greatest impediments to policy makers’ lack of focus on agriculture emissions. In fact, just 38 percent of agriculture emissions are covered by nationally determined commitments under the Paris Agreement.11
+8 Agriculture and climate change
+
+
+The 1.5°C pathway
+The 2018 IPCC report outlined a set of scenarios that would limit global warming to 1.5 degrees Celsius, the point at which irreversible environmental tipping points are likely to occur.12 This requires staying within the cumulative carbon budget of 570 GtCO2,* reaching net-zero carbon dioxide (CO2) emissions globally by around 2050, and significantly reducing the emissions of other gases—particularly methane and nitrous oxide.
+This analysis is based on the following GHG targets for agriculture, forestry, and land-use change:13
+— Eliminate CO2 emissions entirely by 2050, and sequester 0.1 GtCO2 annually by 2030 and 2.3 GtCO2 annually by 2050
+* For a two-thirds chance of limiting global mean surface temperature to 1.5°C above preindustrial levels.
+Agriculture and climate change 9
+
+
+Exhibit 1
+— Reduce methane (CH4) emissions by 25 to 35 percent by 2030 and by 50 to 60 percent by 2050 (versus 2010 baseline)
+— Reduce nitrous oxide (N2O) emissions by 10 to 15 percent by 2030 and by 20 to 30 percent by 2050 (versus 2010 baseline)
+These targets are based on the low-overshoot scenarios from the Integrated Assessment Modeling (IAM) Consortium, underpinning the IPCC’s 2018 report, Global Warming of 1.5°C. These scenarios vary significantly and differ, for example, in how quickly emissions are reduced, how much negative emissions they use later in the century, and on pathways for non–carbon dioxide emissions reduction (including methane and nitrous oxide).14 The targets assumed in this analysis are at the upper end of required reductions outlined in the IAM scenarios and are higher than the interquartile range published by the IPCC.15 This reflects a prudent approach to understanding what it would take for agriculture to limit warming to 1.5°C.
+All told, reducing agriculture emissions will require changing how we farm, what we eat, and how we manage our forests and natural carbon sinks (Exhibit 1). Next-horizon technologies will help offset shortfalls in any of these areas. This report focuses on transforming how we farm—starting with the highest-emitting activities across animal protein, rice cultivation, crops, and on-farm energy use.
+McKinsey Sustainability 2020 1.5 Pathway report Exhibit 1 of 3
+Reducing agriculture emissions will require changing how we farm, what we eat, how much we waste, and how we manage our forests and natural carbon sinks.
+Required emissions reduction to meet 1.5°C target, GtCO2e, 20-year AR5 GWP
+Efforts can involve expanding adoption of technologies or agriculture practices that can reduce emissions while maintaining food production levels (GHG-efficient food production).
+Efforts can involve not only reducing food loss and food waste but also shifting diet demands away from ruminant animal protein (mostly beef and lamb).
+Efforts can involve reducing deforestation and delivering reforestation, afforestation, and other natural sinks.
+Remaining emissions are in compliance with the 2018 IPCC report’s target of limiting the impact of climate change to 1.5°C.
+Current or baseline emissions from agriculture, forestry, and land use
+Business-as-usual emissions growth
+to 2050 3.5
+23.4
+4.6
+8.6
+5.21
+5.0
+19.9
+Business-as-usual emissions in 2050
+Change in how we farm
+Change in what we eat and how much we waste
+Change how we manage our forests and natural carbon sinks
+Remaining emissions that comply with 1.5°C pathway
+1 Figure does not include need for negative emissions from forestry and natural carbon sinks, which is discussed later in this report.
+Next-horizon technologies will help offset shortfalls in any of these areas. These technologies include those that are not yet present on farms but could increase mitigation from GHG–efficient food production practices, land-use change, and carbon sinks.
+10 Agriculture and climate change
+
+
+Greenhouse gas
+efficient farming
+practices: The global
+agriculture marginal
+abatement cost curve
+Agriculture and climate change 11
+
+
+The first step in reducing emissions from agriculture is to produce food as efficiently as possible—that is, to change how we farm. A set of proven GHG-efficient farming technologies and practices—which are already being deployed—could achieve about 20 percent of the sector’s required emissions reduction by 2050.
+To understand exactly how the sector can reduce its emissions to achieve the 1.5°C pathway, we developed a MACC that details how much GHG abatement can be realized and at what costs (Exhibit 2). Each column represents a measure that reduces emissions—either through reduced unit emission rate (for example, nitrous oxide emission per hectare) or improved productivity (for example, fewer dairy cows for the same level of milk production).
+The width of each column represents the potential reduction of annual emissions, as measured by CO2e,* by 2050 compared with business-as-usual emissions. The height of each column represents the average cost of abating one metric ton of CO2e emissions from said measure. The columns are organized, left to right, from the least to the most expensive measure, expressed in US dollars per metric ton of CO2e abated. For example, the measure on the far left—zero-emissions on-farm machinery and equipment—would result in cost savings of approximately $229 per metric ton of CO2e emissions abated. Abatement costs refer to values paid or saved by farmers themselves; they do not reflect what costs may be necessitated from industry (for example, R&D), government (for example, subsidies), or other stakeholders.
+All told, 15 of the 25 measures would result in cost savings or are cost neutral—raising the obvious question: Why aren’t farmers already scaling these solutions? The simple yet monumental challenges include capital constraints, limited access to technology, and an adherence to traditional local practices. Furthermore, these challenges are exacerbated among smallholdings, which account for three out of four farms around the world. Ensuring proper support for smallholders is therefore essential to bring agriculture in line with the 1.5°C pathway.
+For more on the development of the global agriculture MACC, see sidebar “About the research.”
+A set of proven GHG-efficient farming
+technologies and practices—which
+are already being deployed—could
+achieve about 20 percent of the sector’s
+required emissions reduction by 2050.
+* CO2e is a common unit used to express several types of GHG emissions (including methane and nitrous oxide) as one number.
+12 Agriculture and climate change
+
+
+Exhibit 2
+–200
+100
+–100
+–250
+–150
+–50
+50
+150
+250
+300
+350
+450
+500
+550
+200
+0
+400
+Animal
+protein Crops Rice Energy
+Technical GHG mitigation potential MMT CO2e (GWP AR5 20-year)
+GHG-efficient food production requires a whole-scale adoption of GHG-efficient food production practices.
+Estimated cost of GHG abatement, $/tCO2e (20-year AR5 GWP values)
+12
+3
+5 8 9 11 12 13 14 15 16
+4 10
+7
+6
+17
+19
+20 21
+18
+22 23
+24
+25
+1 Zero-emissions on-farm machinery and equipment –229
+2 Variable rate fertilization –176
+3 Reduced N overapplication in China and India –97
+4
+5
+Dry direct seeding –41
+Low- or no- tillage –41
+6 Improved equipment
+maintenance –34
+17 N-inhibitors on pasture 15
+18 Improved fertilization timing 40
+19 Controlled-release and stabilized fertilizers 65
+20 Animal feed additives 88
+13 Livestock nutrient use efficiency 0
+14 Optimal rice varietal selection 0
+15 Nitrogen-fixing rotations 0
+16 Improved fertilization of rice 3
+22 Technologies that increase livestock production efficiencies 119
+23 Animal feed mix optimization 131
+24 Conversion from flood to drip or sprinkler irrigation 147
+25 Specialty crop nutrition amendments 523
+21 Anaerobic manure digestion 92
+12 GHG-focused breeding and genetic selection 0
+Improved rice paddy water management –12
+Improved rice straw management –8
+7
+9
+Improved fuel efficiency of fishing vehicles –12
+10 Improved animal health monitoring and illness prevention –5
+11 Feed-grain processing for improved digestibility –3
+8
+–+
+Agriculture and climate change 13
+
+
+About the research
+McKinsey’s global agriculture marginal abatement cost curve (MACC) shows our perspective on the potential emissions reduction from the proven measures (technologies and practices) currently deployed on farms.1
+The global agriculture MACC considers 25 measures, chosen from a longer list of potential measures (detailed in the technical appendix). These measures were identified through a process of elimination of measures with limited projected impact, risk of overlap (given inclusion of similar measures with broader or deeper impact), or risk of reduced long-term application (for example, due to regulatory constraints on antibiotics and growth hormones). The full list was developed through extensive discussion with leading experts in academia, industry, and intergovernmental organizations and comparison with key reference models that detail agriculture emissions reduction.2
+For each measure, a bottom-up assessment of mitigation potential and cost was calculated using a synthesis of available literature; comparison across models of the Global Biosphere Management Model, Common Agricultural Policy Regionalised Impact, and the Netherlands Environmental Agency; and discussions with relevant experts and practitioners. Costs shown include capital expenses, operating expenses, and potential cost savings. For all measures, the level of uptake and implementation was assessed to be as ambitious as possible while also being aware of the potential economic and noneconomic barriers to implement across regions, farm scales, and production systems.
+Some limitations of the global agriculture MACC should be noted:
+— The MACC shows the global potential and cost of each measure. Since impact and cost vary by region, the costs shown are a weighted average and cannot therefore be assumed to apply in all regions for the cost shown.
+— The MACC presents a perspective on marginal impact and cost from the implementation of discrete measures. Implementation of multiple measures in concert that target reduction of emissions from the same emissions source on the same land or by the same animal is likely to result in impact that is not fully additive. We have controlled for potential overlap through constrained adoption at a region and species level as well as by limiting the MACC to measures that could feasibly be applied together.
+— Throughout the next 30 years, exogenous actions—including policy shifts, innovation, and mobilization campaigns—could substantially change the MACC through an increase in both measures and implementation rates.
+1 For more on GHG abatement cost curves, see “Greenhouse gas abatement cost curves,” accessed February 21, 2020, McKinsey.com. 2 See IIASA (GLOBIOM), the European Commission (CAPRI), and the Netherlands Environmental Agency (PBL).
+14 Agriculture and climate change
+
+
+Exhibit 3
+Adopt zero-emissions on-farm machinery and equipment ~537 MtCO2e, at cost savings of ~$229/tCO2e16
+The largest amount of on-farm emissions abatement potential can be achieved by shifting from traditional fossil-fuel equipment and machinery—such as tractors, harvesters, and dryers—to their zero-emission counterparts. This transition would realize huge cost savings of $229 per tCO2e.
+Market penetration of zero-emissions farm equipment and machinery is far behind that of consumer vehicles today. Although market leaders have piloted proofs-of-concept and prototype equipment and machinery, no notable commercial launches have taken place. However, broader market dynamics suggest internal combustion engines and other fossil-fuel sources are ripe for mass displacement by 2050. With the right investment from machinery manufacturers, total-cost-of-ownership parity between, for example, tractors powered by internal combustion engines and those powered by zero-emissions sources (such as
+McK Agriculture 2020 Agriculture and climate change Exhibit 3 of 3
+The top 15 measures identified by the global agriculture MACC.
+Adopt zero-emissions on-farm machinery and equipment
+~537 MtCO2e, at cost savings of ~$229/tCO2e
+1 12 Employ greenhouse gas–focused genetic selection and breeding
+~506 MtCO2e, at zero cost
+10 Improve animal health monitoring and illness prevention
+~411 MtCO2e, at cost savings of ~$5/tCO2e
+16 Improve fertilization practices in rice cultivation
+~449 MtCO2e, at cost of ~$3/tCO2e
+17 Apply nitrification inhibitors on pasture
+~123 MtCO2e, at cost of ~$15/tCO2e
+23 Optimize the animal feed mix
+~370 MtCO2e, at cost of ~$131/tCO2e
+5 Scale low- and no-tillage practices
+~119 MtCO2e, at cost savings of ~$41/tCO2e
+20 Expand use of animal feed additives
+~299 MtCO2e, at cost of ~$88/tCO2e
+8 Improve rice paddy water management
+~296 MtCO2e, at cost savings of ~$12/tCO2e
+3 Reduce nitrogen overapplication in China and India
+~88 MtCO2e, at cost savings of ~$97/tCO2e
+21 Expand use of anaerobic manure digestion
+~260 MtCO2e, at cost of ~$92/tCO2e
+19 Expand adoption of controlled-release and stabilized fertilizers
+~75 MtCO2e, at cost of ~$65/tCO2e
+11 Expand use of feed-grain processing for improved digestibility
+~219 MtCO2e, at cost savings of ~$3/tCO2e
+4 Expand adoption of dry direct seeding in rice cultivation
+~217 MtCO2e, at cost savings of ~$41/tCO2e
+22 Expand uptake of technologies that increase livestock production efficiencies
+~180 MtCO2e, at cost of ~$119/tCO2e
+Cost savings Animal protein
+x Crops Rice Energy
+Greenhouse gas–efficient farming: The most crucial agriculture measures to address climate change
+The top 15 measures identified by the global agriculture MACC may deliver about 85 percent of the total 4.6 GtCO2e mitigation potential from GHG-efficient farming by 2050, compared with business-as-usual emissions (Exhibit 3). The measures are listed in the order of their potential MtCO2e mitigation (on the MACC, the widest to the narrowest). The circled numbers refer to the cost savings; the lower the number, the more cost saved.
+1
+Agriculture and climate change 15
+
+
+battery electric power) could be viable by about 2030.17 After that, incremental capital-expenditure cost reductions will likely come from rapid reduction in battery prices (historical and forecasted), which alone make up 30 to 50 percent of tractor component costs.18
+The most significant challenge to implementing these measures may be the slow turnover of farm equipment. For example, the typical lifetime of a tractor is more than 20 years.19 But policies, such as revised emissions regulations and targeted R&D investment by farm-equipment majors and new pure-play challengers, could accelerate adoption.
+Employ greenhouse gas–focused genetic selection and breeding ~506 MtCO2e, at zero cost20
+Genetic selection and breeding programs focused on ruminant animals’ enteric fermentation could significantly reduce overall emissions by 2050. Leading experts assert that about 20 percent of a ruminant’s methane emissions rate stems from genetics alone.21 In single herds, intentional breeding for methane efficiency has achieved variation in methane production of about 20 percent. Some commercial genetics products reduce emissions by 5 percent or more per head. Assuming other factors, such as productivity, remain steady, applying such commercial genetics in the United States could reduce methane emissions from about 53 kilograms per cow to about 42 kilograms per cow.
+A major obstacle to uptake and investment in genetic selection and breeding is the lack of economic incentive in the form of market payments or credits for methane reduction. The immaturity and lack of breed-specificity of genetics programs—especially outside of dairy and, more broadly, within low- and middle-income markets—will also inhibit implementation at scale. But new breeding techniques, such as those using CRISPR/Cas9,* could lower barriers to entry for innovators and allow for more specificity in genetics programs. In addition, targeted investment by major players in the animal genetics space could accelerate innovation.
+Improve fertilization practices in rice cultivation ~449 MtCO2e, at cost of ~$3/tCO2e22
+The warm, water-logged soil of flooded rice paddies provides ideal conditions for bacterial processes that produce methane—most of which is released into the atmosphere.23 Farmers that adopt improved fertilization practices can reduce methane emissions from rice cultivation by about 40 percent.24 Sulfatecontaining fertilizers (such as ammonia sulfate) and sulfate amendments (such as gypsum) outcompete methane-producing bacteria in fields, thus reducing the amount of methane released.
+Sulfate application on rice fields today is estimated at only about 1 percent of global production area.25 This is largely because there is no link between higher sulfate content and yield improvement, so farmers are reluctant to pay for the practice unless fields have clear sulfate deficiency. Two moves could encourage adoption: policy shifts can, for example, subsidize the practice or charge fees for methane emissions, and manufacturing shifts can include sulfate amendments into standard fertilizer blends.
+* Clustered regularly interspaced short palindromic repeats (CRISPR); CRISPR associated protein 9 (Cas9).
+16
+12
+16 Agriculture and climate change
+
+
+Improve animal health monitoring and illness prevention ~411 MtCO2e, at cost savings of ~$5/tCO2e26
+By improving the health of farm animals, farmers could improve productivity and reduce animal mortality due to disease. The ability to meet the world’s projected animal protein demand with fewer, healthier animals could reduce emissions from enteric fermentation, manure left on pasture, and manure management.
+In North America, implementation of improved animal health management methods could improve overall cattle herd productivity by a weighted average of about 8 percent.27 In low- and middle-income regions that have less access to animal health products and clinical resources, the impact is likely to be significantly higher. However, achieving this potential requires overcoming significant hurdles. And since health challenges vary greatly by region and species, a silver bullet, or even several, are unlikely.
+Several efforts could encourage implementation at greater scale: innovation from animal health-product manufacturers could increase the availability of vaccines for emerging diseases, such as African swine fever. Underresourced regions, such as Southeast Asia and sub-Saharan Africa, could particularly benefit from expanding distribution, advisory, and veterinary networks, as well as public health promotion strategies.
+Optimize the animal feed mix
+~370 MtCO2e, at cost of ~$131/tCO2e28
+Transitioning ruminants to higher-fat diets is widely applicable and recognized as effective in reducing enteric fermentation. Fat helps suppress methane both indirectly, by reducing organic-matter fermentation and improving fiber digestibility, and directly, by inhibiting methanogens in the rumen (the first stomach of ruminants) via hydrogenated unsaturated fatty acids. Such diet shifts involve expanding the dry matter (DM) percentage of fats from whole seeds (such as rapeseed or linseed), plant oils (sunflower, rapeseed, palm, coconut), or special products (fat supplements) by 2 to 3 percent in cattle diets. A traditional ruminant diet contains 1.5 to 3 DM percent fat; methane reduction is reduced by approximately 4 percent for every increase of 1 DM percent provided by fats.29 Because of potential health issues, total fat content must be limited to 6 DM percent.30
+The primary barrier to optimizing the feed mix is that it has not been clearly linked to profitability. Furthermore, impact is likely to vary by region, driven by local feedstock availability—for example, linseed and oilseed in Europe demonstrate greater profitability and impact than palm and coconut oil in Southeast Asia. It will be difficult for farmers to make such shifts on their own. Product innovation, strategic marketing, and technical support from feed producers, distributors, and nutritional advisory networks will be critical enablers of adoption.
+Expand use of animal feed additives ~299 MtCO2e, at cost of ~$88/tCO2e31
+Some feed additives have been shown to inhibit methane production in the rumen.32 Propionate precursors—a class of free acids or salts, such as sodium acrylate or sodium fumarate—will likely have widespread applicability, as their use has been shown to directly inhibit methane emissions from cattle without affecting animal growth. The combined impact of direct enteric-fermentation-rate reduction (approximately 13.0 percent) and productivity improvement (approximately 2.5 percent) generates potential for an approximately 15.0 percent reduction in CO2e emissions per ruminant.33
+10
+23
+20
+Agriculture and climate change 17
+
+
+Novel feed additives (yet to be commercialized) have the demonstrated ability to reduce emissions from enteric fermentation by as much as 30 percent (see sidebar “Potential for novel feed alternatives”). The primary inhibitor to implementing feed additives at scale is the low degree of confined feeding globally. Confinement—limited today to North America and parts of Brazil, Europe, and East Asia—generally translates to greater control over individual feeding schedules and mix. It also brings socioeconomic considerations, including favoring large-scale operators and sparking animal welfare concerns. Still, as global agriculture shifts toward confined feeding, increased use of animal feed additives can drive a significant expansion of emissions reduction potential in coming years.
+Improve rice paddy water management
+~296 MtCO2e, at cost savings of ~$12/tCO2e34
+Several practices could reduce methane emissions in rice paddies, relative to what is observed in the continuous flooding systems used most widely across the world. Alternate wetting and drying, single season drainage, and other methods can increase in nitrous oxide emissions. However, this adverse impact is significantly outweighed in terms of tCO2e by direct methane-emissions reduction.
+Local extension services and pioneering research institutes such as the International Rice Research Institute have proven the potential for adopting at-scale rice paddy water management. In fact, studies suggest up to 40 percent of rice producers in China already use alternative wetting and drying, as do significant swaths of Southeast Asia.35 Constraining factors to adoption of improved water management include existing payment and financing schemes (flat rates paid to irrigation agencies not tied to water use volume), regional rainfall patterns (too much rain inhibiting ability of fields to dry), and field characteristics (nonlevel fields inhibiting control over water flow).
+Expansion of laser-land leveling technology in low- and middle-income regions could prove to be a game changer, drastically expanding applicability. Water use–focused policy such as market pricing for water could further shift the economics in favor of improved water management. (For another practice to reduce methane emissions in rice, see sidebar, “Potential for aerobic rice.”)
+Potential for novel feed alternatives
+Methane is a by-product of the digestive process of ruminant animals (for example, cattle and sheep). Certain molecules disrupt a critical step in the formation of methane by interfering with the respective
+biological pathway, reducing rumen organisms’ ability to produce methane waste. Producers claim that feed additives can reduce methane production by up to 30 percent.1 Applying them to all
+cattle globally would have an emissions abatement potential of about three gigatonnes of equivalent carbon dioxide per year by 2050 (using 20-year values for global warming potential).
+1 Jim Cornall, “DSM feed additive could cut methane emissions by 30%,” Dairy Reporter, July 23, 2019, dairyreporter.com.
+8
+18 Agriculture and climate change
+
+
+Expand use of anaerobic manure digestion ~260 MtCO2e, at cost of ~$92/tCO2e36
+Capturing and using methane through anaerobic digesters can significantly reduce GHG emissions from dairy cow and hog manure systems. Today, such digesters are primarily used to control for odor and pathogens, and as such their deployment is limited. There is significant scope, however, for expanded generation of biogas, which can be used on the farm or sold back to the grid (electricity or natural gas).
+Several types of capital-intensive digesters—including complete mix digesters, plug flow digesters, and covered lagoon digesters—are used primarily on large-scale, intensive farms in Europe and North America. Small-scale dome digesters are more suitable in low-income regions, being relatively affordable for even midsize family farms. They do, however, carry lower GHG emission reduction potential (about 50 percent versus 85 percent for capital-intensive digesters37).
+Rising biomethane prices in the years to come could make installation and adoption of all sizes of digesters far more economically attractive. Key to biomethane’s attractiveness is its potential to displace natural gas. To deliver significant additional use of anaerobic manure digestion, farmers need long-term certainty on the demand for and price of biomethane.
+Expand use of feed-grain processing for improved digestibility ~219 MtCO2e, at cost savings of ~$3/tCO2e38
+Mechanical processing, such as steam flaking, improves the starch digestibility of grain for large ruminants by reducing particle size, providing greater microbial access to substrate, reducing energy expenditures, and increasing overall feed intake. Given constant levels of protein demand, such feed-grain processing methods cut projected GHG emissions through improved productivity (up to 5 percent, depending on region) and reduced enteric fermentation (about 15 percent less kilograms of methane per head).39
+These mechanisms are already widely applied in the United States, where steam flaking has been a staple of intensive production for over a decade. However, on-farm steam-flaking capacity can cost up to $300,000 in up-front capital expenditure alone. As such, capital constraints as well as feedstock availability will limit mitigation potential in other—especially low- to middle-income—regions. Input providers, direct lenders, and public financing programs can play a significant role in removing financial barriers to implementation at scale.
+21
+11
+8
+Potential for aerobic rice
+Aerobic rice refers to varieties grown in nonflooded fields (“aerobic soils”). The practice enables a greater decrease in emissions than alternative wetting and drying, and in some cases nearly eliminates methane emissions.1
+While aerobic rice is already grown by farmers as a subsistence crop, traditional aerobic varieties have low yields. But in recent years, new, higheryielding aerobic rice varieties have been developed, and their use as a cash crop
+is increasing. Water scarcity has been a driver for their use, especially in India and China.
+1 Tim Searchinger et al., “Wetting and drying: Reducing greenhouse gas emissions and saving water from rice production,” World Resources Institute, December 2014, wri.org.
+Agriculture and climate change 19
+
+
+Expand adoption of dry direct seeding in rice cultivation ~217 MtCO2e, at cost savings of ~$41/tCO2e40
+Most rice cultivation systems involve growing rice seedlings in a separate nursery and transplanting them into flooded paddies. By contrast, dry direct seeding entails sowing seeds directly into dry rice paddies. This method reduces the time a field needs to be flooded by a month, limiting the activity of methaneproducing microorganisms and cutting emissions by approximately 45 percent per hectare.41 Moreover, rice producers can realize significant cost savings, thanks to a reduction in the labor needed to transplant rice and manage flooding.
+Fields must be able to dry; thus, rainfall patterns make at-scale implementation in wet seasons and especially humid regions difficult. In addition, achieving maximum impact requires access to and adoption of several incremental technologies (such as laser-land leveling), optimal rice varieties, precision water management, and herbicides. In low- and middle-income regions, local advisory networks and research institutes could play a significant role in expanding implementation through technology diffusion and farmer education. The support of input manufacturers may be critical to ensure sufficient availability and affordability of enabling technologies.
+Expand uptake of technologies that increase livestock production efficiencies ~180 MtCO2e, at cost of ~$119/tCO2e42
+Increasing livestock production efficiency can reduce GHG emissions from animals bred for consumption. It is possible to increase efficiency through a wide range of measures including hormones, microbial additives (for example, probiotics), biosecurity, herd management and monitoring (including new digital tools), and vaccination. Preventative antibiotics were previously used to increase livestock productivity, but farmers have largely moved away from them due to regulation, their own choice, or their perception of consumer preference, given antibiotics' contribution to antibiotic resistance in animals and humans.
+As a result, a new approach is required that can deliver livestock production efficiencies without the recognized concerns with some existing options. Industry players have thus developed several classes of antibiotic-alternative growth promoters for use on commercial farms—and their application continues to grow. While investment and innovation in this space is nascent, many products (especially probiotics) have proven directly competitive with antibiotics’ impact on livestock productivity, if not yet cost or storability. Further innovation will expand potential for emissions reduction impact.
+Apply nitrification inhibitors on pasture ~123 MtCO2e, at cost of ~$15/tCO2e43
+Though the practice is nascent, direct application of nitrification inhibitors on pastureland has demonstrated significant reduction in nitrous oxide emissions from ruminant urine.44 Most widely used today are dicyandiamide and nitropyrene, and concurrent application of urease inhibitors has been shown to mitigate potential ammonia emissions.
+22
+17
+4
+20 Agriculture and climate change
+
+
+While access to and cost of nitrification technology could limit implementation in low- and middle-income regions, its application is most impactful and cost-effective where pasture intensity is highest: Europe and North America. The primary challenge facing increased uptake is likely the lack of a link to the bottom line, especially outside of existing crop-livestock integrated systems. This includes farms that cultivate both crops and livestock that interact, such as growing feed at large scale to nourish livestock. However, shifts in policy or industrial marketing strategies could bend the economics to favor expanded implementation.
+Scale low- and no-tillage practices
+~119 MtCO2e, at cost savings of ~$41/tCO2e45
+Low- and no-tillage practices aim to reduce soil organic matter loss, limit erosion, and conserve water through alternatives to conventional tillage. When combined with deep placement of nitrogen, low- and no-tillage practices—such as shallow plowing, fewer tillage passes, chisel coulter drilling, and zone tillage—reduce fuel usage and denitrification, in turn reducing emissions. In aggregate, these practices have been shown to deliver an 18 percent reduction in yield-scaled nitrous oxide emissions in dry environments, in addition to an up to 75 percent reduction in on-farm fuel usage.46 While penetration of low- and no-tillage practices today is estimated at 11 percent of hectares globally, it has shown rapid growth in key markets, with approximately 40 percent of hectares in Brazil and the United States now using low- and no-tillage practices.47
+Although potential yield losses may deter adopting low- and no-tillage practices, several studies contend that long-term cost savings outweigh lost revenue from production.48 In many cases, implementation has been shown to drive other economic benefits such as reduced field labor man-hours. However, low- and no-tillage practices are not universally effective; some studies have shown little (or even adverse) impact on nitrous oxide emissions in select moist, temperate environments.49 Given this shortcoming, technical advisors familiar with the local context (including soil, environment, and agriculture economics) will need to pair with local farmers willing to pilot the practice.
+Reduce nitrogen overapplication in China and India ~88 MtCO2e, at cost savings of ~$97/tCO2e50
+Global overapplication of nitrogen fertilizers is estimated at approximately 25 million metric tons of fertilizer—meaning about $13 billion is spent beyond what is needed each year.51 China’s share makes up approximately 35 percent of global overapplication; India trails close behind at about 25 percent. Nitrogen fertilizers are heavily subsidized in both countries, so farmers are provided incentives to over apply despite
+5
+3
+Increasing livestock production
+efficiency can reduce GHG emissions
+from animals bred for consumption.
+Agriculture and climate change 21
+
+
+little marginal yield impact. Correcting China and India’s overapplication of nitrogen to a more standard rate—such as the level seen in the United States—could deliver a reduction in emissions of approximately 24 percent, as well as cost savings of about $22 per hectare. Concurrent policy adjustment and farmer education would likely be key factors in implementation at scale.*
+Expand adoption of controlled-release and stabilized fertilizers ~75 MtCO2e, at cost of ~$65/tCO2e52
+Moving farmers away from traditional fertilizers and toward controlled-release fertilizers or stabilizers could deliver up to a 20 percent reduction in nitrous oxide emissions. The most commonly used commercial fertilizers are water-soluble quick-release varieties, which ensure that nitrogen is released at a consistent rate. However, crops’ nutrient requirements vary as they mature and do not typically adhere to this linear, consistent pattern. An alternative is slow- or controlled-release stabilized fertilizers, which ensure that applied nitrogen is available to plants precisely when they need it, resulting in less nitrogen lost to the environment.
+The cost of controlled-release and stabilized fertilizers typically outweighs the potential cost savings from reduced use. Incremental innovation to reduce product costs will be key to shifting the economics. Commercial fertilizer manufacturers can play a significant role in driving forward expansion, most notably by incorporating controlled-release and stabilized fertilizers into typical blends. (For another practice to reduce crop emissions, see sidebar, “Potential for perennial row crops.”)
+19
+Potential for perennial row crops
+Traditional grain crops such as corn and wheat need to be replanted each season. This leads to higher GHG emissions from equipment use, greater fertilizer needs, and increased soil runoff. Perennial grain crops are a potential alternative, as they
+don’t need to be replanted each year. Examples include the new species Salish Blue, created from wheat and wheatgrass, and Kernza®, another wheat-like grain.1 In addition, such crops can sequester greater levels of carbon in the soil. For example,
+the producer of Kernza® estimates that its adoption in the North American wheat belt could reduce CO2 emissions by millions of tons annually.
+1 Seth Truscott, “Scientists discover perennial hybrid of wheat, wheatgrass,” WSU Insider, January 12, 2017, news.wsu.edu; Daniel Cusick, “Grain may take a big bite out of cropland emissions,” E&E News, May 7, 2019, eenews.net.
+* Adjusting fertilizer production practices also holds potential for emissions reduction, though it is not included in this analysis.
+22 Agriculture and climate change
+
+
+Beyond the farm:
+Food consumption,
+carbon sinks,
+and next-horizon
+technologies
+Agriculture and climate change 23
+
+
+In addition to changing how we produce food, ensuring that agriculture, forestry, and land-use change meet emissions targets aligned with a 1.5°C pathway will require substantial changes—specifically, how we eat, how much food we waste, and how we manage our forests and natural carbon sinks. Changes in diet and reduction in food waste are the most impactful measures to reduce emissions and can be implemented at the individual consumer level. Improvements in land use and carbon-sink management will be crucial to reversing the impact of land conversion due to agriculture and urbanization. Investment in next-horizon technologies can help to facilitate and accelerate emission reduction in food production and consumption as well as carbon-sink management.
+How we eat
+Ruminant animal protein (mostly beef and lamb) is the most greenhouse gas–intensive food to produce (Exhibit A), largely because of methane from enteric fermentation. Reducing consumption of ruminant animal protein (such as beef and lamb) and substituting it with less carbon-intensive protein sources (mostly legumes, poultry, or fish) are the most impactful measures by far to achieve desired emissions reduction targets.
+Without a significant breakthrough in production efficiency, adhering to the 1.5°C pathway would require reducing the share of global consumption of ruminant animal protein (mostly beef and lamb) protein by half, from about 9 percent in current projections to about 4 to 5 percent by 2050.1
+1 If the global population switched to a flexitarian diet, greenhouse gas emissions would decline by 54 percent. We would need half the global population to switch diets in order to meet methane reduction targets of 20 to 30 percent. For more, see Marco Springmann et al., “Health and nutritional aspects of sustainable diet strategies and their association with environmental impacts: A global modelling analysis with countrylevel detail,” Lancet Planet Health, October 2018, Volume 2, Number 10, pp. e451–61, ncbi.nlm.nih.gov.
+Ruminant animals are almost ten times more carbon intensive than alternative animal protein and more than 30 times more carbon intensive than vegetable protein.
+GHG intensity of various foods,1 kg CO2e/kg of protein
+Direct emissions Indirect emissions
+McKinsey Sustainability 2020 1.5 Pathway report Sidebar 1 of 2
+1 Direct emissions include all on-farm emissions. Indirect emissions include off-farm emissions, such as emissions associated w ith food manufacturing.
+Source: Greenhouse gas emissions from pig and chicken supply chains: A global life cycle assessment, Food and Agriculture Organization of the United Nations (FAQ) Rome; Greenhouse gas emissions from ruminant supply chains: A global life cycle assessment, Food and Agriculture Organization of the United Nations (FAQ) Rome; McKinsey analysis
+Beef Lamb Pork Poultry Fish Rice Milk Eggs Nuts and seeds
+Soybeans and legumes
+Wheat
+46.2
+35.8
+Largely driven by enteric fermentation (CH4 emissions)
+5.8 5.2 3.0 2.6 2.8 3.6 1.4 0.6 0.2
+Exhibit A
+24 Agriculture and climate change
+
+
+Limiting warming to 1.5 degrees Celsius requires 6–8 GtCO e from reforestation, afforestation, deforestation avoidance, and other sequestration.
+Distribution of abatement and sequestration potential, MtCO2/year (2050 100-year GWP), MtCO2e yr-1
+0–10 10–50
+McKinsey Sustainability 2020 1.5 Pathway report Sidebar 2 of 2
+1 Map shows potential from reforestation not from reforestation or afforestation. 2 Assume equally distributed reforestation and forest-management burden in the years between 2020 and 2050; 2 kgCO2e ha-1 yr-1. Source: Adams et al., “Natural climate solutions,” Proceedings of the National Academy of Sciences of the United States of America, 2017
+Reforestation and afforestation
+51–100 101–500 501–1000 1000+ No data
+Maximum technical potential,2 GtCO2/year (2050)
+Reforestation Avoided deforestation Natural forest management
+Deforestation avoidance
+Natural forest management
+Other forestry, agricultural practices, and wetland conservation
+8.4
+5.2
+1.3
+6.7
+19
+13
+64
+Applicable land per year (Mha/yr)1
+Exhibit B
+How much we waste
+Approximately one-third of all food produced is never consumed. Food loss takes place early in the supply chain during production, transportation, and storage; this is driven by lack of access to technology and cold-storage infrastructure. Food waste occurs at retail and consumption stages and is prevalent in higher-income regions; it is caused by aesthetic preferences, purchasing more than is needed, and poor portion control.
+To meet targets in a 1.5°C pathway, food loss and waste would need to fall from about 33 percent in recent years to under 30 percent by 2030 and 20 percent by 2050. Achieving this target would result in a reduction of overall emissions from food waste by about 40 percent globally.2
+How we manage forests and natural carbon sinks
+Plants, forests, and soil absorb carbon dioxide, making our management of forests and land paramount to adhering to the 1.5°C pathway (Exhibit B). Deforestation is rapidly reducing the planet’s potential to absorb
+2 Five percent and 35 percent from developed and developing countries respectively. For more, see Nadia Scialabba, “Food wastage footprint & climate change,” UN FAO, 2015, fao.org.
+Agriculture and climate change 25
+
+
+carbon dioxide and mitigate its warming effects. Natural carbon sinks present up to 19 Gt of carbon dioxide sequestration potential across forests, wetlands, agricultural land, and grasslands.3 The primary carbon sequestration measures in these biomes are reforestation, afforestation, deforestation avoidance, and natural forest management. It is also possible to enhance soil carbon through regenerative agricultural practices such as low- and no-till agriculture, cover crops or crop rotations, legumes sewn in pastures, and optimized grazing intensity.
+Six to eight Gt of carbon dioxide sequestration is required to meet a 1.5°C pathway. Delivering all this through forestry would require reforesting 50 to 60 percent of the total area that has been deforested over the past 150 years.4
+How we invest in next horizon technologies
+While achieving a 1.5°C pathway is possible through farming productivity improvements, diet shift, food waste reduction, and effective carbon-sink management, these measures are going to be extremely difficult to implement. Investment, development, commercialization, and scaling of next-horizon technologies can greatly accelerate efforts to reduce GHG emissions in the agriculture sector. Promising technologies at various stages of development could have significant GHG abatement potential.
+Some of these technologies include the following:
+Gene editing for disease resistance or for enhanced carbon sequestration
+Plant and soil microbiome technology
+Aerobic rice
+Direct methane capture from beef and dairy cattle
+Perennial row crops
+Inhibition of enteric fermentation through vaccines and novel feed additives
+3 Justin Adams et al., “Natural climate solutions,” Proceedings of the National Academy of Sciences of the United States of America, October 2017, Volume 114, Number 44, pp. 11645–50, pnas.org. 4 R. A. Houghton and Alexander A. Nakkisas, “Global and regional fluxes of carbon from land use and land cover change 1850–2015,” Global Biogeochemical Cycles, March 2017, Volume 31, Number 3, pp. 456–72, agupubs.onlinelibrary.wiley.com.
+26 Agriculture and climate change
+
+
+Conclusion
+Feeding the world while fighting climate change is no easy feat—and it will not happen automatically. Achieving a 1.5°C pathway (or anything close to it) will require an industry-wide effort and cooperation of consumers, farmers, industry players, investors, and regulators to drive significant shifts in how we farm. While the place to start is the top 15 measures of the MACC, efforts must move beyond rethinking how we produce our food to adjusting what we eat, how much we waste, how we manage our forests and carbon sinks, and how we apply next-horizon technologies. Without swift action, emissions in agriculture will continue to grow and contribute to heating the planet to dangerous levels.
+Justin Ahmed is a consultant in McKinsey's Boston office, where Hannah Kitchel is a consultant; Elaine Almeida is a consultant in the Calgary office; Daniel Aminetzah is a senior partner in the New York office; Nicolas Denis is a partner in the Brussels office; Kimberly Henderson is a partner in the Washington, DC, office; Joshua Katz is a partner in the Stamford office; and Peter Mannion is a consultant in the Dublin office.
+Agriculture and climate change 27
+
+
+Acknowledgments
+The authors wish to thank the following people for their contributions to this report:
+Dr. Robert H. Beach, RTI International
+Dr. Matt Bell, School of Biosciences at the University of Nottingham
+Dr. Jia Deng, Earth Systems Research Center at the University of New Hampshire
+Dr. Stefan Frank, Ecosystems Services and Management at the International Institute for Applied Systems Analysis
+John Elliot, ADAS
+Dr. Mathijs Harmsen, PBL Netherlands Environmental Assessment Agency; Integrated Assessment of Global Environmental Change at the Faculty of Geosciences at Utrecht University
+Dr. Ben Henderson, Trade and Agriculture Directorate at the Organisation for Economic Co-operation and Development
+Susanna Hönle, Coordination Unit Climate at Johann Heinrich von Thünen Institute
+Dr. Richard A. Houghton, Woods Hole Research Center
+Dr. Virender Kumar, Crop and Environmental Sciences Division at the International Rice Research Institute
+Dr. Rattan Lal, School of Environment and Natural Resources at The Ohio State University
+Dr. Bruce A. Linquist, Department of Plant Sciences at the University of California, Davis
+Bjoern Ole Sander, Climate Change Research Group at the International Rice Research Institute
+Dr. William H. Schlesinger, Cary Institute of Ecosystem Studies
+Dr. Pete Smith, School of Biological Sciences at the University of Aberdeen
+Dr. Detlef P. van Vuuren, PBL Netherlands Environmental Assessment Agency; Integrated Assessment of Global Environmental Change at the Faculty of Geosciences, Utrecht University
+28 Agriculture and climate change
+
+
+Technical appendix
+Agriculture and climate change 29
+
+
+Calculating the baseline of agriculture emissions
+The agriculture emissions baseline is calculated based on the Food and Agriculture Organization’s Agriculture Emissions Database (Agriculture Total, FAOSTAT, FAO, accessed July 2019, fao.org/faostat), with the following minor adjustments:
+— Adapted emissions to reflect AR5 GWP values (Climate change 2014: Synthesis report, Intergovernmental Panel on Climate Change, 2015, ar5-syr.ipcc.ch, p. 87)
+— Cross-checked with crop and livestock demand estimates contained within FAO’s database (“Food and agriculture projections to 2050,” Global Perspectives Studies, FAO, 2018, fao.org; see also The future of food and agriculture: Alternative pathways to 2050, FAO, 2018, fao.org) and the McKinsey Food Demand Model. This resulted in minor adjustment to emissions expected to be driven by crop agriculture production area (up 9 percent by 2030 and up 13 percent by 2050)
+— Given that FAO’s estimates for emissions from “energy use in agriculture” were discontinued from 2013 forward, we used 2007–12 compound annual growth rates (CAGRs) by region (Brazil, Europe, China, India, and the rest of Asia) and energy source (electricity, fuel oil, natural gas) to project emissions forward to 2015. Forecasts to 2050 were based on discrete CAGRs (2012–30 and 203050) for agricultural acreage projections (The future of food and agriculture: Alternative pathways to 2050, FAO, 2018, fao.org)
+30 Agriculture and climate change
+
+
+Key assumptions, by MACC measure
+All assumptions made for each part of the marginal abatement cost curve (MACC) are based on published literature.
+100-year GWP2 20-year GWP2
+Emissions reduction potential, MMT CO2e [A × B × C]3
+522 537
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+696 715
+Source: McKinsey baseline model (via FAOSTAT data): GHG emissions from energy use on farm (excluding in fisheries, for irrigation, and electricity)
+Lever implementation cost savings, $/tCO2e
+236 229
+Source: To identify capex/opex costs for BEV vs ICE at point of TCO-parity, see Markus Forsgren, Erik Östgren, and Andreas Tschiesner, “Harnessing momentum for electrification in heavy machinery and equipment,” May 2019, McKinsey.com; to identify relative weight of opex/capex on farms, see “Commodity costs and returns,” United States Department of Agriculture Economic Research Service, accessed July 2019, ers.usda.gov; for share of tractor costs attributable to battery, see Michael Fries et al., “An overview of costs for vehicle components, fuels, greenhouse gas emissions and total cost of ownership update 2017,” UC Davis, February 2018, steps.ucdavis.edu; for projected development of BEV battery prices, as proxy for capex, see Electric vehicle outlook 2019, BloombergNEF, accessed July 2019, bnef.com
+75 Incremental lever implementation, % [B]
+Source (current and incremental implementation): To determine tractor life span as proxy for farm equipment; thus replacement rate, see Ricardo Muñoz et al., “Estimation of the lifespan of agricultural tractors using a diffusion model at the aggregate level,” Ciencia e investigación agrarian, December 2012, Volume 39, Number 3, pp. 557–62; to estimate year of TCO-parity for agriculture equipment, see Markus Forsgren, Erik Östgren, and Andreas Tschiesner, “Harnessing momentum for electrification in heavy machinery and equipment,” May 2019, McKinsey.com
+Zero-emissions on-farm machinery and equipment
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: To determine tractor life span as proxy for farm equipment, thus replacement rate, see Ricardo Muñoz et al., “Estimation of the lifespan of agricultural tractors using a diffusion model at the aggregate level,” Ciencia e investigación agrarian, December 2012, Volume 39, Number 3, pp. 557–62; to estimate year of TCO-parity for agriculture equipment, see Markus Forsgren, Erik Östgren, and Andreas Tschiesner, “Harnessing momentum for electrification in heavy machinery and equipment,” May 2019, McKinsey.com
+100
+1
+Emissions reduction potential, MMT CO2e [A × B × C]3
+47 47
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+753 750
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from application of synthetic fertilizers
+30 Incremental lever implementation, % [B]
+Source (current and incremental implementation): Jeff Bradford et al., 2017
+precision agriculture dealership survey, Departments of Agricultural Economics and Agronomy, Purdue University, December 2017, agribusiness.purdue.edu
+Lever implementation cost savings, $/tCO2e
+176 176
+Source: Kamil Okyay Sindir and Arif Behiç Tekin, “Economics of variable rate fertilizer application,” International Scientific Conference, Rousse, Bulgaria, April 6, 2002; Judith Bates et al., “Agriculture: Methane and nitrous oxide, sectoral emission reduction potentials and economic costs for climate change (SERPECCC),” October 2009; variable cost index build via World Bank/FAOSTAT data
+Variable rate fertilization
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Michael MacLeod et al., “Assessing the greenhouse gas mitigation effect of removing bovine trypanosomiasis in Eastern Africa,” Sustainability, May 2018, Volume 10, Number 5, pp. 1633–47; OECD
+21
+2
+Agriculture and climate change 31
+
+
+100-year GWP2 20-year GWP2
+Emissions reduction potential, MMT CO2e [A × B × C]3
+88 88
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+368 367
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from application of synthetic fertilizers in China and India; McKinsey Fertilizer Demand Model, 2019
+Lever implementation cost savings, $/tCO2e
+97 97
+Source: McKinsey Fertilizer Demand Model, 2019
+100 Incremental lever implementation, % [B]
+Source: McKinsey Fertilizer Demand Model, 2019
+Reduced N overapplication in China and India
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: McKinsey Fertilizer Demand Model, 2019
+24
+3
+Emissions reduction potential, MMT CO2e [A × B × C]3
+72 217
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+374 1,122
+Source: McKinsey baseline model (via FAOSTAT data): methane emissions from rice cultivation—only relevant to fields considered able to dry in-season (ie, not wet season; approximately 50 percent of hectares)
+Lever implementation cost savings, $/tCO2e
+123 41
+Source: Mihn D Ngo et al., “The current adoption of dry-direct seeding rice (DDSR) in Thailand,” CGIAR, June 28, 2019; variable cost index built via World Bank/FAOSTAT data
+45 Incremental lever implementation, % [B]
+Source (current implementation): Hongyan Liu et al., “Progress and constraints of dry direct-seeded rice in China,” Journal of Food Agriculture and Environment, May 2014, Volume 1212, Number 2, pp. 465–72, researchgate.net
+Source (incremental implementation): Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace. library.uu.nl
+4 Dry direct seeding
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: J.Y. Ko and H.W. Kang, “The effects of cultural practices on methane emission from rice fields,” Nutrient Cycling in Agroecosystems, 2000, Volume 58, pp. 311–14
+43
+Emissions reduction potential, MMT CO2e [A × B × C]3
+114 119
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+577 586
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from application of synthetic fertilizers and GHG emissions from fuel combustion activity on farm; Pedro Pellegrini et al., “Crop intensification, land use, and on-farm energy-use efficiency during the worldwide spread of the green
+revolution,” Proceedings of the National Academy of Sciences, February 2018, Volume 115, Number 10, pp. 2335–40
+Lever implementation cost savings, $/tCO2e
+43 41
+Source: For electronic supplementary material, see Stefan Frank et al., “Structural change as a key component for agricultural non-CO2 mitigation efforts,” Nature Communications, March 13, 2018, Volume 9, nature.com; variable cost index and fuel cost index developed from World Bank/FAOSTAT data
+75 Incremental lever implementation, % [B]
+Source (incremental implementation): “Conservation agriculture,” Project Drawdown, accessed July 2019, drawdown.org; Limited to hectares currently irrigated via groundwater, “AQUASTAT – FAO’s global information system on water and agriculture,” FAO, 2019, fao.org; Rolf Derpsch et al., “Current status of adoption of no-till farming in the world and some of its main benefits,” International Journal of Agriculture and Biological Engineering, January 2010, pp. 1–25; Chris van Kessel et al., “Climate, duration, and N placement determine N2O emissions in reduced tillage systems: a meta-analysis,” Global Change Biology, July 3, 2012, pp. 33–44, onlinelibrary.wiley.com; Jay Apt et al., “Managing soil carbon,” Science, April 2004, Volume 304, Number 5669, pp. 393, science.sciencemag.org
+Low- or no-tillage
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Chris van Kessel et al., “Climate, duration, and N placement determine N2O emissions in reduced tillage systems: a meta-analysis,” Global Change Biology, July 3, 2012, pp. 33–44, onlinelibrary.wiley.com; to index impact by climate zone, see “National Aggregates of geospatial data collection: Population, landscape, and climate estimates, v3 (1990, 2000, 2010),” Center for International Earth Science Information Network – CIESIN – Columbia University, 2012, sedac.ciesin.columbia.edu; Shamsudheen Mangalassery et al., “To what extent can zero tillage lead to a reduction in greenhouse gas emissions from temperate soils?,” Scientific Reports, April 4, 2014, Volume 4, nature.com; “Tillage and no-till systems,” University of Nebraska–Lincoln, accessed July 2019, cropwatch.unl.edu; “No-till agriculture,” CropLife International, accessed July 2019, croplife.org
+26
+5
+32 Agriculture and climate change
+
+
+100-year GWP2 20-year GWP2
+Emissions reduction potential, MMT CO2e [A × B × C]3
+17 16
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+330 329
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from application of synthetic fertilizers on large-scale row crop acres only (where N fertilizers are used most intensively and fertilizer spreader maintenance is most relevant); includes 39 percent of total global acreage
+Lever implementation cost savings, /tCO2e
+34 34
+Source: Adriana Gomez Sanabria et al., Non-CO2 greenhouse gas emissions in the EU-28 from 2005 to 2050: GAINS model methodology, International Institute for Applied Systems Analysis, June 7, 2016, pure.iiasa.ac.at
+100 Incremental lever implementation, % [B]
+Improved equipment maintenance
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Benjamin van Doorslaer et al., An economic assessment of GHG
+mitigation policy options for EU agriculture, EU Science Hub, 2015, ec.europa.eu
+5
+Source: McKinsey analysis
+6
+Emissions reduction potential, MMT CO2e [A × B × C]3
+99 296
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+748 2,245
+Source: McKinsey baseline model (via FAOSTAT data): methane emissions from rice cultivation
+Lever implementation cost savings, $/tCO2e
+35 12
+Source: M. Shahe Alam et al., “Economics of alternate wetting and drying method of irrigation: Evidences from farm level study,” The Agriculturists, December 2009, Volume 7, Numbers 1 and 2, pp. 82–95; variable cost index build via World Bank/FAOSTAT data
+30 Incremental lever implementation, % [B]
+Source (current implementation): Randoph Barker et al., “Increasing water productivity for paddy irrigation in China,” Paddy and Water Environment, December 2004, Volume 2, Number 4; Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace. library.uu.nl; "Adaptation and mitigation initiatives in Philippine rice cultivation,” United Nations Development Programme, November 5, 2015, undp.org
+Source (incremental implementation): Wina H.J. Crijns-Graus et al., “Marginal greenhouse gas abatement curves for agriculture,” Ecofys, August 2013; Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace.library.uu.nlproduction”; Carbon Management, 2017, Volume 8, Number 4, tandfonline.com
+Improved rice paddy water management
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: M. Shahe Alam et al., “Economics of alternate wetting and drying method of irrigation: Evidences from farm level study,” The Agriculturists, December 2009, Volume 7, Numbers 1 and 2, pp. 82–95, Yu Jiang et al., “Water management to mitigate the global warming potential of rice systems: A global meta-analysis,” Field Crops Research, March 15, 2019, Volume 234, pp. 47–54
+44
+8
+Emissions reduction potential, MMT CO2e [A × B × C]3
+17 17
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+34 34
+Source: McKinsey baseline model (via FAOSTAT data): GHG emissions from energy used for fishing vessel fuel
+Lever implementation cost savings, $/tCO2e
+12 12
+Source: James F. Muir, Fuel and energy use in the fisheries sector: Approaches, inventories and strategic implications, FAO Fisheries and Aquaculture Circular, 2015, fao.org
+75 Incremental lever implementation, % [B]
+Improved fuel efficiency of fishing vessels
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: James F. Muir, Fuel and energy use in the fisheries sector: Approaches, inventories and strategic implications, FAO Fisheries and Aquaculture Circular, 2015, fao.org; Lee Kindberg, “Improving vessel and supply chain fuel efficiency,” Maersk Line, 2012, epa.gov; Gary Wollenhaupt, “Study says ships are less fuel efficient; operational evidence differs,” Professional Mariner, July 30, 2015, professionalmariner.com
+65
+Source: McKinsey analysis
+7
+Agriculture and climate change 33
+
+
+100-year GWP2 20-year GWP2
+Emissions reduction potential, MMT CO2e [A × B × C]3
+49 148
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+748 2,245
+Source: McKinsey baseline model (via FAOSTAT data): methane emissions from rice cultivation
+Lever implementation cost savings, $/tCO2e
+26 8
+Source: Constancio Asis et al., “Cost-effectiveness analysis of farmers’ rice straw management practices considering CH4 and N2O emissions,” Journal of Environmental Management, September 2016, Volume 183
+15 Incremental lever implementation, % [B]
+Source (current implementation): Tsuneo Kobayashiet al., “Factors affecting farmers’ decisions on utilization of rice straw compost in Northeastern
+Thailand,” Journal of Agriculture and Rural Development in the Tropics and
+Subtropics, August 2013, Volume 114, Number 1, pp. 21–27, kobra.uni-kassel.de/ handle/123456789/2013030542579
+Source (incremental implementation): Wina H.J. Crijns-Graus et al., “Marginal greenhouse gas abatement curves for agriculture,” Ecofys, August 2013, researchgate.net
+Improved rice straw management
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Ryan R. Romasanta et al., “How does burning of rice straw affect CH4 and N2O emissions? A comparative experiment of different on-field straw management practices,” Agriculture, Ecosystems & Environment, February 2017, Volume 239, pp. 143–53
+44
+9
+Emissions reduction potential, MMT CO2e [A × B × C]3
+162 411
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+4,680 11,923
+Source: McKinsey baseline model (via FAOSTAT data): non-CO2 emissions from enteric fermentation, manure management, and manure left on pasture for all commercial livestock
+Lever implementation cost savings, $/tCO2e
+55
+Source: To see weighted-average cost across MACC, excluding measures at cost of >$200/tCO2eq, see Study to model the impact of controlling endemic cattle diseases and conditions on national cattle productivity, agricultural performance and greenhouse gas emissions, ADAS, February 2015, randd.defra.goc.uk; Lanigan et al., “An analysis of abatement potential of greenhouse gas emissions in Irish agriculture 2021–2030,” Teagasc Greenhouse Gas Working Group, March 2019, teagasc.ie; Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace.library.uu.nl
+Incremental lever implementation, % [B]
+25
+Source (current implementation): McKinsey baseline model (via FAOSTAT data): non-CO2 emissions from enteric fermentation, manure management, and manure left on pasture for all commercial livestock
+Source (incremental implementation): Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace. library.uu.nl; Lanigan et al., “An analysis of abatement potential of greenhouse gas emissions in Irish agriculture 2021–2030,” Teagasc Greenhouse Gas Working Group, March 2019, teagasc.ie
+Improved animal health monitoring and illness prevention
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace.library.uu.nl; Alexander N. Hristov et al., “Mitigation of greenhouse gas emissions in livestock production,” FAO, 2013, fao.org; Michael MacLeod et al., “Assessing the greenhouse gas mitigation effect of removing bovine trypanosomiasis in Eastern Africa,” Sustainability, May 2018, Volume 10, Number 5, pp. 1633–47; McKinsey analysis regarding prevalence and economic impact of top 10 US cattle diseases
+14
+10
+34 Agriculture and climate change
+
+
+Emissions reduction potential, MMT CO2e [A × B × C]3
+169 506
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+3,317 9,952
+Source: McKinsey baseline model (via FAOSTAT data): methane emissions from enteric fermentation by ruminant animals; emissions from manure on pasture and management for all
+Lever implementation cost, $/tCO2e
+-
+Source: Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace.library.uu.nl
+Incremental lever implementation, % [B]
+45
+Source (current implementation): McKinsey baseline model (via FAOSTAT data): methane emissions from enteric fermentation by ruminant animals
+Source (incremental implementation): “Animal genetics market by products & services (live animals [poultry, porcine, bovine, canine] genetic material [semen {bovine, porcine}], embryo [bovine, equine]) genetic testing (DNA testing, DNA typing, genetic disease testing]) - forecast to 2023,” Markets and Markets, December 2018, marketsandmarkets.com
+GHG-focused breeding and genetic selection
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Matthew Bell et al., “Effect of breeding for milk yield, diet and management on enteric methane emissions from dairy cows,” Animal Production Science, January 2010, Volume 50, Number 8, pp. 817–26; Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace.library.uu.nl; “Animal genetics market by products & services (live animals [poultry, porcine, bovine, canine] genetic material [semen {bovine, porcine}], embryo [bovine, equine]) genetic testing (DNA testing, DNA typing, genetic disease testing]) - forecast to 2021,” Markets and Markets, December 2018, marketsandmarkets.com; Viking Genetics, "Breeding for climate-friendly cows is possible – VikingGenetics focuses on reducing methane emissions at herd level," February 2018, vikinggenetics.com
+11
+12
+100-year GWP2 20-year GWP2
+Emissions reduction potential, MMT CO2e [A × B × C]3
+73 219
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+2,836 8,507
+Source: McKinsey baseline model (via FAOSTAT data): emissions from enteric fermentation for large ruminant animals (only cattle and buffaloes)
+Lever implementation cost savings, $/tCO2e
+83
+Source: Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace.library.uu.nl; C. N. Macken et al., “The cost of corn processing for finishing cattle,” The Professional Animal Scientist, February 2006, Volume 22, Number 1, pp. 23–32, sciencedirect.com
+Incremental lever implementation, % [B]
+15
+Source (current implementation): KL Samuelson et al., Nutritional
+recommendations of feedlot consulting nutritionists: The 2015 New Mexico State and Texas Tech survey, Journal of Animal Science, June 2016, Volume 94, Number 6, pp. 2648–63, ncbi.nlm.nih.gov
+Source (incremental implementation): Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace. library.uu.nl
+Feed-grain processing for improved digestibility
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: "Cattle grain processing symposium," Oklahoma State University, November 2006, beefextension.okstate.edu; Alexander N. Hristov et al., “Mitigation of greenhouse gas emissions in livestock production,” FAO, 2013, fao.org; Khalil Safaei et al., “Effects of grain processing with focus on grinding and steam-flaking on dairy cow performance,” March 8, 2017, intechopen.com; “Cattle grain processing symposium,” Oklahoma State University, November 2006, beefextension.okstate.edu
+17
+11
+Agriculture and climate change 35
+
+
+100-year GWP2 20-year GWP2
+Emissions reduction potential, MMT CO2e [A × B × C]3
+47 47
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+782 779
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from manure left on pasture and manure left on soil by dairy and non-dairy cattle
+Lever implementation cost, $/tCO2e
+-
+Source: Benjamin J. DeAngelo et al., “Methane and nitrous oxide mitigation in agriculture,” International Association for Energy Economics, 2006, Volume 27, pp. 89–108, jstor.org
+100 Incremental lever implementation, % [B]
+Livestock nutrient use efficiency
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Benjamin J. DeAngelo et al., “Methane and nitrous oxide mitigation in agriculture,” International Association for Energy Economics, 2006, Volume 27, pp. 89–108, jstor.org
+6
+Source: McKinsey analysis
+13
+Emissions reduction potential, MMT CO2e [A × B × C]3
+30 90
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+748 2,245
+Source: McKinsey baseline model (via FAOSTAT data): methane emissions from rice cultivation
+Source: McKinsey analysis
+Lever implementation cost, $/tCO2e
+-
+Source: Benjamin van Doorslaer et al., An economic assessment of GHG mitigation policy options for EU agriculture, EU Science Hub, 2015, ec.europa.eu
+100 Incremental lever implementation, % [B]
+Optimal rice varietal selection
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Benjamin van Doorslaer et al., An economic assessment of GHG
+mitigation policy options for EU agriculture, EU Science Hub, 2015, ec.europa.eu
+4
+14
+Source: McKinsey analysis
+Emissions reduction potential, MMT CO2e [A × B × C]3
+14 14
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+720 717
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from application of synthetic fertilizers (on non-“nitrogen fixing” acres [e.g., legumes, pulse, and soybean production])
+Lever implementation cost, $/tCO2e
+-
+Source: Benjamin van Doorslaer et al., An economic assessment of GHG
+mitigation policy options for EU agriculture, EU Science Hub, 2015, ec.europa.eu
+100 Incremental lever implementation, % [B]
+Nitrogen-fixing rotations
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Benjamin van Doorslaer et al., An economic assessment of GHG
+mitigation policy options for EU agriculture, EU Science Hub, 2015, ec.europa.eu
+2
+15
+36 Agriculture and climate change
+
+
+100-year GWP2 20-year GWP2
+Emissions reduction potential, MMT CO2e [A × B × C]3
+150 449
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+748 2,245
+Source: McKinsey baseline model (via FAOSTAT data): methane emissions from rice cultivation
+Lever implementation cost, $/tCO2e
+93
+Source: Hugo A. van der Gon et al., “Sulfate-containing amendments to reduce methane emissions from rice fields: Mechanisms, effectiveness and costs,” March 2001, springer.com; variable cost index build via World Bank/FAOSTAT data
+50 Incremental lever implementation, % [B]
+Source (current implementation): Market reports; expert estimates
+Source (incremental implementation): Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace. library.uu.nl; expert estimates
+Improved fertilization of rice
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Bruce Linquist et al., “Fertilizer management practices and greenhouse gas emissions from rice systems: A quantitative review and analysis,” Science of the Total Environment, Volume 135, August 30, 2012, pp. 10–21
+40
+16
+Emissions reduction potential, MMT CO2e [A × B × C]3
+124 123
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+826 823
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from manure left on pasture by ruminant animals
+Lever implementation cost, $/tCO2e
+15 15
+Source: Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace.library.uu.nl; McKinsey Fertilizer Demand Model, 2019 (via Controlled-Release and Stabilized Fertilizers lever), adjusted to per head estimates via FAOSTAT “livestock intensity” data
+50 Incremental lever implementation, % [B]
+Source (current implementation): Samuelson et al., Nutritional recommendations of feedlot consulting nutritionists: The 2015 New Mexico State and Texas Tech survey, Journal of Animal Science, June 2016, Volume 94, Number 6, pp. 264863, ncbi.nlm.nih.gov
+Source (incremental implementation): Jan Hartger Mathijs Harmsen, "Non-CO2 greenhouse gas mitigation in the 21st century," Utrecht University, 2019, dspace. library.uu.nl
+N-inhibitors on pasture
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Alexander N. Hristov et al., “Mitigation of greenhouse gas emissions in livestock production,” FAO, 2013, fao.org; Jiafa Luo et al., “Nitrous oxide and greenhouse gas emissions from grazed pastures as affected by use of nitrification inhibitor and restricted grazing regime,” Science of the Total Environment, Volume 465, November 1, 2013, pp. 107–14, sciencedirect.com; Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace.library.uu.nl
+30
+17
+Emissions reduction potential, MMT CO2e [A × B × C]3
+45 45
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+847 844
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from application of synthetic fertilizers
+Source: McKinsey analysis
+Lever implementation cost, $/tCO2e
+40 40
+Source: Stefan Frank et al., “Structural change as a key component for agricultural non-CO2 mitigation efforts,” Nature Communications, March 13, 2018, Volume 9, nature.com
+100 Incremental lever implementation, % [B]
+Improved fertilization timing
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Stefan Frank et al., “Structural change as a key component for agricultural non-CO2 mitigation efforts,” Nature Communications, March 13, 2018, Volume 9, nature.com
+5.3
+18
+Agriculture and climate change 37
+
+
+Emissions reduction potential, MMT CO2e [A × B × C]3
+86 260
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+182 547
+Source: McKinsey baseline model (via FAOSTAT data): non-CO2 emissions from manure management in dairy and hog production
+Wina H. J. Crijns-Graus et al., "Marginal greenhouse gas abatement curves for agriculture," Ecofys, August 2013, researchgate.net
+Lever implementation cost, $/tCO2e
+277 92
+Source: Greenhouse gas mitigation options and costs for agricultural land and animal production within the United States, ICF International, February 2013, usda.gov; Benjamin J. DeAngelo et al., “Methane and nitrous oxide mitigation in agriculture,” International Association for Energy Economics, 2006, Volume 27, pp. 89–108, jstor.org; variable cost index built via World Bank/FAOSTAT data
+60 Incremental lever implementation, % [B]
+Anaerobic manure digestion
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Stefan Frank et al., “Structural change as a key component for agricultural non-CO2 mitigation efforts,” Nature Communications, March 13, 2018, Volume 9, nature.com; Benjamin J. DeAngelo et al., “Methane and nitrous oxide mitigation in agriculture,” International Association for Energy Economics, 2006, Volume 27, pp. 89–108, jstor.org; Benjamin van Doorslaer et al., An
+economic assessment of GHG mitigation policy options for EU agriculture, EU Science Hub, 2015, ec.europa.eu
+79
+21
+100-year GWP2 20-year GWP2
+Emissions reduction potential, MMT CO2e [A × B × C]3
+75 75
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+753 750
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from application of synthetic fertilizers
+Lever implementation cost, $/tCO2e
+65 65
+Source: David Kanter et al., “Reducing nitrogen pollution while decreasing farmers’ costs and increasing fertilizer industry profits,” Journal of Environmental Quality, March 2015, Volume 44, Number 2, researchgate.net; McKinsey Fertilizer Demand Model, 2019
+50 Incremental lever implementation, % [B]
+Source (current implementation): Controlled- and slow-release fertilizers, IHS Markit, June 2018, ihsmarkit.com
+Source (incremental implementation): Based on 100 percent adoption of either controlled release or inhibitors or stabilizers by fertilizer majors in products, and the market share of the top six fertilizer players
+Controlled-release and stabilized fertilizers
+Source: Wilfried Winiwarter, “Reducing nitrous oxide emissions from agriculture: Review on options and costs,” International Institute for Applied Systems Analysis, June 9, 2015, pure.iiasa.ac.at
+20 Greenhouse gas reduction factor,1 % CO2e [C]
+19
+Emissions reduction potential, MMT CO2e [A × B × C]3
+100 299
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+3,281 9,842
+Source: McKinsey baseline model (via FAOSTAT data): methane emissions from enteric fermentation by cattle, buffalo, goats, and sheep
+Lever implementation cost, $/tCO2e
+263 88
+Source: Stefan Frank et al., “Structural change as a key component for agricultural non-CO2 mitigation efforts,” Nature Communications, March 13, 2018, Volume 9, nature.com
+Incremental lever implementation, % [B]
+20
+Source (current and incremental implementation): Timothy P. Robinson, Global livestock production systems, 2011; restricting adoption to (potentially) intensive production; Wina H.J. Crijns-Graus et al., “Marginal greenhouse gas abatement curves for agriculture,” Ecofys, August 2013
+Animal feed additives
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Stefan Frank et al., “Structural change as a key component for agricultural non-CO2 mitigation efforts,” Nature Communications, March 13, 2018, Volume 9, nature.com
+15
+20
+38 Agriculture and climate change
+
+
+100-year GWP2 20-year GWP2
+Emissions reduction potential, MMT CO2e [A × B × C]3
+70 180
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+2,646 6,748
+Source: McKinsey baseline model (via FAOSTAT data): non-CO2 emissions from enteric fermentation, manure management, and manure left on pasture for meatproducing livestock (non-dairy cattle, market swine, buffalo, and broilers)
+Lever implementation cost, $/tCO2e
+119 119
+Source: Stefan Frank et al., “Structural change as a key component for agricultural non-CO2 mitigation efforts,” Nature Communications, March 13, 2018, Volume 9, nature.com
+Incremental lever implementation, % [B]
+25
+Source (current implementation): Thomas P. Van Boeckel et al., “Global trends in antimicrobial use in food animals,” PNAS, May 5, 2015, Volume 112, Number 18, pp. 5649–54, pnas.org; Timothy Landers et al., “A review of antibiotic use in food animals: Perspective, policy, and potential,” Public Health Reports, January 2012, Volume 127, Number 1, pp. 4–22, researchgate.net; Ziping Wu, “Antibiotic use and antibiotic resistance in food-producing animals in China,” OECD Food, Agriculture and Fisheries Papers, Number 134, oecd-ilibrary.org
+Source (incremental implementation): “Animal growth promoters & performance enhancers,” Markets and Markets, 2016, marketsandmarkets.com; Timothy P. Robinson, Global livestock production systems, 2011; “Accounting for intensive livestock production,” FAO, 2011, fao.org; restricting adoption to (potentially) intensive production
+Technologies that increase livestock production efficiencies
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Special report: Animal pharm antibiotic replacement in modern animal production, Agribusiness Intelligence, May 2018, agribusinessintelligence. informa.com; Stefan Frank et al., “Structural change as a key component for agricultural non-CO2 mitigation efforts,” Nature Communications, March 13, 2018, Volume 9, nature.com; KR Stackhouse et al., “Growth-promoting technologies decrease the carbon footprint, ammonia emissions, and costs of California beef production systems,” Journal of Animal Science, December 2012, Volume 90, Number 12, pp. 4656–65, ncbi.nlm.nih.gov
+7
+22
+Emissions reduction potential, MMT CO2e [A × B × C]3
+123 370
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+3,087 9,261
+Source: McKinsey baseline model (via FAOSTAT data): methane emissions from enteric fermentation by cattle, buffalo, and sheep only
+Lever implementation cost, $/tCO2e
+131 131
+Source: Michael MacLeod et al., “Cost-effectiveness of greenhouse gas mitigation measures for agriculture,” OECD, August 1, 2015, oecd-ilibrary.org
+Incremental lever implementation, % [B]
+40
+Source (current and incremental implementation): Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace.library.uu.nl
+Source (incremental implementation): Timothy P. Robinson, Global livestock production systems, 2011; restricting adoption to (potentially) intensive production; Stefan Frank et al., “Structural change as a key component for agricultural non-CO2 mitigation efforts,” Nature Communications, March 13, 2018, Volume 9, nature.com
+Animal feed mix optimization
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Michael MacLeod et al., “Cost-effectiveness of greenhouse gas mitigation measures for agriculture,” OECD, August 1, 2015, oecd-ilibrary.org
+10
+23
+Agriculture and climate change 39
+
+
+1 Difference due to greenhouse-gas reduction factor, % rounding. 2 Global warming potential. 3 A × B × C doesn’t always equal the exact final emissions abatement number due to GHG reduction/applicability percentage rounding.
+100-year GWP2 20-year GWP2
+Emissions reduction potential, MMT CO2e [A × B × C]3
+18 18
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+750 747
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from application of synthetic fertilizers; N2O emissions from synthetic fertilizers and CO2 emissions from energy use in agriculture
+Source: McKinsey analysis
+30 Incremental lever implementation, % [B]
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from application of synthetic fertilizers, with synthetic fertilizer overapplication emissions from China and India removed Source: McKinsey analysis
+Lever implementation cost, $/tCO2e
+521 523
+Specialty crop nutrition amendments
+8 Greenhouse gas reduction factor,1 % CO2e [C]
+25
+Emissions reduction potential, MMT CO2e [A × B × C]3
+56 55
+Baseline applicable emissions, MMT CO2e, 2050 [A]
+212 211
+Source: McKinsey baseline model (via FAOSTAT data): nitrous oxide emissions from denitrification of synthetic fertilizers and GHG emissions from energy used for power irrigation on farm; “AQUASTAT – FAO’s global information system on water and agriculture,” FAO, 2019, fao.org [limited to hectares currently irrigated via groundwater]
+Lever implementation cost, $/tCO2e
+146 147
+Source: Las Almas et al., Economics of irrigation systems, Texas A&M AgriLife Extension Service, January 2002, oaktrust.library.tamu.edu
+50 Incremental lever implementation, % [B]
+Source (current implementation): limited to hectares currently irrigated via groundwater, “AQUASTAT – FAO’s global information system on water and agriculture,” FAO, 2019, fao.org
+Source (incremental implementation): Assumption that all acres reach 75 percent adoption, except for Europe and North America that reach 100 percent adoption
+Conversion from flood to drip or sprinkler irrigation
+Greenhouse gas reduction factor,1 % CO2e [C]
+Source: Mohsin Hafeez et al., “A comparative analysis of water application and energy consumption at the irrigated field level,” Agricultural Water Management, Volume 97, Number 10, October 2010, pp. 1477–85; Jessica G. Charrier Klobas et al., “Changes in irrigation practices likely mitigate nitrous oxide emissions from California cropland,” Global Biochemical Cycles, October 2018, Volume 32, Number 10, pp. 1433–620, agupubs.onlinelibrary.wiley.com
+53
+24
+40 Agriculture and climate change
+
+
+Exhibit X of X
+Several levers were considered for inclusion in the MACC but ultimately excluded due to relatively low impact potential and likely overlap with other measures.
+Category
+Crops Fertilizer efficiency
+Other crop production management
+Energy or CO2
+Fertilizer-free zones
+Integrated pest management
+Shift to indoor agriculture
+Incorporation of “cover crops”
+Crop breeding for improved productivity
+Expanded acreage under irrigation
+Replace HPS lighting with LEDs in greenhouses
+Increased heating efficiency and management
+Use of renewable energy on farm
+Penetration of lightweight equipment
+Expanded usage of antibiotics
+Precision feeding
+Manure composting
+Expanded usage of recombinant bovine somatotropin
+Improved housing and bedding practices
+Decreased manure storage time
+Optimal grazing intensity (ie, rotational grazing)
+Early slaughter
+Assisted reproductive technologies
+Manure slurry acidification
+Shift fishing strategies (eg, from trawl to seine)
+Integrative multitrophic aquaculture
+Increased penetration of aquaponics
+Regeneration of fish stocks
+Potential measure
+Livestock productivity
+Feeding
+Animal proteins
+Manure management
+Other livestock systems management
+Aquaculture or fisheries
+Agriculture and climate change 41
+
+
+1 Global Warming of 1.5°C, Intergovernmental Panel on Climate Change (IPCC), October 8, 2018, ipcc.ch.
+2 For more on GHG abatement cost curves, see “Greenhouse gas abatement cost curves,” accessed February 24, 2020, McKinsey.com.
+3 “Growing at a slower pace, world population is expected to reach 9.7 billion in 2050 and could peak at nearly 11 billion around 2100,” United Nations, June 17, 2019, un.org; FAOSTAT, Food and Agriculture Organization of the United Nations, accessed September 13, 2019, fao.org.
+4 There is a high degree of uncertainty regarding land use, land-use change, and forestry (LULUCF) projections due to the volatility and unpredictability of future trends in forest gain. This is especially true for deforestation rates, which are currently on the rise in key forest biomes such as the Brazilian Amazon. As a result, this analysis assumes the average 2007–16 LULUCF emissions are constant at 5.2 GtCO2e/year until 2050 in a business-as-usual scenario, per the IPCC. For more, see Special report: Climate change and land, IPCC, accessed February 24, 2020, ipcc.ch.
+5 AR5 climate change 2013: The physical science basis, IPCC, September 2013, ipcc.ch.
+6 FAOSTAT: Enteric Fermentation (2016), Food and Agriculture Organization of the United Nations, accessed July 2019, fao.org.
+7 Estimates range from 50 percent to 85 percent, with most analysis falling at the upper end of this range; Dave S. Reay et al., “Global agriculture and nitrous oxide emissions,” Nature Climate Change, June 2012, Volume 2, Number 6, pp. 410–6, researchgate.net.
+8 Gunnar Myhre et al., “Anthropogenic and natural radiative forcing” in Climate Change 2013: The Physical Science Basis, IPCC, 2013, ipcc.ch.
+9 Sarah K. Lowder et al., “The number, size, and distribution of farms, smallholder farms, and family farms worldwide,” World Development, 2016, Volume 87, pp. 16–29.
+10 Prashanti Gandhi et al., “Which industries are the most digital (and why)?”, Harvard Business Review, April 1, 2016, hbr.org.
+11 Susanna Esther Hönle et al., “Climate change mitigation strategies for agriculture: An analysis of nationally determined contributions, biennial reports and biennial update reports,” Climate Policy, 2019, Volume 19, Number 6, pp. 688–702, tandfonline.com; accounts for the 46 countries (including the European Union as one country) that contribute 90 percent of global agricultural emissions.
+12 Joeri Rogelj et al., “Mitigation pathways compatible with 1.5°C in the context of sustainable development,” IPCC, 2019, pp. 119–20, ipcc.ch.
+13 “IAMC 1.5°C scenario explorer and hosted by IIASA,” Integrated Assessment Modeling Consortium and International Institute for Applied Systems Analysis, 2018, data.ene.iiasa.ac.at.
+14 For more on Integrated Assessment Modeling, see “Q&A: How integrated assessment models’ are used to study climate change,” Carbon Brief, October 1, 2018, carbonbrief.org
+15 The interquartile range of the Integrated Assessment Modeling (IAM) Consortium models suggests reduction in agricultural methane of 24 to 47 percent and reduction in agricultural nitrous oxide emissions of up to 26 percent. For more, see p. 14 of Special report: Global warming of 1.5°C: Summary for policymakers, IPCC, October 8, 2018, ipcc.ch.
+42 Agriculture and climate change
+Endnotes
+
+
+16 Ricardo Muñoz et al., “Estimation of the lifespan of agricultural tractors using a diffusion model at the aggregate level,” Ciencia e investigación agrarian, December 2012, Volume 39, Number 3, pp. 557–62, researchgate.net; Markus Forsgren, Erik Östgren, and Andreas Tschiesner, “Harnessing momentum for electrification in heavy machinery and equipment,” May 2019, McKinsey.com; “Commodity costs and returns,” United States Department of Agriculture Economic Research Service, accessed July 2019, ers.usda.gov; Michael Fries et al., “An overview of costs for vehicle components, fuels, greenhouse gas emissions and total cost of ownership update 2017,” UC Davis, February 2018, steps. ucdavis.edu; Electric vehicle outlook 2019, BloombergNEF, accessed July 2019, bnef.com.
+17 Forsgren et al., “Harnessing momentum.”
+18 UC Davis, “An overview of costs”; BloombergNEF, Electric vehicle outlook 2019.
+19 Muñoz et al., “Estimation of the lifespan.”
+20 “Animal genetics market by products & services (live animals [poultry, porcine, bovine, canine] genetic material [semen {bovine, porcine}], embryo [bovine, equine]) genetic testing (DNA testing, DNA typing, genetic disease testing]) forecast to 2023,” Markets and Markets, December 2018, marketsandmarkets.com; Matthew Bell et al., “Effect of breeding for milk yield, diet and management on enteric methane emissions from dairy cows,” Animal Production Science, January 2010, Volume 50, Number 8, 817–26, researchgate.net; Jan Hartger Mathijs Harmsen, “Non-CO2 greenhouse gas mitigation in the 21st century,” Utrecht University, 2019, dspace.library.uu.nl.
+21 Harmsen, “Non-CO2 greenhouse gas mitigation”; Bell et al., “Effect of breeding”; “Lower methane production through breeding,” Viking Genetics, accessed February 18, 2020, vikinggenetics.com.
+22 Harmsen, “Non-CO2 greenhouse gas mitigation”; McKinsey expert estimates; Bruce Linquist et al., “Fertilizer management practices and greenhouse gas emissions from rice systems: A quantitative review and analysis,” Science Direct, Volume 135, August 30, 2012, pp. 10–21, sciencedirect.com; Hugo A. van der Gon et al., “Sulfate-containing amendments to reduce methane emissions from rice fields: Mechanisms, effectiveness and costs,” March 2001, springer. com; Wina H.J. Crijns-Graus et al., “Marginal greenhouse gas abatement curves for agriculture,” Ecofys, August 2004, researchgate.net.
+23 Sass et al., “CH4 emissions from rice agriculture,” 2003, ipcc-nggip.iges.or.jp.
+24 Linquist et al., “Fertilizer management practices.”
+25 Expert interviews.
+26 Harmsen, “Non-CO2 greenhouse gas mitigation”; Lanigan et al., “An analysis of abatement potential of greenhouse gas emissions in Irish agriculture 2021-2030,” Teagasc Greenhouse Gas Working Group, March 2019, teagasc.ie; Alexander N. Hristov et al., “Mitigation of greenhouse gas emissions in livestock production,” FAO, 2013, fao.org ; Michael MacLeod et al., “Assessing the greenhouse gas mitigation effect of removing bovine trypanosomiasis in Eastern Africa,” Sustainability, May 2018, Volume 10, Number 5, researchgate.net; Study to model the impact of controlling endemic cattle diseases and conditions on national cattle productivity, agricultural performance and greenhouse gas emissions, ADAS, February 2015, randd.defra.goc.uk.
+27 ADAS, Study to model the impact.
+28 Thomas P. Van Boeckel et al., “Global trends in antimicrobial use in food animals,” PNAS, May 5, 2015, Volume 112, Number 18, pp. 5649–54, pnas.org; TF Landers et al., “A review of antibiotic use in food animals: Perspective, policy, and potential,” Public Health Rep, Jan–Feb 2012, Volume 127, Number 1, pp. 4–22, ncbi.nlm.nih.gov; Ziping Wu, “Antibiotic Use and Antibiotic Resistance in Food Producing Animals in China,” OECD, July 10, 2019, oecd-ilibrary.org; “Animal growth promoters and performance enhancers market by product antibiotic and non-antibiotic (hormones, acidifiers, feed enzymes, probiotics & prebiotics, phytogenics), animal (poultry, porcine, livestock, aquaculture) - global forecast to 2024,” Markets and Markets, January 2020, marketsandmarkets.com; Michael MacLeod et al., “Cost-effectiveness of greenhouse gas mitigation measures for agriculture,” OECD, August 1, 2015, oecd-ilibrary.org.
+Agriculture and climate change 43
+
+
+29 MacLeod et al., “Cost-effectiveness of greenhouse gas mitigation.”
+30 MacLeod et al., “Cost-effectiveness of greenhouse gas mitigation.”
+31 Timothy Robinson et al., Global livestock production systems, chapter 5: “Accounting for intensive livestock production,” 2011, FAO, fao.org; Frank et al., “Structural change as a key.”
+32 “Carbon farming: Reducing methane emissions from cattle using feed additives,” Australia Department of Primary Industries and Regional Development, November 21, 2019, agric.wa.gov.au.
+33 Frank et al., “Structural change as a key.”
+34 Yu Jiang et al., “Water management to mitigate the global warming potential of rice systems: A global meta-analysis,” Field Crops Research, March 15, 2019, Volume 234, pp. 47–54; M. Shahe Alam et al., “Economics of alternate wetting and drying method of irrigation: Evidences from farm level study,” The Agriculturists, December 2009, Volume 7, Numbers 1 and 2, pp. 82–95, researchgate.net; T.K. Adhya et al., “Wetting and drying: Reducing greenhouse gas emissions and saving water from rice production,” World Resources Institute, December 2014, edlis.org; variable cost index build via World Bank/FAOSTAT data; Randoph Barker et al., “Increasing water productivity for paddy irrigation in China,” Paddy and Water Environment, December 2004, Volume 2, Number 4, researchgate.net; “Adaptation and mitigation initiatives in Philippine rice cultivation,” United Nations Development Programme, November 5, 2015, undp.org; Bjoern Ole Sander et al., “Climate-based suitability assessment for alternate wetting and drying water management in the Philippines: A novel approach for mapping methane mitigation potential in rice production,” Carbon Management, 2017, Volume 8, Number 4, tandfonline.com.
+35 Barker et al., “Increasing water productivity for paddy irrigation in China”; UNDP, “Adaptation and mitigation initiatives in Philippine rice cultivation”; Sander et al., “Climate-based suitability assessment for alternate wetting and drying water management.”
+36 Crijns-Graus et al., “Marginal greenhouse gas abatement curves”; Frank et al., “Structural change as a key”; Benjamin J. DeAngelo et al., “Methane and nitrous oxide mitigation in agriculture,” International Association for Energy Economics, 2006, Volume 27, pp. 89–108, jstor.org; Benjamin van Doorslaer et al., An economic assessment of GHG mitigation policy options for EU agriculture, EU Science Hub, 2015, ec.europa.eu; ICF International, “Greenhouse gas mitigation options and costs for agricultural land and animal production within the United States,” February 2013, usda.gov; variable cost index built using World Bank/FAOSTAT data.
+37 Frank et al., “Structural change as a key.”
+38 Crijns-Graus et al., “Marginal greenhouse gas abatement curves”; Hristov et al., “Mitigation of greenhouse gas emissions”; Khalil Safaei et al., “Effects of grain processing with focus on grinding and steam-flaking on dairy cow performance,” March 8, 2017, itechopen.com; Oklahoma State University, “Cattle grain processing symposium,” November 2006, beefextension.okstate.edu; C.N. Macken et al., “The cost of corn processing for finishing cattle,” The Professional Animal Scientist, February 2006, Volume 22, Number 1, pp. 23–32, sciencedirect.com.
+39 Hristov et al., “Mitigation of greenhouse gas emissions”; Khalil Safaei et al., “Effects of grain processing”; Oklahoma State University, “Cattle grain processing symposium.”
+40 Mihn D Ngo et al., “The current adoption of dry-direct seeding rice (DDSR) in Thailand and lessons learned for Mekong River Delta of Vietnam,” CGIAR, June 28, 2019, ccafs.cgiar.org; Hongyan Liu et al., “Progress and constraints of dry direct-seeded rice in China,” Journal of Food Agriculture and Environment, May 2014, Volume 1212, Number 2, pp. 465–72, researchgate.net; Eric Scopel et al., “Direct seeding mulch-based cropping systems (DMC) in Latina America,” Agritrop, 2004, agritrop.cirad.fr; Crijns-Graus et al., “Marginal greenhouse gas abatement curves”; Debashis Chakraborty et al., “A global analysis of alternative tillage and crop establishment practices for economically and environmentally efficient rice production environmentally efficient rice production,” Scientific Reports, August 24, 2017, Volume 7, nature.com; S. Pandey et al., “Economics of direct seeding in Asia: patterns of adoption and research priorities,” August 1999, semanticsscholar.org; Mihn D Ngo et al., “The current adoption of dry-direct seeding rice (DDSR) in Thailand”; variable cost index built via World Bank/FAOSTAT data.
+41 Debashis Chakraborty et al., “A global analysis of alternative tillage and crop establishment practices.”
+42 “Animal pharm antibiotic replacement in modern animal production,” Agribusiness Intelligence, May 2018,
+44 Agriculture and climate change
+
+
+agribusinessintelligence.informa.com; Frank et al., “Structural change as a key”; KR Stackhouse et al., “Growthpromoting technologies decrease the carbon footprint, ammonia emissions, and costs of California beef production systems,” Journal of Animal Science, December 2012, Volume 90, Number 12, pp. 4656–65, ncbi.nlm.nih.gov.
+43 KL Samuelson et al., The 2015 New Mexico State and Texas Tech University survey, Journal of Animal Science, June 2016, Volume 94, Number 6, pp. 2648–63, ncbi.nlm.nih.gov; Harmsen, “Non-CO2 greenhouse gas mitigation”; Hristov et al., “Mitigation of greenhouse gas emissions”; “Animal production and health,” FAO, accessed July 2019, fao.org; Jiafa Luo et al., “Nitrous oxide and greenhouse gas emissions from grazed pastures as affected by use of nitrification inhibitor and restricted grazing regime,” Science of the Total Environment, Volume 465, November 1, 2013, pp. 107–114, sciencedirect.com.
+44 Hristov et al., “Mitigation of greenhouse gas emissions”; FAO, “Animal production and health.”
+45 Pedro Pellegrini et al., “Crop intensification, land use, and on-farm energy-use efficiency during the worldwide spread of the green revolution,” Proceedings of the National Academy of Sciences, February 2018, Volume 115, Number 10, researchgate.net; “AQUASTAT – FAO’s global information system on water and agriculture,” FAO, accessed July 2019, fao.org; Rolf Derpsch et al., “Current status of adoption of no-till farming in the world and some of its main benefits,” International Journal of Agriculture and Biological Engineering, January 2010, researchgate.net; “Food conservation agriculture,” Project Drawdown, accessed July 2019, drawdown.org; Chris van Kessel et al., “Climate, duration, and N placement determine N2O emissions in reduced tillage systems: a meta-analysis,” Global Change Biology, July 3, 2012, onlinelibrary.wiley.com; “National Aggregates of geospatial data collection: Population, landscape, and climate estimates, v3 (1990, 2000, 2010)” Center for International Earth Science Information Network – CIESIN – Columbia University, 2012, sedac.ciesin.columbia.edu; Shamsudheen Mangalassery et al., “To what extent can zero tillage lead to a reduction in greenhouse gas emissions from temperate soils?,” Scientific Reports, April 4, 2014, Volume 4, nature. com; “Tillage and no-till systems,” University of Nebraska–Lincoln, accessed July 2019, cropwatch.unl.edu; “No-till agriculture,” CropLife International, accessed July 2019, croplife.org; Stefan Frank et al., “Structural change as a key component for agricultural non-CO2 mitigation efforts,” Nature Communications, March 13, 2018, Volume 9, nature.com.
+46 Kessel et al., “Climate, duration, and N placement”; “Fuel Requirements,” University of Nebraska–Lincoln, accessed July 2019, cropwatch.unl.edu; CropLife International, “No-till agriculture.”
+47 “AQUASTAT – FAO’s global information system on water and agriculture,” FAO, accessed July 2019, fao.org.
+48 David W. Archer et al., “Economics of irrigated continuous corn under conventional-till and no-till in Northern Colorado,” Agronomy Journal, July 2008, Volume 100, Number 4, researchgate.net; Cameron M. Pittelkow et al., “When does no-till yield more? A global meta-analysis,” Elsevier, November 2015, Volume 183, pp. 156–68, sciencedirect.com; Derpsch, et al., “Current status of adoption of no-till farming.”
+49 Kessel et al., “Climate, duration, and N placement.”
+50 McKinsey Fertilizer Demand Model, 2019; International Fertilizer Association website, accessed July 2019, ifastat.org.
+51 McKinsey Fertilizer Demand Model, 2019.
+52 Controlled- and slow-release fertilizers, IHS Markit, June 2018, ihsmarkit.com; Wilfried Winiwarter, “Reducing nitrous oxide emissions from agriculture: Review on options and costs,” June 9, 2015, pure.iiasa.ac.at; David Kanter et al., “Reducing nitrogen pollution while decreasing farmers’ costs and increasing fertilizer industry profits,” Journal of Environmental Quality, March 2015, Volume 44, Number 2, researchgate.net.
+Agriculture and climate change 45
+
+
+
+
+
+
+Copyright © McKinsey & Company. All rights reserved.
+McKinsey.com

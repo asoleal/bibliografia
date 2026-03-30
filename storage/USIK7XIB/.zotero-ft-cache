@@ -1,0 +1,192 @@
+International Journal of Technology 12(1) 207-216 (2021) Received June 2020 / Revised July 2020 / Accepted November 2020
+International Journal of Technology
+http://ijtech.eng.ui.ac.id
+A Growth Kinetics Model for Black Soldier Fly (Hermetia illucens) Larvae
+Agus Prasetya1, Robby Darmawan1, Thya Laurencia Benedita Araujo1, Himawan Tri Bayu Murti Petrus1*, Felix Arie Setiawan2**
+1Department of Chemical Engineering, Universitas Gadjah Mada, Jl. Grafika No. 2, Kampus UGM Bulaksumur, Yogyakarta 55281, Indonesia 2Department of Chemical Engineering, Universitas Jember, Jl. Kalimantan No. 37, Jember, Jawa Timur 68121, Indonesia
+Abstract. Known as a promising protein source, black soldier fly (BSF) larva has attracted the attention of many researchers. BSF larvae have the ability to convert organic waste into protein. However, the growth modeling of this process has not been studied previously. Hence, this study generated a BSF larvae growth model to explain BSF larvae production. Vegetable and fruit waste collected from the Gamping fruit market was used as the growth media. The weight of larvae and the leftover substrate were measured for 20 days. The substrate consumed was related to larvae body mass. The model was properly fitted with R-squared values of 0.9988 and 0.9312 for the substrate consumption and larvae growth, respectively. The value of the kinetics constants in this study were 0.847 ± 0.018 g 0.5 day-1 for k1; 0.058 ± 0.019 g-0.5 day-1 for k2; and 0.007 ± 0.013 g-1.0 day1 for k3.
+Keywords: Black soldier fly; Growth model kinetics; Larvae; Organic waste
+1. Introduction
+Municipal solid waste (MSW) has become an interesting issue in the sustainable development of human life (Gabriel Andari Kristanto, 2015). The increasing human population directly affects the increase in MSW (Djoko M. Hartono, 2015), and waste generation will increase from 1.2 to 1.42 kg per person per day in the next 15 years (Hoornweg & Bhada-Tata, 2012). Various studies utilize MSW mostly for energy and in agricultural sectors as organic fertilizers (Othman et al., 2013; Rodionov & Nakata, 2011; Yay, 2015). Other studies have also utilized Black Soldier Fly (BSF, Hermetia illucens) larvae as a means of recycling MSW, especially organic MSW (Barragan-Fonseca et al., 2017; Čičková et al., 2015; Diener et al., 2015; Diener et al., 2011a; Diener et al., 2011b; Wynants et al., 2019). BSF larvae digest organic MSW to produce proteins, fats, and carbohydrates. The diet of BSF larva consists of mostly vegetable and fruit waste, but they can also digest the manure of humans and animals (Hussein et al., 2017; Li et al., 2011; Xiao et al., 2018). BSF larvae have the potential to curb MSW generation. The most straightforward utilization of BSF larvae is as animal feed, and a number of researchers have investigated this application (Manzano-Agugliaro et al., 2012; Sánchez-Muros et al., 2014; Tschirner and
+*Corresponding author’s email: bayupetrus@ugm.ac.id, Tel.: +62-81-327770497, Fax: +62-81-327770497 **Corresponding author’s email: felix.arie@unej.ac.id doi: 10.14716/ijtech.v12i1.4148
+
+
+208 A Growth Kinetics Model for Black Soldier Fly (Hermetia illucens) Larvae
+Simon, 2015; Surendra et al., 2016; Hussein et al., 2017; Su et al., 2019; Wynants et al., 2019). BSF larvae can also produce biodiesel through fat processing and biologically active substances (Li et al., 2011; Manzano-Agugliaro et al., 2012; Surendra et al., 2016; Su et al., 2019). With the help of enzymes contained in BSF larvae, contaminants in waste and nitrogen levels can be reduced by 50–60% and around 40–62%, respectively (Paz et al., 2015). The use of BSF larvae in MSW recycling has a low technology implementation compared to other MSW recycling methods. Furthermore, it is performed mostly in developing countries. Moreover, the BSF species needs sunlight for successful mating (Oonincx et al., 2016; Sheppard et al., 2002); therefore, BSF larvae can be produced in countries with tropical and subtropical climates. Indonesia, a developing country with a tropical climate, produces mostly organic or decaying waste (Damanhuri, 2010). This type of waste includes food or agricultural waste that decomposes easily through the activities of decomposing microorganisms (Shukor et al., 2018). Around 74% of the waste in Indonesia is domestic waste, and almost all of it is disposed of in landfills (Guerrero et al., 2013; Shekdar, 2009). According to Darmawan (2014), the majority of the organic waste in Indonesia is agricultural waste, and some of it is food waste(rice, vegetables, and leftover side dishes). By utilizing BSF larvae, organic matter can be reduced by 70% (Lalander et al., 2015). Based on some reports, the waste treatment system using BSF larvae has been proven to eliminate Salmonella sp., so that BSF is a healthy larva to be used as a protein source (Gabler & Vinnerås, 2014; LEE et al., 2018). Interestingly, the byproducts of waste treatment using BSF larvae can be used as compost (Xiao et al. (2018); Zurbrügg et al. (2018). Studies have investigated the feasibility of using BSF larvae in recycling MSW in terms of nutrition, microorganism contamination, survival rate, waste reduction index, and the efficiency of conversion of digested feed. This study developed a BSF larvae growth model in the presence of feed, such as fruit waste and vegetable waste. The growth kinetics model of BSF larvae was proposed to understand the effect of feed additives and to estimate the amount of BSF larvae produced within a specified time. The correlation between feed and BSF larvae growth was investigated in this study. Thus, the data provides information on the appropriate design methods for BSF larvae apparatus and enables the estimation of the feasibility of this recycling method.
+2. Methods
+BSF eggs were provided by the Ministry of Marine Affairs and Fisheries of the Republic of Indonesia. The fruit waste and vegetable waste (mixed vegetable waste) fed to the BSF larvae were obtained from the Gamping fruit market in Yogyakarta, Indonesia. The BSF larvae were grown using the modified container shown in Figure 1.
+Annotation:
+1. Gauze 2. Feed and BSF larvae 3. Filter 4. Liquid waste
+Figure 1 Container for BSF larvae growth
+1
+2 43
+
+
+Prasetya et al. 209
+2.1. Larvae Growth in Laboratory
+This study began with the preparation of hatch media for BSF eggs. The hatch media was a mixture of bran and vegetables (carrots, long beans, mustard greens), adapted from the study by Hakim et al. (2017). The hatched larvae were then transferred to the growth media or feed, as illustrated in Figure 1. The composition of the growth media was varied as shown in Table 1. The larvae were grown in the medium and monitored every five days for 20 days. Growth media containers were placed in the shade to protect from direct sunlight. Larvae biomass, proximate larvae, substrate reduction, temperature, and humidity were analyzed.
+Table 1 The composition of the growth media
+Variable code Vegetable
+(Mix)
+Fruit (Mango)
+V1 100% 0% V2 75% 25% V3 50% 50% V4 25% 75% V5 0% 100%
+All parameters, such as maggot weight, waste reduction, and the amount of larvae, were measured three times to ensure reproducibility. Maggot weight was measured to quantify the increase in maggot weight. Proximate analysis was carried out on the larval production media. Proximate tests consisted of protein content, fat content, water content, and ash content. The method of proximate analysis used was the official method of analysis (AOAC, 1990) (Horwitz et al., 1970). The leftover substrate was weighed every five days to determine the substrate consumed by BSF larvae. Temperature and humidity in the growth environment were measured using temperature and Rh digital equipment. The value of waste reduction was calculated based on Equation 1, proposed by (Stefan Diener et al., 2009):
+Waste reduction = Final substrate mass − initial substrate mass
+Final substrate mass (1)
+Calculations on larvae growth were also conducted to support the proposed model. The number of larvae was counted. The waste reduction fraction was calculated using Equation 2 as the input parameter to the proposed larvae growth model. The weight of the larvae was calculated and the waste reduction index (WRI) was determined using Equation 3 Stefan Diener et al. (2009).
+xs = W− R
+W (2)
+WRI = D
+t × 100 (3)
+where xs is the waste reduction fraction; W is the initial substrate in g; R is the leftover substrate in g; and t is the time duration. The efficiency of the conversion of digested feed (ECD) was calculated using Equation 4, based on the method by Scriber and Slansky Jr (1981).
+ECD = B
+(l − f) (4)
+where B is the increased weight of the larvae in g; l is the amount of substrate consumed in g; and f is the amount of leftover substrate in g.
+
+
+210 A Growth Kinetics Model for Black Soldier Fly (Hermetia illucens) Larvae
+2.2. The Proposed Larvae Growth Model
+A larvae growth model was proposed to describe the behavior of larvae in the presence of substrate. This model was proposed to understand the growth of the larvae within a specified amount of time. This model was based on the general mass balance. There was an increase in larvae body mass as a result of substrate consumption. Thus, waste reduction is a critical factor in the larvae growth model. The assumption made from this study was that larvae growth occurred in a batch reactor; hence, the input of substrate was equal to the output of substrate, which was equal to zero, as follows:
+input − output − consumption + generation = accumulation
+dms
+dt = −k1(xsms)0.5 (5)
+where ms is substrate mass in g; xs is the waste reduction fraction; t is the time in min; and k1 is the constant of substrate consumption in g 0.5 day-1. Furthermore, the mass balance of larvae growth was described as:
+input − output − consumption + generation = accumulation
+dmc
+dt = kobsmC(xsms)0.5 − k3mc2 (6)
+kobs = k2 (1 − ( t
+25))
+2
+(7)
+where mc is maggot mass in g; k2 is the constant for maggot weight growth in g-0.5 day-1; kobs is the modified constant for maggot weight growth in g-0.5 day-1; and k3 is the constant for maggot weight loss in g-1 day-1. Equations 5, 6, and 7 were analyzed simultaneously using the Matlab 2017a® software. Nonlinear data fitting was conducted to optimize the proposed model.
+3. Results and Discussion
+The larvae were successfully grown in all combination media (V1–V5) with an average mortality rate of 2.2%, as seen in Table 2. The growth of larvae depended on the substrate composition, which was related to substrate consumption.
+Table 2 The number of surviving BSF larvae
+Growth media Surviving Larvae Counted
+0 days 5 days 10 days 15 days 20 days V1 200 200 200 200 200 200 200 200 200 192 200 200 200 200 187 V2 200 200 200 200 189 200 200 200 200 197 200 200 200 200 190 V3 200 200 200 200 190 200 200 200 200 200 200 200 200 200 200 V4 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 V5 200 200 200 200 200 200 200 200 200 200 200 200 200 200 189
+
+
+Prasetya et al. 211
+The most common substrate used in previous studies for BSF larvae growth media is organic waste material (e.g., spent vegetable, spent fruit, and animal feces). Mixed vegetables and fruits are very suitable for BSF growth media. The compositions of fruit and vegetables with high protein content used in previous studies varied from 35 to 58 % and 44% wt., respectively (Mohd-Noor et al., 2017; Tinder et al., 2017). In another study by Nyakeri et al. (2017), the mixture of fruits and vegetables had a 39% wt. protein content. The weight of BSF larvae increased within the day as seen in Figure 2 but decreased afterward. The BSF larva life cycle explains this phenomenon. Generally, the BSF larva life cycle occurs for 25 days. This was noted in Equation 7 as the value of kobs . The most effective BSF larva harvest occurs from days 14–16 because during that time, their dry mass increases by 4,000 times (Liu et al., 2017). BSF larvae weight increased as the amount of the substrate decreased.
+Figure 2 BSF larvae and substrate weights
+Before constructing the BSF larvae growth model, xs was calculated. The value of xs is presented in Table 3 and was inputted to Equations 5 and 6. The different substrate compositions affected the consumption rate of the BSF larvae. Hence, this variable is important in calculating the growth of BSF larvae.
+Table 3 The value of the waste reduction fraction
+Repetition Growth media
+V1 V2 V3 V4 V5
+1 0.440 0.461 0.483 0.487 0.540 2 0.435 0.465 0.485 0.485 0.532 3 0.437 0.473 0.470 0.481 0.521 Average 0.437 ± 0.002 0.466 ± 0.006 0.479 ± 0.008 0.485 ± 0.003 0.531 ± 0.009
+The result of waste reduction is provided in Figure 3, which illustrates the comparison between waste reduction data within 20 days and the model fitting. The model fitting of waste reduction had an R-squared value of 0.9988 with a slope of 0.9939. The R-squared
+0 5 10 15 20
+200
+250
+300
+350
+400
+Larvae weight V1 Larvae weight V2 Larvae weight V3 Larvae weight V4 Larvae weight V5 Substrate weight V1 Substrate weight V2 Substrate weight V3 Substrate weight V4 Substrate weight V5
+Time, days
+Substrate weight, g
+0
+5
+10
+15
+20
+25
+Total larvae weight, g
+
+
+212 A Growth Kinetics Model for Black Soldier Fly (Hermetia illucens) Larvae
+and slope values were significant. The model resulted in a k1 value of 0.845±0.016 g0.5 day
+1.
+(a) (b)
+Figure 3 Waste reduction data: (a) within 20 days; and (b) model fitting
+Therefore, as described in Equation 7, the larvae growth model can provide the value of k2, which generates the value of kobs, while Equation 6 can generate the value of k3. The values of k2 and k3 from the modeling were 0.060±0.016 g-0.5 day-1 and 0.007±0.010 g-1.0 day-1, respectively. Thus, the value of kobs can be formulated based on Equation 7, as presented in Equation 8.
+kobs = 0.060 × (1 − ( t
+25))
+2
+(8)
+The fitting of the larvae growth model is illustrated in Figure 4. The BSF larvae weight within the 20-day period is presented in Figure 4a. The BSF larvae weights and model comparison is plotted in Figure 4b. The model fitting had slope and R-squared values of 1.0434 and 0.9312, respectively. This indicates that the model is appropriate for use.
+(a) (b)
+Figure 4 BSF Larvae weight: (a) within 20 days; and (b) model fitting
+As described above, k1, which is the constant of substrate consumption, significantly affects BSF larvae growth, and k2 and k3 are related to maggot weight growth. Thus, Equations 5 and 6 can be replaced with Equations 9 and 10 as follows:
+0 10 20
+200
+300
+400
+Waste reduction, g
+Time, days
+V1 model V2 model V3 model V4 model V5 model V1 data V2 data V3 data V4 data V5 data
+200 300 400
+200
+300
+400
+Waste reduction model, g
+Waste reduction data, g
+Equation y = b*x Slope 0.9939 ± 0.0069 Adj. R-Squared 0.9988
+0 10 20
+0
+10
+20
+30
+Larvae weight, g
+Time, days
+V1 model V2 model V3 model V4 model V5 model V1 data V2 data V3 data V4 data V5 data
+0 10 20 30
+0
+10
+20
+30
+Larvae growth model, g
+Larvae growth data, g
+Equation y = b*x Slope 1.0434 ± 0.0566 Adj. R-Squared 0.9312
+
+
+Prasetya et al. 213
+dms
+dt = −0.845(xsms)0.5 (9)
+dmc
+dt = 0.060 × (1 − ( t
+25))
+2
+mC(xsms)0.5 − 0.007mc2 (10)
+Other parameters for describing the BSF larvae, such as proximate analysis and waste reduction index, as seen in Tables 4 and 5, respectively, were calculated. Proximate analysis was carried out for the V4 and V5 samples.
+Table 4 Proximate analysis of BSF larvae
+Analysis This Study (Liu et al., 2017)
+Water content, % 77.72 74.70 - Protein, % wt. 10.26 10.12 46.20 43.80 Crude fat, % wt. 8.00 10.99 8.20 7.20
+The proximate analysis was conducted using BSF larvae that were 20 days old. The protein content of larvae in this study was not comparable with that in the study by Liu et al. (2017) because of the different substrate compositions. A high protein content in the feed substrate enables the larvae to convert their body mass. The values of crude fat in the two studies were similar.
+Table 5 Waste reduction indices
+Repetition Growth media
+V1 V2 V3 V4 V5 1 10.99 11.54 12.08 12.18 13.49 2 10.89 11.62 12.13 12.12 13.31 3 10.93 11.82 11.74 12.04 13.03 Average 10.94±0.05 11.66±0.14 11.98±0.21 12.11±0.07 13.28±0.23
+A visual representation of BSF larvae growth is presented in Figure 5. The sizes of the larvae increased. The larvae growth was consistent with the growth stages observed in the study by (Liu et al., 2017): (0 day)–Larvae stage (7 days)–Pre pupa stage (13 days)–Pupa stage (19 days). On day 13, some of the BSF larvae changed to a dark color, signifying the start of the pupa stage, and the number of BSF larvae in the pupa stage on day 19 was increasing compared to the number on day 13.
+Figure 5 Visualization of BSF larvae growth
+
+
+214 A Growth Kinetics Model for Black Soldier Fly (Hermetia illucens) Larvae
+The BSF larvae growth model could be useful in predicting scale-up processes such as the optimum cultivation day, the final maggot mass, and the substrate mass requirement. Previous studies have not predicted the larvae growth model. According to the BSF larvae growth model, the waste reduction fraction, substrate mass, and cultivation time are important for larvae growth. However, further research should be conducted to investigate the waste reduction fraction variable for more specific parameters that will make the scaleup production more feasible.
+4. Conclusions
+This study resulted in the construction of the first ever BSF larvae growth model. The R-squared values of the model for substrate consumption and larvae growth were
+0.9988 and 0.9312, respectively. The BSF larvae growth model was dms
+dt =
+−0.845(xsms)0.5 and dmc
+dt = kobsmC(xsms)0.5 − 0.007mc2 with kobs = 0.060 × (1 −
+(t
+25))
+2
+. The growth model could be useful in scale-up calculations. However, further
+research should be conducted to analyze and break down the waste reduction fraction variable to uncover the parameters that affect BSF larvae growth.
+References
+Barragan-Fonseca, K.B., Dicke, M., van Loon, J.J., 2017. Nutritional Value of the Black Soldier Fly (Hermetia illucens L.) and its Suitability as Animal Feed–a Review. Journal of Insects as Food and Feed, Volume 3(2), pp. 105–120 Čičková, H., Newton, G.L., Lacy, R.C., Kozánek, M., 2015. The Use of Fly Larvae for Organic Waste Treatment. Waste Management, Volume 35, pp. 68–80 Damanhuri, E., 2010. Diktat Pengelolaan Sampah (Waste Management Dictate). Jurusan Teknik Lingkungan FTSL ITB, pp. 5–30
+Darmawan, M., 2014. Kajian pengolahan sampah di TPST Mulyoagung Bersatu, Kecamatan Dau, Kabupaten Malang (Study of Solid Waste Treatment at Mulyoagung Bersatu Recycling Facility in Dau Sub-District, Malang District). Bachelor Graduate Program, Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia Diener, S., Lalander, C., Zurbrügg, C., Vinnerås, B., 2015. Opportunities and Constraints for Medium-Scale Organic Waste Treatment with Fly Larvae Composting. In: Proceedings of the 15th International Waste Management and Landfill Symposium, Cagliari, Sardinia Diener, S., Solano, N.M.S., Gutiérrez, F.R., Zurbrügg, C., Tockner, K., 2011b. Biological Treatment of Municipal Organic Waste using Black Soldier Fly Larvae. Waste and Biomass Valorization, Volume 2(4), pp. 357–363
+Diener, S., Zurbrügg, C., Gutiérrez, F.R., Nguyen, D.H., Morel, A., Koottatep, T., Tockner, K., 2011a. Black Soldier Fly Larvae for Organic Waste Treatment-Prospects and Constraints. Proceedings of the WasteSafe, Volume 2, pp. 13–15 Diener, S., Zurbrügg, C., Tockner, K., 2009. Conversion of Organic Material by Black Soldier Fly Larvae: Establishing Optimal Feeding Rates. Waste Management & Research, Volume 27(6), pp. 603–610
+Gabler, F., Vinnerås, B., 2014. Using Black Soldier Fly for Waste Recy-cling and Effective Salmonella spp. Reduction. (Project based internship). Swedish University of Agricultural Sciences, Swedish Guerrero, L.A., Maas, G., Hogland, W., 2013. Solid Waste Management Challenges for Cities in Developing Countries. Waste Management, Volume 33(1), pp. 220–232
+
+
+Prasetya et al. 215
+Hakim, A.R., Prasetya, A., Petrus, H.T., 2017. The Potential of Hermetia illucens Larvae as Reducer of Industrial Fish Processing Waste. Jurnal Perikanan Universitas Gadjah Mada, Volume 19(1), 39–44 Hartono, D.M, Kristanto, G.A., Amin, S., 2015. Potential Reduction of Solid Waste Generated from Traditional and Modern Markets. International Journal of Technology, Volume 6(5), pp. 291–319
+Hoornweg, D., Bhada-Tata, P., 2012. What a Waste: A Global Review of Solid Waste Management. Urban Development Series; Knowledge Papers no. 15. World Bank, Washington, DC, World Bank Horwitz, W., Chichilo, P., Reynolds, H., 1970. Official Methods of Analysis of the Association of Official Analytical Chemists. In: Official Methods of Analysis of the Association of Official Analytical Chemists.: Washington, DC, USA: Association of Official Analytical Chemists Hussein, M., Pillai, V.V., Goddard, J.M., Park, H.G., Kothapalli, K.S., Ross, D.A., Ketterings, Q.M., Brenna, J.T., Milstein, M.B., Marquis, H., 2017. Sustainable Production of Housefly (Musca domestica) Larvae as a Protein-Rich Feed Ingredient by Utilizing Cattle Manure. PLoS One, Volume 12(2), e0171708 Kristanto, G.A., Gusniani, I., Ratna, A., 2015. The Performance of Municipal Solid Waste Recycling Program in Depok, Indonesia. International Journal of Technology, Volume 6(2), pp. 291–319 Lalander, C.H., Fidjeland, J., Diener, S., Eriksson, S., Vinnerås, B., 2015. High Waste-ToBiomass Conversion and Efficient Salmonella Spp. Reduction using Black Soldier Fly for Waste Recycling. Agronomy for Sustainable Development, Volume 35(1), pp. 261–271 Lee, J.-A., Kim, Y.-M., Park, Y.-K., Yang, Y.-C., Jung, B.-G., Lee, B.-J., 2018. Black Soldier Fly (Hermetia Illucens) Larvae Enhances Immune Activities and Increases Survivability of Broiler Chicks Against Experimental Infection of Salmonella Gallinarum. Journal of Veterinary Medical Science, Volume 80(5), pp. 736–740
+Li, Q., Zheng, L., Qiu, N., Cai, H., Tomberlin, J.K., Yu, Z., 2011. Bioconversion of Dairy Manure by Black Soldier Fly (Diptera: Stratiomyidae) for Biodiesel and Sugar Production. Waste Management, Volume 31(6), pp. 1316–1320 Liu, X., Chen, X., Wang, H., Yang, Q., ur Rehman, K., Li, W., Cai, M., Li, Q., Mazza, L., Zhang, J., 2017. Dynamic Changes of Nutrient Composition Throughout the Entire Life Cycle of Black Soldier Fly. PLoS One, Volume 12(8): e0182601. https://doi.org/10.1371/journal.pone.0182601 Manzano-Agugliaro, F., Sanchez-Muros, M., Barroso, F., Martínez-Sánchez, A., Rojo, S., PérezBañón, C., 2012. Insects for Biodiesel Production. Renewable and Sustainable Energy Reviews, Volume 16(6), pp. 3744–3753 Mohd-Noor, S.-N., Wong, C.-Y., Lim, J.-W., Uemura, Y., Lam, M.-K., Ramli, A., Bashir, M.J., Tham, L., 2017. Optimization of Self-Fermented Period of Waste Coconut Endosperm Destined to Feed Black Soldier Fly Larvae in Enhancing the Lipid and Protein Yields. Renewable Energy, Volume 111, pp. 646–654 Nyakeri, E., Ogola, H., Ayieko, M., Amimo, F., 2017. An Open System for Farming Black Soldier Fly Larvae as a Source of Proteins for Smallscale Poultry and Fish Production. Journal of Insects as Food and Feed, Volume 3(1), pp. 51–56
+Oonincx, D., Volk, N., Diehl, J., Van Loon, J., Belušič, G., 2016. Photoreceptor Spectral Sensitivity of the Compound Eyes of Black Soldier Fly (Hermetia illucens) Informing the Design of LED-based Illumination to Enhance Indoor Reproduction. Journal of Insect Physiology, Volume 95, pp. 133–139
+
+
+216 A Growth Kinetics Model for Black Soldier Fly (Hermetia illucens) Larvae
+Othman, S.N., Noor, Z.Z., Abba, A.H., Yusuf, R.O., Hassan, M.A.A., 2013. Review on Life Cycle Assessment of Integrated Solid Waste Management in Some Asian Countries. Journal of Cleaner Production, Volume 41, pp. 251–262
+Paz, A.S.P., Carrejo, N.S., Rodríguez, C.H.G., 2015. Effects of Larval Density and Feeding Rates on the Bioconversion of Vegetable Waste using Black Soldier Fly Larvae Hermetia illucens (L.),(Diptera: Stratiomyidae). Waste and Biomass Valorization, Volume 6(6), pp. 1059–1065 Rodionov, M., Nakata, T., 2011. Design of an Optimal Waste Utilization System: A Case Study in St. Petersburg, Russia. Sustainability, Volume 3(9), pp. 1486–1509 Sánchez-Muros, M.-J., Barroso, F.G., Manzano-Agugliaro, F., 2014. Insect Meal as Renewable Source of Food for Animal Feeding: A Review. Journal of Cleaner Production, Volume 65, pp. 16–27 Scriber, J., Slansky Jr, F., 1981. The Nutritional Ecology of Immature Insects. Annual Review of Entomology, Volume 26(1), pp. 183–211 Shekdar, A.V., 2009. Sustainable Solid Waste Management: An Integrated Approach for Asian Countries. Waste Management, Volume 29(4), pp. 1438–1448 Sheppard, D.C., Tomberlin, J.K., Joyce, J.A., Kiser, B.C., Sumner, S.M., 2002. Rearing Methods for the Black Soldier Fly (Diptera: Stratiomyidae). Journal of Medical Entomology, Volume 39(4), pp. 695–698 Shukor, J.A., Omar, M.F., Kasim, M.M., Jamaludin, M.H., Naim, M.A., 2018. Assessment of Composting Technologies for Organic Waste Management. International Journal of Technology, Volume 9(8), pp. 291–319 Su, C.-H., Nguyen, H.C., Bui, T.L., Huang, D.-L., 2019. Enzyme-Assisted Extraction of Insect Fat for Biodiesel Production. Journal of Cleaner Production, Volume 223, pp. 436–444 Surendra, K., Olivier, R., Tomberlin, J.K., Jha, R., Khanal, S.K., 2016. Bioconversion of Organic Wastes into Biodiesel and Animal Feed via Insect Farming. Renewable Energy, Volume 98, pp. 197–202 Tinder, A.C., Puckett, R., Turner, N., Cammack, J., Tomberlin, J., 2017. Bioconversion of Sorghum and Cowpea by Black Soldier Fly (Hermetia illucens (L.)) Larvae for Alternative Protein Production. Journal of Insects as Food and Feed, Volume 3(2), pp. 121–130 Tschirner, M., Simon, A., 2015. Influence of Different Growing Substrates and Processing on the Nutrient Composition of Black Soldier Fly Larvae Destined for Animal Feed. Journal of Insects as Food and Feed, Volume 1(4), pp. 249–259
+Wynants, E., Frooninckx, L., Crauwels, S., Verreth, C., De Smet, J., Sandrock, C., Wohlfahrt, J., Van Schelt, J., Depraetere, S., Lievens, B., 2019. Assessing the Microbiota of Black Soldier Fly Larvae (Hermetia illucens) Reared on Organic Waste Streams on Four Different Locations at Laboratory and Large Scale. Microbial Ecology, Volume 77(4), pp. 913–930 Xiao, X., Mazza, L., Yu, Y., Cai, M., Zheng, L., Tomberlin, J.K., Yu, J., van Huis, A., Yu, Z., Fasulo, S., 2018. Efficient Co-conversion Process of Chicken Manure into Protein Feed and Organic Fertilizer by Hermetia illucens L. (Diptera: Stratiomyidae) larvae and Functional Bacteria. Journal of Environmental Management, Volume 217, pp. 668–676 Yay, A.S.E., 2015. Application of Life Cycle Assessment (LCA) for Municipal Solid Waste Management: A Case Study of Sakarya. Journal of Cleaner Production, Volume 94, pp. 284–293 Zurbrügg, C., Dortmans, B., Fadhila, A., Verstappen, B., Diener, S., 2018. From Pilot to Full Scale Operation of a Waste-To-Protein Treatment Facility. Detritus, Volume 1(1), pp. 18

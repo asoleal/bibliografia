@@ -1,0 +1,618 @@
+Mathematical analysis of an
+anaerobic digestion model for
+biogas production from solid waste
+Iliyass Ahlamine1, Abdellah Alla1,2 & Noha El Khattabi1,2
+Municipal solid waste is one of the most significant sources of gas emissions. In a context of renewable energy production and greenhouse gas emission reduction, we focus on the amount of biogas
+produced by the anaerobic digestion of organic matter in a controlled landfill environment. We present a mathematical model describing this process from a microbiological and biochemical point of view, including the dynamics of the methane and carbon dioxide produced. A qualitative analysis of the dynamic system shows the existence of an infinite number of non-hyperbolic equilibria inducing an attractor that has been identified. Through numerical tests, we explore how the non-connectivity of the attractor resulting from the choice of growth functions can entirely transform the performance of the process, and highlight critical initial stock values that influence the amount of biogas produced.
+Keywords Biogas production, Anaerobic digestion, Dynamical systems theory, Stable manifold theorem, Optimal initial stock
+List of symbols
+Ss Total concentration of biodegradable organic substrate (g/l) Sdc Dissolved organic substrate concentration (g/l) Xa Acidogenic biomass concentration (g/l) Sac Acetate substrate concentration (g/l) Xm Methanogenic biomass concentration (g/l) CH4 Methane concentration (g/l) CO2 Carbon dioxide concentration (g/l) Y Vector of variables ya Mass conversion rate of dissolved organic substrate into acidogenic biomass ym Mass conversion rate of acetate substrate into methanogenic biomass yac Acetate substrate conversion yield yCH4 Methane conversion yield Kd Half-saturation constant of dissolved organic substrate (g/l) Ka Half-saturation constant of acetate substrate (g/l) Kid Inhibition constant of dissolved organic substrate (g/l) Kia Inhibition constant of acetate substrate (g/l)
+kh Hydrolysis constant of biodegradable organic substrate (day−1)
+da Death rate of acidogenic bacteria (day−1)
+dm Death rate of methanogenic bacteria (day−1)
+μamax Maximum growth rate of acidogenic bacteria (day−1)
+μmmax Maximum growth rate of methanogenic bacteria (day−1) t Time (day)
+Sd∗c Limit concentration of dissolved organic substrate (g/l)
+Sa∗c Limit concentration of acetate substrate (g/l)
+̂CH4 Limit concentration of methane (g/l)
+̂CO2 Limit concentration of carbon dioxide (g/l) μa(.) Growth function of acidogenic bacteria μm(.) Growth function of methanogenic bacteria
+The bio-degradation process of municipal waste in landfills consists of a succession of chemical reactions catalyzed by bacteria, which transform slowly the organic matter contained in the waste into mineral or gaseous
+1LAMA Laboratory, Department of Mathematics, Faculty of Sciences, Mohammed V University in Rabat, Rabat, Morocco. 2these authors contributed equally to this work. email: iliyass.ahlamine@um5r.ac.ma
+OPEN
+Scientific Reports | (2024) 14:25934 1
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports
+
+
+elements. This transformation of organic matter can be decomposed in many steps, which differ depending on the environment being under aerobic or anaerobic conditions. The aerobic digestion lasts only a few days after the waste is deposited in the landfill, where oxygen is present in the void spaces. During this period, the biogas produced is mainly carbon dioxide. The anaerobic digestion operates within a closed environment where, in the absence of oxygen, organic matter is gradually converted into biogas, primarily composed of carbon dioxide and
+methane1,2. This process unfolds in four major stages: first, hydrolysis breaks down insoluble organic polymers into soluble derivatives that become accessible to other bacteria. Next, during acidogenesis, acidogenic bacteria convert these sugars and amino acids into carbon dioxide, hydrogen, ammonia, and organic acids. In the acetogenesis stage, these organic acids are further processed by bacteria into acetic acid, along with additional ammonia, hydrogen, and carbon dioxide. Finally, methanogens convert these end products into methane and
+carbon dioxide, completing the biogas production process3,4. The mathematical modeling of the anaerobic digestion process in landfills holds significant importance for multiple reasons. It’s a fundamental tool for optimizing, and managing the generation of biogas, offering essential prospects for environmental sustainability and energy recovery. In the literature, various models have been developed to describe the anaerobic digestion process and the associated microbial dynamics, aiming to better understand and optimize digester performance under varying
+microbial conditions5–13.The Anaerobic Digestion Model No. 1 (ADM1) is a structural model that outlines the
+four main stages of anaerobic digestion leading to biogas production5. However, its complexity, due to a large number of equations, makes difficult its analysis. To overcome this, simplified models have been proposed.
+Rouez’s model6 uses a two-step process (hydrolysis/acidogenesis and methanogenesis), and was mathematically
+analysed later by Ouchtout et al.14 highlighting the impact of the selected bacterial growth functions. In the
+context of wastewater treatment, the (AM2) model by Bernard et al.7 is notable, incorporating Monod growth for acidogenesis and Haldane growth for methanogenesis. This choice is well-suited for control and optimization, as
+demonstrated by the stability analysis conducted by Benyahia et al.15 Furthermore, in the context of co-digestion,
+where multiple types of substrates are mixed, Berga et al.16 have provided a mathematical analysis of Rakmak et
+al.’s two-step model (hydrolysis/acidogenesis and methanogenesis)8, and highlighting the influence of the chosen
+bacterial growth functions. However, the Halvadakis model9, which captures the natural process of anaerobic digestion, is of particular interest for our study. This model provides a comprehensive description of the three main stages: hydrolysis, acidogenesis, and methanogenesis. The model considers biodegradable organic matter (easily, intermediate, and slowly), which is hydrolyzed into a dissolved organic substrate. This substrate is then transformed into acetate substrate and carbon dioxide by the acidogenic biomass. The methanogenic biomass uses the acetate substrate to produce methane and additional carbon dioxide. The substrate utilization by biomass is determined by the Monod bacterial growth function. The model also takes into account the decomposition of dead acidogenic bacteria, which is converted to acetate and carbon dioxide, and the decomposition of dead methanogenic bacteria, which is converted to methane and carbon dioxide. In this study, we perform a mathematical analysis of the Halvadakis dynamical system, incorporating bacterial
+growth functions μa(.) and μm(.), which can be of either the Monod or Haldane type17,18. Regardless of the growth function selected, our analysis confirms the existence of an infinite number of non-hyperbolic equilibria toward which the system’s trajectories converge. By employing Barbalat’s lemma and the stable manifold theorem, we identify the attractor of the dynamical system and derive an expression for the biogas produced based on initial substrate concentrations and their limiting values. Through numerical simulation, we demonstrate how the process performance is influenced by the connectivity of the attractor when the Monod growth function is chosen, and by its non-connectivity when the Haldane growth function is applied. Furthermore, we demonstrate that biogas production, as a function of the initial stock concentration, exhibits five changes in monotonicity. These changes are driven by the four regions of convergence of substrate concentrations that result from the selection of the Haldane growth function. We also analyze the impact of bacterial mortality rates on biogas production, highlighting their significant role in the overall process.
+Description of the model
+In this section, we introduce the mathematical model for anaerobic digestion, inspired by the Halvadakis model. Initially, the biodegradable organic substrate present in the waste, with easily, intermediate, and slowly degradable components, breakdown into dissolved organic substrate with an hydrolysis constant kh. The
+dissolved organic substrate is then consumed by acidogenic biomass at a rate of 1
+ya
+μa(Sdc). A portion of this
+consumption supports the growth of the acidogenic biomass, which is modeled as a natality rate μa(Sdc) minus
+a mortality rate da. The remainder of the consumed substrate, expressed as 1 − ya
+ya
+μa(Sdc), is partially converted
+to acetate substrate with a yield yac, while the rest is transformed into carbon dioxide with a yield of (1 − yac). A similar process applies to the acetate substrate and methanogenic biomass. The acetate substrate is consumed by
+methanogenic biomass at a rate of 1
+ym
+μm(Sac). Part of this consumption is used for the growth of methanogenic
+biomass, described by a natality rate μm(Sac) minus a mortality rate dm. The remaining portion, expressed as 1 − ym
+ym
+μm(Sac), leads to the production of methane with a yield yCH4, while the remainder produces carbon
+dioxide with a yield of (1 − yCH4). The model also emphasizes the significant role of mortality rates in biogas production. These rates are included in the equations for biogas production because they account for the natural decrease in biomass. This decrease influences substrate availability, which in turn affects the rates of methane
+Scientific Reports | (2024) 14:25934 2
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+and carbon dioxide production.The mathematical model of the process described in Fig. 1 is formulated through a system of differential equations. This system is represented as follows:
+
+
+dSs
+dt = −khSs
+dSdc
+dt = khSs − 1
+ya
+μa(Sdc)Xa
+dXa
+dt = (μa(Sdc) − da) Xa
+dSac
+dt = yac
+1 − ya
+ya
+μa(Sdc) + da
+
+Xa − 1
+ym
+μm(Sac)Xm
+dXm
+dt = (μm(Sac) − dm) Xm.
+(1)
+
+
+dC H4
+dt = yCH4
+1 − ym
+ym
+μm(Sac) + dm
+
+Xm
+dC O2
+dt = (1 − yac)
+1 − ya
+ya
+μa(Sdc) + da
+
+Xa + (1 − yCH4)
+1 − ym
+ym
+μm(Sac) + dm
+
+Xm.
+(2)
+The bacterial growth functions denoted as μa and μm, are two C1-functions defined on R by:
+• Monod law:
+μa(Sdc) = μamaxSdc
+Kd + Sdc
+and μm(Sac) = μmmaxSac
+Ka + Sac
+, ∀Sdc, Sac ∈ R+, or :
+•
+• Haldane law:
+μa(Sdc) = μamaxSdc
+Kd + Sdc + Sd2c
+Kid
+and μm(Sac) = μmmaxSac
+Ka + Sac + Sa2c
+Kia
+, ∀Sdc, Sac ∈ R+.
+Fig. 1. Schematic representation of anaerobic digestion process in landfill.
+Scientific Reports | (2024) 14:25934 3
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+• Haldane’s law includes inhibition effects, providing a more realistic representation of bacterial growth at high substrate concentrations. Monod’s growth function is appropriate for simpler systems with lower substrate concentrations and minimal inhibition effects, while the Haldane function is better suited for complex scenarios involving significant substrate inhibition, although it can affect biogas production. In the model, we have:
+Variables:
+Ss: Total concentration of biodegradable organic substrate (g/l), Sdc: Dissolved organic substrate concentration (g/l), Xa: Acidogenic biomass concentration (g/l), Sac: Acetate substrate concentration (g/l), Xm: Methanogenic biomass concentration (g/l), CH4: Methane concentration (g/l), CO2: Carbon dioxide concentration (g/l). Parameters:
+ya: mass conversion rate of dissolved organic substrate into acidogenic biomass, ym: mass conversion rate of acetate substrate into methanogenic biomass, yac: acetate substrate conversion yield, yCH4: methane conversion yield.
+Kd: half-saturation constant of dissolved organic substrate (g/l), Ka: half-saturation constant of acetate substrate (g/l), Kid: inhibition constant of dissolved organic substrate (g/l), Kia: inhibition constant of acetate substrate (g/l),
+kh: hydrolysis constant of biodegradable organic substrate (day−1),
+da: death rate of acidogenic bacteria (day−1),
+dm: death rate of methanogenic bacteria (day−1).
+μamax: maximum growth rate of acidogenic bacteria (day−1),
+μmmax: maximum growth rate of methanogenic bacteria (day−1). The model parameters satisfy the following conditions. H1 . The substrate-biomass yields are strictly positives and:
+ya, ym, yac, yCH4 ∈ (0, 1).
+H2 . The hydrolysis, half saturation and inhibition constants are strictly positives:
+kh, Kd, Ka, Kid, Kia > 0.
+H3 . The bacterial death rates are strictly positives and less than the maximum growth rates:
+0 < da < μmax
+a and 0 < dm < μmax
+m.
+We define the non-empty sets:
+ξdc = {s ∈ R+; μa(s) ≤ da} and ξac = {s ∈ R+; μm(s) ≤ dm}.
+For the Monod expression, we have:
+ξdc = [0, λa] with λa = daKd
+μamax − da
+, (3)
+and
+ξac = [0, λm] with λm = dmKa
+μmmax − dm
+. (4)
+For the Haldane expression, we have:
+ξdc = [0, λ−
+a ] ∪ [λ+
+a , +∞) with λ±
+a = μamax − da ± √∆a
+2da/Kid
+, (5)
+and
+ξac = [0, λ−
+m] ∪ [λ+
+m, +∞) with λ±
+m = μmmax − dm ± √∆m
+2dm/Kia
+, (6)
+where
+Scientific Reports | (2024) 14:25934 4
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+∆a = (da − μmax
+a )2 − 4 Kd
+Kid
+d2
+a and ∆m = (dm − μmax
+m )2 − 4 Ka
+Kia
+d2
+m.
+Study of the asymptotic behavior
+As our system (1)–(2) satisfies the conditions of Cauchy-Lipschitz theorem, the existence and uniqueness of the solution with a given initial value is guaranteed. We begin with a result on the non-negativity and boundedness of the solution.
+Proposition1 Underhypothesis(H1-H3),foranynon-negativeinitialcondition(Ss0, Sd0c, Xa0, Sa0c, X0m, CH40, CO20) , the solution
+(Ss(.), Sdc(.), Xa(.), Sac(.), Xm(.), CH4(.), CO2(.)) of (1)–(2) is non-negative and bounded.
+Proof We will demonstrate the non-negativity of each component of the solution.
+• For the component Ss, we have dSs
+dt = −khSs with Ss(0) = Ss0, which implies Ss(t) = Ss0e−kht. If Ss0 ≥ 0,
+then for all t ≥ 0, we have Ss(t) ≥ 0.
+• ForthecomponentSdc,wehave dSdc
+dt = khSs − 1
+ya
+μa(Sdc)Xa withSdc(0) = Sd0c.Wehave dSdc
+dt ≥ − 1
+ya
+μa(Sdc)Xa
+for all t ≥ 0. According to the comparison theorem19, if Sd0c > S0, then Sdc(t) > S(t), such that S(t) is a solution of the differential equation:
+dS
+dt = − 1
+ya
+μa(S)Xa, S(0) = S0. (7)
+If S0 = 0, then S ≡ 0 is the only solution of (7), thus S(t) > 0 when S0 > 0 for all t ≥ 0. Then, if Sd0c > 0, we
+have Sdc(t) > 0 for all t ≥ 0.
+• For the component Xa, we have dXa
+dt = (μa(Sdc) − da) Xa with Xa(0) = Xa0. The term (μa(Sdc) − da) Xa is
+linear with respect to Xa, thus if Xa0 ≥ 0, we have Xa(t) ≥ 0 for all t ≥ 0.
+• For the component Sac, we have dSac
+dt = yac
+(1 − ya
+ya
+μa(Sdc) + da
+)
+Xa − 1
+ym
+μm(Sac)Xm with Sac(0) = Sa0c
+. We have dSac
+dt ≥ − 1
+ym
+μm(Sac)Xm for all t ≥ 0. According to the comparison theorem, if Sa0c > S0, then
+Sac(t) > S(t), such that S(t) is a solution of the differential equation:
+dS
+dt = − 1
+ym
+μm(S)Xm, S(0) = S0. (8)
+If S0 = 0, then S ≡ 0 is the only solution of (8), thus S(t) > 0 when S0 > 0 for all t ≥ 0. Then, if Sa0c > 0, we have Sac(t) > 0 for all t ≥ 0.
+• For the component Xm, we have dXm
+dt = (μm(Sac) − dm) Xm with Xm(0) = X0m. The term (μm(Sac) − dm) Xm
+is linear with respect to Xm, thus if X0m ≥ 0, we have Xm(t) ≥ 0 for all t ≥ 0. • From the above, we deduce the non-negativity of the components CH4 and CO2.For boundedness, it suffices to notice that our system is closed, that is:
+dSs
+dt + dSdc
+dt + dXa
+dt + dSac
+dt + dXm
+dt + dCH4
+dt + dCO2
+dt = 0,
+so, there exists a positive constant C such that for all t ≥ 0, we have:
+Scientific Reports | (2024) 14:25934 5
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+Ss(t) + Sdc(t) + Xa(t) + Sac(t) + Xm(t) + CH4(t) + CO2(t) = C. (9)
+Hence, the result is proven. □
+Next, we proceed to investigate the asymptotic behaviour of (1).
+Proposition 2 Under hypothesis (H1-H3), for any non-negative initial condition (Ss0, Sd0c, Xa0, Sa0c, X0m), the solution of (1) verifies:
+1. t l→i+m∞ Ss(t) = t l→i+m∞ Xa(t) = t l→i+m∞ Xm(t) = 0.
+2. There exist two positive real numbers Sd∗c and Sa∗c, which satisfy:
+t l→i+m∞ Sdc(t) = S∗
+dc and t l→i+m∞ Sac(t) = S∗
+ac.
+Proof We have t l→i+m∞ Ss(t) = t l→i+m∞ Ss0e−kht = 0. To prove the convergence of Xa and Sdc, we consider the C1
+-function defined on [0, +∞) as follows:
+V1(t) = Ss(t) + 1
+ya
+Xa(t) + Sdc(t).
+We have:
+dV1
+dt = −da
+ya
+Xa.
+Since Xa is non-negative, then V1 is non-increasing, and minored by 0. So there exists a real l1 ≥ 0 such that t l→i+m∞ V1(t) = l1(l1 < ∞). Moreover, one has:
+d2V1
+dt2 = −da
+ya
+(μa(Sdc) − da) Xa.
+Since d2V1
+dt2 is bounded, dV1
+dt is uniformly continuous. According to Barbalat’s lemma20, we have t l→i+m∞
+dV1
+dt (t) = 0
+. Then t l→i+m∞ Xa(t) = 0.
+Additionally, since t l→i+m∞ V1(t) = t l→i+m∞ Ss(t) + 1
+ya
+Xa(t) + Sdc(t) = l1, we have t l→i+m∞ Sdc(t) = Sd∗c = l1.
+Similarly for Xm and Sac, we consider the C1-function defined on [0, +∞) as follows:
+V2(t) = Sac(t) + 1
+ym
+Xm(t) + yac (Ss(t) + Xa(t) + Sdc(t)) ,
+we prove that t l→i+m∞ Xm(t) = 0 and t l→i+m∞ Sac(t) = Sa∗c. □
+Proposition 3 Under hypothesis (H1–H3), for any non-negative initial condition (Ss0, Sd0c, Xa0, Sa0c, X0m), the
+solution of (1) converges asymptotically to an equilibrium (0, Sd∗c, 0, Sa∗c, 0), where Sd∗c and Sa∗c belong respec
+tively to ξdc and ξac.
+Proof Let Sdc(.) be a component of the solution of (1) which converges to Sd∗c, and suppose that Sd∗c doesn’t
+belong to ξdc.
+Since μa is continuous on [0, +∞), then μa(Sdc(t)) tends to μa(Sd∗c) when t approaches +∞, leading to:
+∀ε > 0, ∃T ≥ 0 : ∀t > T, −ε < μa(Sdc(t)) − μa(S∗
+dc) < ε.
+Choosing ε = μa(Sd∗c) − da
+2 > 0, we have, for all t > T :
+μa(Sdc(t)) − μa(S∗
+dc) > −ε ⇒ μa(Sdc(t)) − μa(S∗
+dc) + 2ε > ε ⇒ μa(Sdc(t)) − da > ε ⇒ dXa
+dt (t) > εXa(t).
+Scientific Reports | (2024) 14:25934 6
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+Letting s ∈ (T, t), integrating from s to t, we get Xa(t) > Xa(s)eε(t−s), for all t > T . This contradicts the fact that
+Xa is bounded. Thus, we conclude that Sd∗c belongs to ξdc.
+Similarly, we prove that Sa∗c belongs to ξac. □
+The sub-system (1) has an infinite number of equilibria that are non-hyperbolic, therefore the linearization does not allow us to conclude stability. To overcome this difficulty, we carry out a change of variables that leads to the use of a hyperbolic system. We then apply the stable manifold theorem. However, we obtain the following result.
+Proposition 4 Under hypothesis (H1–H3), for each steady state E = (0, Sd∗c, 0, Sa∗c, 0) with Sd∗c ∈ ξdc and
+Sa∗c ∈ ξac, there exists an invariant three-dimensional manifold M in R5+ such that any solution of (1) with an initial condition in M converges asymptotically to E.
+Proof Let (Ss, Sdc, Xa, Sac, Xm) be a solution of (1) with an initial condition in M. Let Z1 and Z2 be the two variables defined by:
+Z1(t) = Ss(t) + Sdc(t) − Sd∗c
+Xa(t) + β1, ∀t ≥ 0,
+and
+Z2(t) = yac(Ss(t) + Sdc(t) + Xa(t)) + Sac(t) − yacSd∗c − Sa∗c
+Xm(t) + β2, ∀t ≥ 0,
+with
+β1 = μa(Sd∗c)
+ya(μa(Sd∗c) − da) and β2 = μm(Sa∗c)
+ym(μm(Sa∗c) − dm).
+We have:
+dZ1
+dt = − 1
+ya μa(Sdc)Xa2 − (Z1 − β1)(μa(Sdc) − da)Xa2
+Xa2
+= μa(Sdc)(β1 − 1
+ya
+) − β1da − (μa(Sdc) − da)Z1
+= −γ1(μa(Sdc) − μa(S∗
+dc)) − (μa(Sdc) − da)Z1, with γ1 = − da
+ya(μa(Sd∗c) − da),
+and
+dZ2
+dt = − 1
+ym μm(Sac)X2m − (Z2 − β2)(μm(Sac) − dm)X2m
+X 2m
+= μm(Sac)(β2 − 1
+ym
+) − β2dm − (μm(Sac) − dm)Z2
+= −γ2(μm(Sac) − μm(S∗
+ac)) − (μm(Sac) − dm)Z2, with γ2 = − dm
+ym(μm(Sa∗c) − dm).
+If we define Y = (Ss, Z1, Xa, Z2, Xm), then we have:
+dZ1
+dt = −γ1(ga(Y ) − μa(S∗
+dc)) − (ga(Y ) − da)Z1,
+and
+dZ2
+dt = −γ2(gm(Y ) − μm(S∗
+ac)) − (gm(Y ) − dm)Z2,
+with
+ga(Y ) = μa(Sdc) = μa ((Z1 − β1)Xa − Ss + S∗
+dc) and gm(Y ) = μm(Sac) = μm ((Z2 − β2)Xm − yac(Z1 − β1 + 1)Xa + S∗
+ac) .
+The equivalent system of the system (1) in the domain
+D = {(Ss, Z1, Xa, Z2, Xm) ∈ R+ × R × R∗+ × R × R∗+/(Z1 − β1)Xa − Ss + Sd∗c ≥ 0; (Z2 − β2)Xm − yac(Z1 − β1 + 1)Xa is written:
+Scientific Reports | (2024) 14:25934 7
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+
+
+dSs
+dt = −khSs
+dXa
+dt = (ga(Y ) − da) Xa
+dXm
+dt = (gm(Y ) − dm) Xm
+dZ1
+dt = −γ1(ga(Y ) − μa(S∗
+dc)) − (ga(Y ) − da)Z1
+dZ2
+dt = −γ2(gm(Y ) − μm(S∗
+ac)) − (gm(Y ) − dm)Z2.
+(10)
+The domain D is positively invariant for the system (10). Since μa(Sd∗c) ̸= da and μm(Sa∗c) ̸= dm, 0 is the only
+equilibrium of (10) on D. The Jacobian matrix is given by:
+J(0) =
+
+
+−kh 0 0 0 0
+0 μa(Sd∗c) − da 0 0 0
+0 0 μm(Sa∗c) − dm 0 0
+γ1μ′
+a(Sd∗c) γ1β1μ′
+a(Sd∗c) 0 −(μa(Sd∗c) − da) 0
+0 γ2yac(1 − β2)μ′
+m(Sa∗c) γ2β2μ′
+m(Sa∗c) 0 −(μm(Sa∗c) − dm)
+
+
+We have three negative eigenvalues: −kh, μa(Sd∗c) − da and μm(Sa∗c) − dm, and two positive eigenvalues:
+−(μa(Sd∗c) − da) and − (μm(Sa∗c) − dm). By the stable manifold theorem21, 0 is a hyperbolic equilibrium with a
+three-dimensional stable manifold Ws and a two-dimensional unstable manifold Wu. We conclude that any trajectory of (10) with an initial value in the three-dimensional invariant manifold
+M = Ws ∩ D converges asymptotically to 0, therefore the corresponding trajectory of (1) converges asymptotically
+to E = (0, Sd∗c, 0, Sa∗c, 0). □
+We can now state the corollary.
+Corollary 1 Under hypothesis (H1–H3), the set:
+{0} × ξdc × {0} × ξac × {0}
+is an attractor of sub-system (1).
+Let’s proceed to the sub-system (2).
+Proposition 5 Under hypothesis (H1–H3), for any non-negative initial condition
+(Ss0, Sd0c, Xa0, Sa0c, X0m, CH40, CO20), the solution of (2) verifies:
+t l→i+m∞ CH4(t) = CH0
+4 + yCH4(α − S∗
+ac − yacS∗
+dc),
+and
+t l→i+m∞ CO2(t) = CO0
+2 + β − αyCH4 + (yac.yCH4 − 1)S∗
+dc + (yCH4 − 1)S∗
+ac,
+with
+α = yac(S0
+s + S0
+dc + X0
+a) + S0
+ac + X0
+m and β = S0
+s + S0
+dc + X0
+a + S0
+ac + X0
+m.
+Proof From (2), we have:
+dC O2
+dt = (1 − yCH4)
+(1 − ym
+ym
+μm(Sac) + dm
+)
+Xm + (1 − yac)
+(1 − ya
+ya
+μa(Sdc) + da
+)
+Xa
+= 1 − yCH4
+yCH4
+× dCH4
+dt + (1 − yac)
+(1 − ya
+ya
+μa(Sdc) + da
+)
+Xa
+= 1 − yCH4
+yCH4
+× dCH4
+dt − (1 − yac)(dSs
+dt + dSdc
+dt + dXa
+dt ).
+Scientific Reports | (2024) 14:25934 8
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+For all t ≥ 0, by integrating from 0 to t, we get:
+CO2(t) − CO0
+2 = 1 − yCH4
+yCH4
+(CH4(t) − CH0
+4
+) − (1 − yac)(Ss(t) − S0
+s + Sdc(t) − S0
+dc + Xa(t) − X0
+a ).
+Let’s denote t l→i+m∞ CH4(t) = ̂CH4 and t l→i+m∞ CO2(t) = ̂CO2. Upon taking limits, we obtain:
+̂CO2 − 1 − yCH4
+yCH4
+̂CH4 = CO0
+2 − 1 − yCH4
+yCH4
+CH0
+4 − (1 − yac)(S∗
+dc − S0
+s − S0
+dc − X0
+a). (11)
+On the other hand, from Eq. (9), for all t ≥ 0, we have:
+Ss(t) + Sdc(t) + Xa(t) + Sac(t) + Xm(t) + CH4(t) + CO2(t) = S0
+s + S0
+dc + X0
+a + S0
+ac + X0
+m + CH0
+4 + CO0
+2,
+when t tends to +∞, we obtain:
+S∗
+dc + S∗
+ac + ̂CH4 + ̂CO2 = S0
+s + S0
+dc + X0
+a + S0
+ac + X0
+m + CH0
+4 + CO0
+2. (12)
+From Eq. (11) and Eq. (12), we conclude that:
+̂CH4 = yCH4
+(X0m + Sa0c + yac(Ss0 + Sd0c + Xa0) − Sa∗c − yacSd∗c
+) + CH40, and
+̂CO2 = −̂CH4 − Sd∗c − Sa∗c + Ss0 + Sd0c + Xa0 + Sa0c + X0m + CH40 + CO20.
+Taking α = yac(Ss0 + Sd0c + Xa0) + Sa0c + X0m and β = Ss0 + Sd0c + Xa0 + Sa0c + X0m, we obtain the result. □
+Numerical results
+In this section, we utilize the Matlab programming language to display numerical results for quantities of biogas
+produced, impacted by the final values Sd∗c and Sa∗c of the concentrations of the dissolved organic and acetate substrates.
+The parameter values used in our numerical simulations are inspired by10,11,14 and are presented in the following tables:
+We assume that at the beginning of the process, there is no production of biogas, so that CH40 = CO20 = 0, the other initial conditions are given in Table 1. Figures 2 and 3 describe the trajectories of the system (1)–(2) corresponding to the Monod and Haldane scenarios, respectively. In the Monod case, the concentrations of carbon dioxide and methane reach stability at approximately 200g/l and 250g/l, respectively, following a storage period of 200 days. Notably, an observation can be made that the anaerobic phase begins at around 100 days, signifying a switch wherein methane production exceeds carbon dioxide production. In the Haldane case, the stabilization of carbon dioxide and methane production happens nearly simultaneously but after an extended storage period of 400 days. The start of the anaerobic phase is observed after approximately 300 days in this scenario. The disparity between the Monod and Haldane cases lies in the convergence behavior of the concentrations Sdc and Sac. In the Monod case, the concentrations converge within connected sets, corresponding to the connected attractor. In contrast, the Haldane case shows convergence within non-connected sets, corresponding to the non-connected attractor. To validate this assertion, we fix the parameters specified in Table 2 while varying the initial values. We, then, observe the convergence of the concentrations Sdc and Sac. In the Monod case, from Eq. (3) and Eq. (4), we have λa = 5.5 and λm = 60.
+Figures 4 and 5 illustrate that for any non-negative value of Ss0, Sdc and Sac converge to values less than λa and λm respectively.
+In the Haldane case, Eq. (5) yields λa− = 5.59 and λa+ = 894.4. Figure 6 demonstrates that when:
+• Ss0 ≤ 3300, Sdc converges to values less than λa−.
+• Ss0 > 3300, Sdc converges to values higher than λa+.Therefore, we find that 3300 is the critical value of Ss0 at
+which the limit Sd∗c shifts from the interval λa− to the interval λa+.
+Similarly, Eq. (6) gives λ−m = 123.24 and λ+m = 243.42. Figure 7 shows that when:
+• 0 ≤ Ss0 ≤ 600, Sac converges to values less than λ−m.
+• 600 < Ss0 < 3900, Sac converges to values higher than λ+m.
+• Ss0 ≥ 3900, Sac converges again to values less than λ−m.Therefore, we find that 600 and 3900 are critical values
+of Ss0 at which the limit Sa∗c shifts from λ−m to λ+m and then back to λ−m.
+Ss0 Sd0c Xa0 Sa0c X 0m
+400 50 15 10 1, 5
+Table 1. Initial conditions.
+Scientific Reports | (2024) 14:25934 9
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+μmax
+a Kd ya da μmax
+m Ka ym dm kh yac yCH4 Kid Kia
+0, 5 50 0, 15 0, 05 0, 25 600 0, 06 0, 03 0, 02 0, 7 0, 8 100 50
+Table 2. Model coefficients.
+Scientific Reports | (2024) 14:25934 10
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+Fig. 4. Sdc trajectories for various values of Ss0 in the Monod case.
+Fig. 3. Trajectories of the system using the Haldane growth function.
+Fig. 2. Trajectories of the system using the Monod growth function.
+Scientific Reports | (2024) 14:25934 11
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+When the Haldane growth function is considered, we observe two regions of convergence of Sdc and two regions of convergence of Sac. In Fig. 8, we illustrate the behavior of the substrate concentrations within the dynamic
+model (1) and identify the placement of these four regions. Considering initial substrate concentrations Ss0
+ranging from 0 to 6000 with an increment of 200, this range includes the switch points 600 and 3900 for Sa∗c and
+3300 for Sd∗c. We observe the following:
+• When Ss0 ≤ 600, both Sd∗c and Sa∗c are below λa− and λ−m respectively.
+• For 600 < Ss0 ≤ 3300, Sd∗c remains below λa−, while Sa∗c surpasses λ+m.
+• Between 3300 < Ss0 < 3900, both Sd∗c and Sa∗c exceed λa+ and λ+m respectively.
+• When Ss0 ≥ 3900, Sd∗c rises above λa+, while Sa∗c falls below λ−m.
+This figure reveals the impact of inhibition phenomena on the process. Specifically, inhibition can prevent the bacteria from efficiently consuming the substrate, resulting in high concentrations substrate remaining in the
+Fig. 7. Sac trajectories for various values of Ss0 in the Haldane case.
+Fig. 6. Sdc trajectories for various values of Ss0 in the Haldane case.
+Fig. 5. Sac trajectories for various values of Ss0 in the Monod case.
+Scientific Reports | (2024) 14:25934 12
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+process. As a result, the accumulation of unconsumed substrate affects negatively biogas production, as will be further illustrated in the next figure. In contrast, when the Monod growth function is chosen, only one region of convergence is observed, and the remaining substrate does not reach a high concentration. In the following, we will focus on simulations in the Haldane case. Figure 9 shows the total biogas (methane + carbon dioxide) produced as a function of the initial substrate
+concentration Ss0. According to Proposition 5, the quantity of biogas produced is influenced by the limits Sd∗c
+and Sa∗c, which shift from lower to higher values as Ss0 varies. In this figure, we observe that for 0 ≤ Ss0 ≤ 3300,
+Sdc converges below λa−. This indicates that the dissolved organic substrate is effectively consumed by acidogenic bacteria, resulting in a significant increase in biogas production, which reaches a peak concentration of 1050g/l.
+However, when Ss0 > 3300, Sdc converges above λa+, leading to less effective consumption of the dissolved organic substrate by acidogenic bacteria. Consequently, biogas production declines sharply, with a noticeable
+Fig. 10. Biogas production as function of mortality rate da.
+Fig. 9. Biogas production as function of initial stock concentration Ss0.
+Fig. 8. Ss, Sdc, and Sac trajectories behavior for various values of Ss0 in the Haldane case.
+Scientific Reports | (2024) 14:25934 13
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+fall between 3300 and 3400 in Ss0, where biogas output falls to 400g/l. Beyond this point, biogas concentration
+continues to decrease. Within this range, for Ss0 > 600, Sdc converges above λ+m, resulting in poor consumption of acetate substrate by methanogenic bacteria, which leads to a decrease in biogas concentration over a small
+interval, followed by a gradual increase. Similarly, for Ss0 > 3900, Sdc converges below λ−m, leading to effective consumption of acetate substrate by methanogenic bacteria and a temporary increase in biogas concentration, which is then followed by a continuous decrease. These observations highlight that the choice of growth functions significantly affects biogas production. When both bacterial growth functions are Haldane, biogas production exhibits five distinct switches in monotonicity. In contrast, when one Monod function and one Haldane function are used, there is a single
+switch value of Ss0 at which biogas production exhibits one change in monotonicity, shifting from increasing to
+decreasing. When both functions are Monod, biogas production increases linearly with Ss0 without any decrease. This occurs because there is no inhibition phenomenon present, allowing the bacteria to continuously consume the substrate. Let’s examine the impact of bacterial mortality rates on biogas production by considering a small value of
+Ss0 yielding Biogas- and a large value of Ss0 yielding Biogas+. It can be seen in Fig. 10 that when the initial stock
+concentration Ss0 is less than 3300, the mortality rate of acidogenic bacteria has almost no influence on the biogas production. In the other hand, Fig. 11 shows that the amount of biogas is first constant and then decreases as function of the mortality rate of methanogenic bacteria.
+When Ss0 is higher than 3400, both Figs. 10 and 11 illustrate that the biogas production remains constant when the mortality rates of acidogenic and methanogenic bacteria are below 0.025. However, it starts decreasing once the mortality rates surpass this value. Notably, in this scenario, biogas production decreases sharply with mortality rate of acidogenic bacteria.
+Conclusion
+Our study has provided a detailed analysis of biogas production through anaerobic digestion of solid waste, modeled by a system of differential equations. Through our mathematical analysis, we identified the attractor of the system. Our numerical simulations provide important insights into system behavior. When both bacterial growth functions are Monod, the attractor is connected, and biogas production increases linearly with the initial
+stock concentration Ss0. When one growth function is Monod and the other is Haldane, the attractor becomes
+non-connected with two regions of convergence, and biogas production as function of Ss0 exhibits a single change in monotonicity. When both functions are Haldane, the attractor is non-connected with four regions of
+convergence, and biogas production as function of Ss0 exhibits five changes in monotonicity. Additionally, biogas production decreases with higher bacterial mortality rates. In our future work, we will focus on managing the initial stock concentration to avoid exceeding the switch
+value of Ss0 that results in optimal biogas production and will explore the impact of spatial diffusion effects on biogas production.
+Data availability
+The datasets used and/or analysed during the current study available from the corresponding author on reasonable request.
+Received: 12 June 2024; Accepted: 22 October 2024
+Fig. 11. Biogas production as function of mortality rate dm.
+Scientific Reports | (2024) 14:25934 14
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/
+
+
+References
+1. Farquhar, G. J. & Rovers, F. Gas production during refuse decomposition. Water Air Soil Pollut.2, 483–495. https://doi.org/10.100 7/BF00585092 (1973).
+2. Chenu, D. Modélisation des transferts réactifs de masse et de chaleur dans les installations de stockage de déchets ménagers: application aux installations de type bioréacteur. Ph.D. thesis (2007). 3. Aran, C. Modélisation des écoulements de fluides et des transferts de chaleur au sein des déchets ménagers. Application à la réinjection de lixiviat dans un centre de stockage. Ph.D. thesis (2001). 4. Gholamifard, S. Modélisation des écoulements diphasiques bioactifs dans les installations de stockage de déchets. Ph.D. thesis, Université Paris-Est (2009). 5. Batstone, D. J. et al. The iwa anaerobic digestion model no 1 (ADM1). Water Sci. Technol.45, 65–73. https://doi.org/10.2166/wst.2 002.0292 (2002). 6. Rouez, M. Dégradation anaérobie de déchets solides: Caractérisation, facteurs d’influence et modélisations. Laboratoire de Génie Civil et d’Ingénierie Environnementale. Lyon, Institut National des Sciences Appliquées Docteur259 (2008).
+7. Bernard, O., Hadj-Sadok, Z., Dochain, D., Genovesi, A. & Steyer, J.-P. Dynamical model development and parameter identification for an anaerobic wastewater treatment process. Biotechnol. Bioeng.75, 424–438. https://doi.org/10.1002/bit.10036 (2001). 8. Rakmak, N., Noynoo, L., Jijai, S. & Siripatana, C. Monod-type two-substrate models for batch anaerobic co-digestion. Lecture notes in applied mathematics and applied science in engineering 11–20 (2019).
+9. Halvadakis, C. P. methanogenesis in solid-waste landfill bioreactors. Ph.D. thesis, Stanford University (1983). 10. El-Fadel, M., Findikakis, A. & Leckie, J. A numerical model for methane production in managed sanitary landfills. Waste Manag. Res.7, 31–42. https://doi.org/10.1016/0734-242X(89)90006-2 (1989). 11. El-Fadel, M., Findikakis, A. & Leckie, J. Numerical modelling of generation and transport of gas and heat in landfills I. model formulation. Waste Manag. Res.14, 483–504. https://doi.org/10.1177/0734242X9601400506 (1996). 12. Rapaport, A., Nidelet, T., El Aida, S. & Harmand, J. About biomass overyielding of mixed cultures in batch processes. Math. Biosci.322, 108322. https://doi.org/10.1016/j.mbs.2020.108322 (2020). 13. Harmand, J., Lobry, C., Rapaport, A. & Sari, T. The chemostat: Mathematical theory of microorganism cultures Vol. 1 (John Wiley & Sons, 2017). 14. Ouchtout, S., Mghazli, Z., Harmand, J., Rapaport, A. & Belhachmi, Z. Analysis of an anaerobic digestion model in landfill with mortality term. Commun. Pure Appl. Analy.19, 2333–2346. https://doi.org/10.3934/cpaa.2020101 (2020). 15. Benyahia, B., Sari, T., Cherki, B. & Harmand, J. Bifurcation and stability analysis of a two step model for monitoring anaerobic digestion processes. J. Process Control22, 1008–1019. https://doi.org/10.1016/j.jprocont.2012.04.012 (2012). 16. Berga, H., Alla, A. & El Khattabi, N. Mathematical analysis of an anaerobic co-digestion model with preference function and mortality. Math. Methods Appl. Sci.46, 10103–10122. https://doi.org/10.1002/mma.9105 (2023). 17. Monod, J. The growth of bacterial cultures. Annu. Rev. Microbiol.3, 371–394. https://doi.org/10.1146/annurev.mi.03.100149.002103 (1949). 18. Andrews, J. F. A mathematical model for the continuous culture of microorganisms utilizing inhibitory substrates. Biotechnol. Bioeng.10, 707–723. https://doi.org/10.1002/bit.260100602 (1968). 19. McNabb, A. Comparison theorems for differential equations. J. Math. Anal. Appl.119, 417–428. https://doi.org/10.1016/0022-247 X(86)90163-0 (1986). 20. Barbalat, I. Systemes d’équations différentielles d’oscillations non linéaires. Rev. Math. Pures Appl4, 267–270 (1959). 21. Perko, L. Differential equations and dynamical systems Vol. 7 (Springer Science & Business Media, 2013).
+Author contributions
+I.A. analyzed the outcomes. A.A. and I.A. conducted the numerical simulations. N.E.K. and A.A. identified the problem and provided supervision. All authors reviewed the manuscript.
+Declarations
+Competing interests
+The authors declare no competing interests.
+Additional information
+Correspondence and requests for materials should be addressed to I.A.
+Reprints and permissions information is available at www.nature.com/reprints.
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommo ns.org/licenses/by-nc-nd/4.0/.
+© The Author(s) 2024
+Scientific Reports | (2024) 14:25934 15
+| https://doi.org/10.1038/s41598-024-77430-6
+www.nature.com/scientificreports/

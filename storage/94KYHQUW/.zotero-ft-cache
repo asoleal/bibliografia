@@ -1,0 +1,1030 @@
+A Physics-Informed Neural Network (PINN) framework for generic
+bioreactor modelling
+Monesh Kumar Thirugnanasambandam1,2, José Pinto1,2*, Ekaterina Moskovkina1,2,
+Rafael S. Costa1,2, Rui Oliveira1,2*
+(1) Associate Laboratory i4HB - Institute for Health and Bioeconomy, NOVA School
+of Science and Technology, Universidade NOVA de Lisboa, 2829-516 Caparica,
+Portugal
+(2) UCIBIO - Applied Molecular Biosciences Unit, Department of Chemistry, NOVA
+School of Science and Technology, Universidade NOVA de Lisboa, 2829-516
+Caparica, Portugal
+*Corresponding author: jmm.pinto@campus.fct.unl.pt and rmo@fct.unl.pt
+Abstract
+Many previous studies have explored hybrid semiparametric models merging Artificial
+Neural Networks (ANNs) with mechanistic models for bioprocess applications. More
+recently, Physics-Informed Neural Networks (PINNs) have emerged as promising
+alternatives. Both approaches seek to incorporate prior knowledge in ANN models,
+thereby decreasing data dependency whilst improving model transparency and
+generalization capacity. In the case of hybrid semiparametric modelling, the
+mechanistic equations are hard coded directly into the model structure in interaction
+with the ANN. In the case of PINNs, the same mechanistic equations must be “learned”
+by the ANN structure during the training. This study evaluates a dual-ANN PINN for
+generic bioreactor problems illustrated with 2 case studies. Furthermore, the proposed
+PINN is benchmarked against the general hybrid semiparametric bioreactor model
+under comparable prior knowledge scenarios. Our findings show that PINNs can level
+the prediction accuracy of hybrid semiparametric models for simple problems. PINNs
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+exhibit significant performance degradation in extended temporal extrapolation or
+complex problems involving high-dimensional process states subject to time-varying
+control inputs. The latter is mainly related to the more complex multi-objective training
+of PINN structures.
+Keywords
+Bioprocess modelling; Physics-informed neural networks; Hybrid semiparametric
+modelling; Deep artificial neural networks; ADAM algorithm; Fed-batch bioreactor
+1. Introduction
+Due to the intricate mechanistic complexity of cell culture systems, developing
+predictive models for optimization and control at an acceptable cost remains a
+challenge in the bioprocessing industries Hong et al. (2021). Traditional modelling
+approaches involve mathematical equations derived from first principles, including
+mass and energy balances, reaction kinetics, and transport phenomena. While these
+models can elucidate numerous aspects of process behaviour, their development is
+time-consuming and requires extensive domain knowledge. Furthermore, these
+models are inherently limited in their capacity to represent the global characteristics of
+most biological systems in specific application scenarios, and the efficiency of their
+solution is significantly lower than theoretically possible (Jarka Glassey et al., 2011;
+Van Impe et al., 2013).
+In recent years, data-driven modelling has received significant attention leveraging on
+technical progress in data acquisition and process analytical technology. Particularly
+deep artificial neural networks (deep ANNs) are increasingly considered for bioprocess
+modelling due to their ability to infer intricate patterns from data with minimal domain
+knowledge requirements (Helleckes et al., 2023). However, their dependency on high
+quantity and high-quality data, which are often scarce, and their limited generalization
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+capability constitute major drawbacks (Thomas Kipf et al., 2018). To mitigate these
+limitations, hybrid modelling approaches have emerged that combine ANNs and
+mechanistic modelling in a common workflow. The most frequently reported approach
+is hybrid semiparametric modelling, wherein ANNs and mechanistic equations are
+interlinked in a common model structure, thereby enhancing the model’s accuracy and
+transparency (Psichogios and Ungar 1992; Thompson and Kramer, 1994; Schubert et
+al.,1994; Oliveira, 2004; Kadlec et al.,2009; Von Stosch et al., 2014). Numerous
+application examples have demonstrated the effectiveness of hybrid semiparametric
+modelling for bioreactor systems (e.g., Narayanan et al., 2023; Bayer et al., 2023;
+Pinto et al., 2023; Ramos et al., 2024). A common path involves using intensified
+Statistical Design of Experiments (iDoE) in combination with hybrid modelling to
+dynamically infer the impact of critical process parameters (CPP) on critical quality
+attributes (CQA) (Von Stosch et al., 2014). These methods not only help optimize
+process conditions but also reduce experimental runs, thus saving both time and
+resources. As a result, process engineers can achieve more reliable, scalable, and
+precise outcomes thereby enhancing overall productivity in industrial applications
+(Smiatek et al., 2020).
+A recent addition to bioprocess modelling is Physics-Informed Neural Networks
+(PINNs). PINNs incorporate a system’s known governing physical law, usually
+described by partial differential equations (PDEs) or ordinary differential equations
+(ODEs), into the training process of a deep neural network (DNN) (Raissi et al., 2019).
+The training minimizes two loss functions simultaneously, a data loss function based
+on process observations, and a physics loss function derived from physics equations.
+Unlike conventional DNNs, PINNs can handle complex problems, where precise data
+collection is difficult due to real-world measurement limitations. PINNs and hybrid
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+semiparametric models are thus related concepts with similar goals, i.e. the integration
+of prior process knowledge in ANN models thereby reducing data dependency.
+Whereas in semiparametric modelling the physics equations are hard coded directly
+in the model structure, in the case of PINNs the same physics equations are
+embedded in a physics loss function that is minimized during the training. The general
+principle of a PINN was already postulated in the early study by Thomson and Kramer
+(1994) who categorized hybrid modelling as design methods, where prior knowledge
+is hard coded in the model structure, and training methods where, prior knowledge is
+embedded in the training loss function. Since the pioneering study by Raissi et al.
+(2019), PINNs are now taking the first steps in the bioprocess modelling field. Due to
+their similarities, hybrid semiparametric modelling and PINNs are sometimes
+interchangeably referred to in the literature (e.g., Bangi et al., 2022; Cui et al., 2024).
+Adebar et al. (2024) recently proposed a PINN approach for mammalian cultivations
+using truncated Taylor series expansions to approximate growth kinetics.
+Simplifications such as pseudo-first-order kinetics and decoupled individual process
+outcomes were introduced. Despite the simplifications, they successfully modelled
+with reasonable accuracy the dynamics of key variables such as viable cell density,
+glucose, lactate, and product. In a different study, Li et al. (2024) developed a complex
+PINNs framework using the multi-stage Koopman method for microbial growth
+modelling. The Koopman method served to map the process dynamics into a high
+dimensional linear space and to model each growth stage separately in the linear
+space. Yang et al. (2024) compared parallel hybrid modelling, serial hybrid modelling,
+and PINNs in a pilot fed-batch CHO culture. They applied the multiple-shooting
+method to divide the culture into 24-hour intervals with constant feed. Their results
+suggested that PINNs have superior predictive power than the widely adopted
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+semiparametric approaches. Moayedi et al. (2024) compared a Recurrent Neural
+Network (RNN) with a recurrent PINN in a simulation case study with 2 continuous
+reactors connected in series. They used the Euler method to approximate the
+derivatives of state variables to evaluate the physics loss function. They concluded
+that PINN was superior to conventional RNN. Jul-Rasmussen et al. (2025) recently
+presented a comparative study of hybrid semiparametric modelling and physics
+informed recurrent neural networks (PIRNNs) for a pilot-scale bubble column aeration
+process. The study compared each approach in terms of training ease, adherence to
+governing equations, prediction accuracy with less frequent measurements, and
+performance with limited data. Their study found that hybrid semiparametric modelling
+outperformed the recurrent PINN approach for the pilot-scale bubble column aeration
+process.
+PINNs have gained significant traction in scientific computing, but their advantages
+and development opportunities for bioprocess applications need more evidence.
+Typical problems arising with PINNs are the choice of the ANN structure, handling
+time-varying control inputs, enforcing initial condition (IC), and convergence of the
+multi-objective loss function, which combines physics, data, and IC constraints. One
+critical issue in PINN training is the trade-off between data loss and physics loss, which
+directly influences model convergence. In this study, we propose a dual-ANN PINN
+structure that is generally applicable to stirred-tank bioreactor problems under time
+varying and batch-varying control inputs. This structure is evaluated in 2 case studies
+and compared with the general bioreactor hybrid model (Oliveira, 2004; Pinto et al.,
+2022). The remainder of this paper is organized as follows: section 2 details the
+methodological framework, including the PINN structure and training strategies.
+Section 3 introduces the case studies, encompassing both simple and complex
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+bioreactor problems. Section 4 presents the modelling results and comparative
+performance analysis. Section 5 provides an in-depth discussion of the findings in the
+context of current literature. Finally, Section 6 presents the main conclusions.
+2. Methods
+2.1. PINN structure for bioreactor systems
+The state-space equation of a perfectly mixed stirred tank bioreactor takes the
+following general form,
+dC
+dt = Sr(C,u) ― DC + DCin , C(0) = C0 (1a),
+Where C is a (n × 1) state vector of concentrations of relevant biochemical species,
+S is a (n × m) matrix of yield coefficients, r(C,u) is a (m × 1) vector of biological
+reaction kinetics, D = F/V is the dilution rate (for simplicity we consider the liquid
+volume, V, to be controlled by a single feed stream with flow rate F), Cin is a (n × 1)
+vector of concentrations in the feed stream and t the independent variable time.
+The overall material balance equation for constant liquid density and a single feed
+stream is defined as,
+dV
+dt = F, V(0) = V0 (1b)
+Based on the bioreactor state-space Eqs. (1a, b), a PINN structure is proposed
+assuming that the reaction kinetics term is unknown, i.e., there are no defining
+equations for the term r(C,u) (Figure 1A). The PINN structure is composed of a state
+parameterization feed-forward neural network (FFNN-S) and a reaction kinetics feed
+forward neural network (FFNN-R). The rationale behind this dual-FFNN structure is
+uncoupling the parameterization of dynamic state variables over time and reaction
+kinetics over state variables, thereby improving the convergence stability of the multi
+objective training processes as further discussed below.
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Both network structures are multi-layered FFNNs with an input layer, one or more
+hidden layers (to capture the complex interactions and nonlinearities in the system),
+and an output layer:
+y = σ (WL. σ (WL―1 . σ (W1 . x + b1) + bL―1) + bL (2),
+with y a vector of outputs, x a vector of inputs, Wi a matrix of weights of the ith layer, bi
+a vector of bias parameters and σ the activation function.
+Following the structure of Eq. (2), the FFNN-S is implemented as a one-step predictor.
+It receives as inputs the state variables, C(t ― δt), the control inputs u[t―δt,t] (which are
+constant over time intervals [t ― δt,t]), and time intervals, δt. When the time step δt is
+constant it may drop from the FFNN-S inputs. Of note that δt might not be constant
+due to heterogeneous data sparsity. The predicted concentrations are computed from
+the neural network outputs as follows:
+C(t) = C(t ― δt) +y(t)δt (3)
+Eq. (3) ensures that C(t) = C(t ― δt) when δt = 0, which eliminates the need for initial
+boundary conditions in the loss function used to train the PINN. Automatic
+differentiation (AD) is applied to compute dC dt, which is required in the physics loss
+function (further described below). The second neural network, FFNN-R, computes
+the reaction kinetics at the current time, r(t) = y(t) as a function of concentrations at
+the current time, C(t), and of control inputs at the current time, u(t). The outputs of
+the PINN are thus C(t), r(t) and dC/dt. The outputs of the PINN serve to calculate
+data loss and physics loss. The prior knowledge of the material balance equation is
+not embedded directly in the model structure but is rather used to compute the physics
+loss, as further discussed below.
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Figure 1: Schematic diagram of hybrid model structures for a generic stirred-tank
+bioreactor system. (A) Dual-FFNN PINN structure where physical equations are
+embedded in the training loss function, (B) Hybrid semiparametric structure where
+physical equations are hard-coded directly in the model structure.
+2.2. Hybrid semiparametric model for bioreactor systems
+This study compares the dual-FFNN PINN structure with the more traditional hybrid
+semiparametric approach. Here we follow the previously published general bioreactor
+hybrid model concept (Oliveira, 2004; Pinto et al., 2022) applied in many different
+studies. The hybrid semiparametric model Figure (1B) contains a single neural
+network that models the reaction kinetics as a function of the concentrations of species
+and control inputs. This network parallels the FFNN-R of the PINN structure.
+The calculated reaction kinetics pass to a system of ODEs derived from the material
+balance equations. This is a fundamental difference to the PINN structure, as the prior
+knowledge ODEs are hard-coded directly in the model structure.
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+The ODEs are numerically integrated over time intervals [t ― δt,t]
+from initial conditions, C(t ― dt) to the current concentrations, C(t).
+The integration was done numerically with a Runge-Kutta 4th order method (RK4).
+This is another fundamental difference to PINNs, as the hybrid semiparametric
+approach requires integration whereas the PINN approach requires differentiation.
+However, it is important to note that the discretization of the process to match sampling
+time steps can impact the derivative approximation and overall solution accuracy, as
+highlighted by Cruz-Bournazou et al. (2022). Comparing computed and measured
+concentrations results in a data loss that is minimized during the training (further
+described below).
+2.3. Training methods
+To ensure comparability, the training, testing, and validation methods were identical
+for both modelling approaches, except for the calculation of the loss function which is
+intrinsically different in both approaches. The standard Adaptive Moment Estimation
+Method (ADAM) was applied to minimize the total loss. Specifically, the standard
+ADAM method described in Kingma and Ba, (2014) was applied. In the case of the
+PINN structure, a loss function with two terms is minimized. The data loss term is
+computed as the mean sum of squares as follows,
+Ldata = 1
+N × M ∑iN=1 ∑M
+j=1 (Ci∗,j ― Ci,j
+σCj )2 (4),
+With N the number of observations, M the number of biochemical species, Ci∗,j and Ci,j
+the measured and model predicted concentrations respectively of biochemical species
+j at time instant i, and σCj the standard deviation of the concentration of biochemical
+species j over the set of observations. The physics loss is computed as follows,
+e = dC
+dt ― Sr + DC ― DCin (5a),
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Lphysics = 1
+K × M ∑iK=1 ∑M
+j=1 (δt ei,j
+σCj )2 (5b),
+with K representing the number of collocation points and ei,j denoting the physics
+residual of biochemical species j at collocation point i. The number of collocation
+points does not coincide with the number of observations. A random sampling
+collocation method was employed to distribute these points across the domain space.
+Furthermore, it is ensured that the total number of residuals, (N + K) M, is always
+higher than the total number of weights of the dual-FFNN PINN structure. Finally, the
+total loss is computed as a weighted sum of the two loss terms:
+Ltotal = (1 ― l)Ldata + l Lphysics (6)
+The parameter l is a user defined parameter between 0-1 used to adjust the relative
+importance of the physics and data loss terms. For the hybrid semiparametric
+structures, the physics loss function drops, thus the total loss is simply given as Ltotal
+= Ldata. For comparability, the data was partitioned consistently for both the PINN and
+semiparametric structures. Specifically, the dataset was divided into training,
+validation, and testing subsets, with the specific partitioning varying across case
+studies (further described in Section 3). To mitigate overfitting, either cross-validation
+or stochastic regularization were applied. Based on the study by Pinto et al. (2022), a
+minibatch size stochastic regularization scheme was applied.
+The computation of gradients is a critical step for the success of both models.
+In the hybrid semiparametric case, sensitivity equations are often applied
+(Oliveira, 2004; Pinto et al., 2022). However, for comparability, the automatic
+differentiation method implemented in the python package PyTorch Baydin et al.
+(2018) was applied in both cases. All methods described here were implemented in
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Python. The results reported in this study were obtained using Windows 11 Pro on a
+PC with an Intel Core i9 CPU with 32 GB RAM.
+2.4. Model discrimination
+The selection of the best model was based on test error, considering only the data
+loss term. The model with the lowest data loss on the test partition was chosen as the
+optimal one. Additionally, a probabilistic approach was applied using a modified Akaike
+Information Criterion with second-order bias correction (AICc). In this case, the total
+loss from Eq. (7) was considered, incorporating both the training data residuals and
+physics residuals to evaluate model performance. The inclusion of physics residuals
+is necessary because PINNs are often trained with a number of data residuals lower
+than the number of weights.
+AICc = (N + K) × M ln(Ltotal) +2 nw + 2 nw ( nw + 1 )
+(N + K) × M ― nw ― 1 (7)
+The AICc penalizes the model complexity (i.e., the total number of network
+parameters, nw), ensuring that models with excessive complexity are not favored
+unless they provide a significantly better fit. The model with the lowest AICc score was
+selected as the best model.
+3. Case studies
+3.1. Case study 1 - Logistic biomass growth in a fed-batch bioreactor
+Case study 1 is a very simple logistic growth process in a fed-batch bioreactor with
+only 2 state variables described by two ODEs Eqs. (8 a, b) and the logistic growth
+model Eq. (8c),
+dX
+dt = μX ― DX (8a),
+dV
+dt = F (8b),
+μ = μmax(1 ― X
+Xmax) (8c)
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+With X the biomass concentration, V the liquid volume, μ the specific growth rate, F
+the feed rate into the reactor, D = F/V the dilution rate, μmax the maximum specific
+growth rate, and Xmax the maximum biomass concentration [g/L]. Synthetic
+experiments were simulated dynamically using a Runge-Kutta 4th/5th order ODE solver
+with μmax = 0.3 h-1 and Xmax = 47.3 g/L. Data points were sampled with 1-hour intervals
+and 5% Gaussian noise (5% of true value). A central composite design (CCD) with 3
+factors (initial biomass concentration varying between 0.5-2.5 g/L, initial volume
+varying between 1.9-3.5 L, and feed rate F varying between 0.05-0.5 L/h) resulted in
+a data set with 15 experiments (Supplementary File 2).
+Given the underlying simplicity, the main objective is to evaluate whether training with
+a single fed-batch experiment can predict the 14-remaining fed-batch experiments.
+As such, the data partition consisted of a training subset with a single reactor
+experiment (the DoE center point, i.e., the 15th experiment corresponding to
+24 observations), cross-validation with a single reactor experiment (a repetition of the
+center point experiment corresponding to 24 observations) and testing with all
+remaining 14 reactor experiments corresponding to 336 observations.
+3.2. Case study 2 – Park & Ramirez fed-batch bioreactor
+Case study 2 is a highly nonlinear fed-batch bioreactor of yeast cells expressing a
+foreign protein with five state variables Park and Ramirez, (1988). The bioreactor is
+governed by the following set of material balance equations:
+dX/dt = μ ⋅ X ― D ⋅ X (9a),
+dS/dt = ― Y ⋅ μ ⋅ X + D ⋅ (Sin ― S) (9b),
+dPm/dt = θ ⋅ (Pt ― Pm) ― D ⋅ Pm (9c),
+dPt/dt = fp ⋅ X ― D ⋅ Pt (9d),
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+dV/dt=F (9e)
+The state variables are the biomass concentration (X), glucose concentration (S),
+secreted protein concentration (PM), total protein concentration (PT), and liquid
+volume in the reactor (V). This process has a single feed stream with flow rate, F, and
+substrate concentration Sin = 20 g/L. The specific reaction rates are defined by highly
+nonlinear kinetic equations:
+μ = 21.87 S
+(S + 0.4)(S + 62.5)
+(10a),
+θ = 4.75μ
+0.12 + μ (10b),
+fp = Se―5.0S
+0.1 + S (10c)
+With μ the specific growth rate, Y the substrate/biomass yield coefficient, θ the foreign
+protein secretion rate, and fp the foreign protein synthesis rate. A total of 16
+experiments were simulated across a 0-15 h time window, always with the same initial
+condition (X(0)= 1.0 g/L, S(0)= 5.0 g/L, PT(0)=0 g/L, PM(0)=0 g/L, V(0)=1.0 L) but with
+varying feed rate profiles. A Runge-Kutta 4th/5th order ODE solver was adopted for
+this purpose. Fifteen experiments were generated by a CCD with 3 factors to design
+step changes in the feed rate profile between 0-2 L/h, namely the feed rate between
+0-5 h, F1, feed rate between 5-10 h, F2, and feed rate between 10-15 h, F3.
+The 16th experiment was simulated using the optimal feed rate profile proposed by
+Park and Ramirez, (1988) (Supplementary File 3). This experiment resulted in the
+maximum possible secreted protein production in a 10 L bioreactor (32.4 g) and was
+used as a test experiment (extrapolation batch).
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+4. Results
+4.1. Development of a bioreactor PINN model for case study 1
+The proposed PINN methodology was thoroughly investigated for both bioreactor case
+studies, starting with the simpler logistic fed-batch reactor problem. The key objective
+was to evaluate the PINN approach under high data sparsity (training with data from
+a single experiment (34 observations) and testing with data from the remaining 14
+experiments (336 observations)). The data partition was kept the same in all tests
+performed. The prior knowledge used to compute the physics loss included the
+biomass and volume material balances Eqs. (8a, b) but excluded the logistic growth
+Eq. (8c). The data loss included biomass but excluded volume measurements. It was
+intended to investigate if the PINN can predict unmeasured volume dynamics given
+that the physics loss Eq. (8b) precisely defines volume dynamics.
+To optimize the PINN structure, a systematic hyperparameter search was conducted
+using Optuna Akiba et al. (2019), an automated framework employing the
+Tree-structured Parzen Estimator (TPE) algorithm. The optimization targeted key
+hyperparameters, including the learning rate, activation functions in both networks
+(tanh, SiLU, and gelu), number of layers (n_layers), nodes (n_units) in FFNN-S, and
+nodes in FFNN-R (model2_nodes; a single hidden layer was kept given the simplicity
+of unknown kinetic term defined by Eq. (8c)) over 25 trials. At this stage, the
+pre-optimized weighting parameter l = 0.5 and a number of collocation points, K,
+equivalent to the size of FFNN-S (K=NWS) (further discussed below) were excluded
+from the hyperparameter search. Figure (2) depicts a parallel coordinate plot of
+Optuna's search, where lines represent trials and color indicates objective value.
+Optuna converged to an optimal PINN configuration with FFNN-S sized as
+3x12x12x12x2 with SiLU activation in the hidden layers, FFNN- R sized as 1x3x1 with
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+tanh activation in the hidden layer, and a learning rate of 0.005. This configuration
+achieved a test error of 0.007.
+Figure 2: Optuna hyperparameter search results: Parallel coordinate plot showing the
+relationship between hyperparameters and objective function values for case study 1
+over 25 trials.
+This automated search was further refined by a manual grid search of key
+hyperparameters. The SiLU and tanh activation functions derived from Optuna were
+kept in the manual search. The sizes and learning rate were further investigated.
+Detailed performance metrics for each PINN variation are presented in
+(Supplementary File 1, Table S1). The manual refinement converged to an optimal
+PINN structure (FFNN-S: 3x8x8x8x2 with SiLU, FFNN- R: 1x5x1 with tanh) and a
+learning rate of 0.0075. The slightly higher learning rate was shown to accelerate
+convergence without compromising performance. This configuration achieved the
+same test error of 0.007 of Optuna with a lower number of weights and a lower AICc
+value.
+Figures (3A–D) illustrates the predictive capability and adherence to physics
+constraints of the selected optimal PINN structure for case study 1. Figures (3A) and
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+(3B) show the model’s performance on the training fed-batch experiment and the 14
+test fed-batch experiments, respectively. The coefficient of determination for both
+biomass (X) and volume (V) is high and comparable for the train and test data subsets,
+showing excellent predictive power. Moreover, the final train data loss was 0.0046,
+practically coincident with the noise level (0.0049), showing negligible overfitting. The
+final test data loss was 0.013, almost twofold the noise level (0.007), but even so very
+low (Table S1).
+Figure (3C) depicts the model’s adherence to the underlying physical laws at the
+randomly generated collocation points. These collocation points were randomly
+sampled within the design space (biomass, volume, and feed rate) to enforce the
+physical constraints across the relevant operational range. At each training epoch, a
+set of collocation points was randomly generated within the known bounds of state
+variable, ensuring a comprehensive coverage of the design space. The FFNN-S
+output derivatives (dX/dt and dV/dt) are computed at the collocation points by
+automatic differentiation and then compared against the derivative values derived from
+the governing differential equations Eqs. (8a, b). The strong linear correlation
+observed in Figure (3C) highlights the model’s ability to accurately satisfy the
+governing differential equations. In addition, Figure (3D) extends the analysis of
+physics against the calculated physics at the test data points. This plot provides critical
+insight into the model’s ability to generalize the physical relationships learned to
+different regions of the design space. The strong linear correlation observed in Figure
+(3D) confirms that the model accurately captures the underlying process dynamics
+across different process regimes.
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Figure 3: Training results for case study 1 using a PINN structure (FFNN-S:
+3x8x8x8x2 with SiLU, FFNN- R: 1x5x1 with tanh) trained with a learning rate of 0.0075,
+l = 0.5 and K= 194 collocation points. (A) Predicted versus measured biomass
+and volume data for the training set, (B) Predicted versus measured biomass and
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+volume data for the testing set, (C) Biomass and volume physics at the training
+collocation points, (D) Biomass and volume physics at the test data points.
+Overall, these results show that the PINN model succeeded in predicting the biomass
+and volume dynamics of 14 test experiments based on the training data of a single
+experiment. Notably, the prediction of volume dynamics relied solely on the embedded
+physics law Eq. (8b). This simple example demonstrates that when full and precise
+physics of a subset of state variables are known, observations of those state variables
+are in principle not needed to train the PINN. This highlights a key advantage of PINNs
+over conventional neural networks since the latter always need data for their training.
+4.2. Development of bioreactor PINN model for case study 2
+The PINN framework was applied to the more complex Park and Ramirez fed-batch
+bioreactor benchmark (case study 2), which has a higher dimensionality of
+state variables (biomass (X), substrate (S), total protein (PT), secreted protein (PM),
+and volume (V)), highly nonlinear kinetics and time-varying control inputs. The key
+objective was to evaluate if a PINN trained on a sparse data set (9 of the 15
+experiments of the CCD) can predict the optimal production scenario published by
+Park & Ramirez (32.4 g of secreted protein when the optimal feed profile is applied).
+The physics loss included the material balance equations of the 5 state variables Eqs.
+(9 a-e) and excluded the reaction kinetics Eqs. (10 a-c). The same collocation points
+scheme of case study 1 was employed. The data loss included measurements of all
+state variables except volume, i.e. X, S, PT, and PM (the volume training relied
+exclusively on its defining Eq. (9e) as in case study 1). The data loss was based on 9
+experiments (the center and square points of the CCD; the star experiments were
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+excluded). Overfitting was prevented by stochastic regularization whereby data from
+6 out of 9 experiments were randomly selected to compute the data loss at each
+epoch. Building on the optimal PINN structural features already identified in case study
+1, a systematic grid search of the optimal FFNN-S and FFNN-R sizes was conducted
+as detailed in (Supplementary File 1, Table S2). This procedure converged to the
+optimal structure (FFNN-S: 6x17x17x5 with SiLU, FFNN-R: 1x6x3 with tanh).
+Figures (4A-D) illustrate the training and prediction performance of the optimal PINN.
+Figure (4A) shows a strong agreement between predicted and measured values
+across all five state variables for the training data set. Notably, the coefficient of
+determination (R2) exceeded 0.99 for all state variables showing excellent training
+performance. However, the model’s generalization capability degraded significantly
+when the PINN was exposed to the optimal Park & Ramirez test experiment (Figure,
+4B). The (R2) values for X (0.90), S (0.93), and V (0.99) remained relatively high, but
+a significant performance degradation was observed for PT, and PM, with (R2) values
+of 0.66, and 0.70, respectively. Figure (4C) illustrates the PINN’s adherence to the
+underlying physical laws at randomly generated collocation points. The close
+alignment along the diagonal in Figure (4C) suggests a high level of adherence to the
+physics constraints. However, the generalization of physics equations is severely
+compromised when the PINN is exposed to the test data points (Figure 4D),
+particularly those associated with protein dynamics (PT and PM), which exhibit a
+significant scatter.
+The Park and Ramirez problem clearly poses a greater challenge for the PINN’s ability
+to generalize than in case study 1. Given the excellent training performance, the
+degradation of predictive power could be caused by insufficient information content in
+the training set, as the star points of the CCD-DoE were excluded. To test this
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+hypothesis, the PINN was retrained with the data of the full CCD-DoE (the center,
+square, and star points of the CCD; 15 experiments). Stochastic regularization
+randomly selected 10 out of 15 experiments to compute the data loss at each epoch.
+The overall results are shown in Figures (4 E-F). Indeed, augmenting the training set
+significantly improved the testing performance. As before, PINN succeeded in
+describing the full training data set with (R2) higher than 0.99. The augmented training
+set likely provided a more comprehensive data coverage enabling the PINN to more
+accurately learn the intricate nonlinearities. Despite the tenfold decrease in the test
+loss WMSE (from 0.133 to 0.0128), some scatter persists with a few predictions laying
+outside the 5% error bound, suggesting there is still room for improvement (further to
+this in the comparison with hybrid semiparametric below).
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Figure 4: Training results for case study 2 using a PINN structure (FFNN-S:
+6x17x17x5 with SiLU, FFNN-R: 1x6x3 with tanh), trained with learning rate 0.0075,
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+l = 0.5 and K= 515 collocation points, when the model is trained over a partial data set
+with 8 batch experiments (center and square points of the CCD) (A-D) or over the full
+data set with 15 experiments (full CCD) (E-F). (A) Predicted versus measured X, S,
+PT, PM, V for the partial training set (8 experiments), (B) Predicted versus measured
+X, S, PT, PM, V for the testing set (optimal Park & Ramirez bioreactor with 32.4 g
+production), (C) X, S, PT, PM, V physics at the training collocation points, (D) X, S,
+PT, PM, V physics at the test data points, (E) Predicted versus measured X, S, PT,
+PM, V when the PINN is trained on the full CCD (15 experiments), (F) Predicted versus
+measured X, S, PT, PM, V for the testing set (optimal Park & Ramirez bioreactor with
+32.4 g production).
+4.3. Training convergence
+The training of PINNs is complicated by the need to simultaneously minimize the
+training and physics loss terms. This study followed the most common approach
+whereby a total loss function, defined as the weighted sum of physics and data loss
+terms Eq. (6), is minimized. In this approach, it is critically important that both loss
+terms are correctly normalized. Figures (5 A-B) elucidates the training convergence
+behavior of the optimal PINN structures for case studies 1 and 2, which includes the
+evolution of the data loss, physics loss, and total loss across training epochs.
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Figure 5: Loss function evolution as function of training epoch with a learning rate of
+0.0075, l = 0.5 and K/NWS=1. (A) PINN structure (FFNN-S: 3x8x8x8x2, FFNN-R:
+1x5x1) for case study 1, (B) PINN structure (FFNN-S:6x17x17x5, FFNN-R:1x6x3) for
+case study 2
+In both cases a stable although noisy convergence behavior is observed,
+characterized by a rapid initial decline in the total loss function, encompassing both
+data and physics losses, followed by a prolonged plateau at low loss values. In case
+study 1, stochasticity is introduced in the physics loss function via the random selection
+of collocation points, which propagates to the data loss function via the update of
+neural network parameters. In case study 2, stochasticity originates from both the
+physics loss (random collocation points) and data loss (random experiments to
+compute the data loss). The physics loss term tends to plateau always below the data
+loss term. This is explained by the random experimental error that is intrinsic to the
+data residuals but absent in the physics residuals. Importantly, the data loss terms
+plateaus close to the WMSE noise level (0.0049 for case study 1 and 0.013 for case
+study 2) showing that in both cases overfitting was successfully mitigated.
+4.4. Relative importance of data and physics loss
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+The weighting parameter  sets the relative importance of the physics loss ( and
+data loss (1 - . The choice of  may significantly influence the training convergence
+and overall model performance. The studies above assumed equal importance of
+physics and data loss terms (   Figure (6A) shows the effect of  on the final
+train and test losses for the optimal PINN structure for case study 1. At  = 0.0, the
+physics loss is not minimized thus the PINN becomes analogous to a conventional
+neural network model. As expected, with  = 0.0 the PINN succeeded in describing
+the training data (low final data loss). However, the test data loss was the highest
+among all runs performed. This highlights the importance of “physics learning” for the
+PINN’s ability to extrapolate to unseen observations. As  increases from 0.25 to 0.9,
+a clear decrease trend in the train and test physics is observed. Notably, this is
+accompanied by a decreasing trend in the test data loss denoting synergies between
+physics and data learning. Setting  = 0.5 resulted in the lowest loss values, thus
+providing the optimal trade-off between data and physics loss terms. Figure (6B)
+shows similar results for the optimal PINN structure of case study 2. Likewise,  = 0.5
+provided the optimal balance between data and physics loss minimization. All in all,
+these results demonstrate the synergy between the data and physics learning
+components in the PINN framework. Learning physics is shown to be critically
+important for the PINN’s extrapolation capacity, proving a clear advantage over
+conventional neural models (further discussed below).
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Figure 6: Dependency of data and physics losses for different  values. (A) Optimal
+PINN structure for case-study 1 (FFNN-S: 3x8x8x8x2, FFNN-R: 1x5x1), (B) Optimal
+PINN structure for case-study 2 (FFNN-S:6x17x17x5, FFNN-R:1x6x3).
+4.5. Effect of collocation points
+The number of collocation points (K) directly influences the physics loss minimization
+and indirectly the training convergence and overall model metrics. In this study, the
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+number of collocation points was set as multiples of the number of weights (NWS) of
+the FFNN-S. The ratio K/NWS = 1 thus provides a sufficient number of physics
+residuals to train FFNN-S, even when no data points are available.
+Increasing K/NWS could in theory positively influence the training convergence.
+Figures (7A-B) shows the effect of increasing the ratio K/NWS = 1, 2, 3 on the train
+and test loss terms for the optimal PINN structures of case studies 1 and 2. As
+anticipated, increasing K/NWS generally reduces the train and test physics loss term,
+with however a more marked improvement in case study 1 than in case study 2. The
+physics loss reduction is however not reflected in the data loss terms, which seem to
+be relatively insensitive to the K/NWS ratio. It was concluded that a K/NWS =1 is
+sufficient for achieving robust model convergence. Importantly, the computational cost
+(CPU) escalates linearly with increasing K/NWS. Consequently, a ratio of 1 presents
+an optimal balance between model accuracy and computational efficiency. For this
+reason, K/NWS=1 was set in all tests performed in the present study.
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Figure 7: Dependency of data and physics losses for different K/NWS collocation
+points. (A) Optimal PINN structure for case-study 1 (FFNN-S: 3x8x8x8x2, FFNN-R:
+1x5x1), (B) Optimal PINN structure for case-study 2 (FFNN-S:6x17x17x5, FFNN
+R:1x6x3).
+4.6. Comparison with hybrid semiparametric models
+Several studies have shown the superiority of PINNs in relation to conventional neural
+networks for bioreactor problems (e.g., Bangi et al., 2022; Moayedi et al., 2024;
+Velioglu et al., 2025). Only a few studies compared PINNs and hybrid semiparametric
+modeling (Yang et al., 2024; Jul-Rasmussen et al., 2025). It is particularly interesting
+to analyze if both approaches perform differently when exposed to the same levels of
+data and prior knowledge. To assess this, optimal PINN structures were compared to
+corresponding optimal hybrid semiparametric structures and standard neural network
+structures (without the physics component) for both case studies. Furthermore, the
+dual-FFNN PINN concept proposed in this study was compared with an equivalent
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+single-FFNN PINN where all state variables and kinetic rates are computed by a single
+FFNN. The optimal sizes of the FFNN-S and FFNN-R for all model types were
+systematically evaluated by manual search as previously performed for the dual-FFNN
+PINN structure. To ensure a fair comparison, the 4 types of models were subject to
+identical training, validation, and testing processes. Detailed performance metrics for
+each type of model are given in (Supplementary File 1, Tables S1 and S2 for case
+studies 1 and 2 respectively). A summary of the results is presented in Table 1.
+Table 1 – Comparison of best Dual-FFNN PINN, Single-FFNN PINN, conventional
+FFNN and Hybrid semiparametric models for case studies 1 and 2
+Model FFNN-S FFNN-R Train Data
+loss WMSE
+Validation WMSE
+Test Data
+loss WMSE AICc Nw CPU (min)
+Case study I
+Dual-FFNN PINN 3x8x8x8x2 1x5x1 0.0046 0.0054 0.013 -1895.7 210 109.17
+Single-FFNN
+PINN† 3x8x8x8x3 NA 0.0053 0.0047 0.258 -1856.78 203 104.9
+Conventional
+FFNN‡ 3x3x1 NA 0.0046 0.007 168.83 190.83 16 5.62
+Hybrid
+semiparametric * NA 1x5x1 0.0046 0.0085 0.007 -19.44 16 103.9
+Case study II
+Dual-FFNN PINN 6x17x17x5 1x6x3 0.012 NA 0.133 -11766.50 548 732.3
+Single-FFNN
+PINN† 6x17x17x8 NA 0.010 NA 0.177 -14057.06 569 810
+Conventional
+FFNN‡ 6x5x5x4 NA 0.011 NA 0.521 -102.83 89 125.2
+Hybrid
+semiparametric* NA 1x6x3 0.013 NA 0.039 -108.26 33 702
+(†) Single-FFNN PINNs consisted of a FFNN-S structure where the output layer computes all the state variables and all the unknown kinetic rates (3 outputs for case study 1 and 8 outputs for case study 2) (‡) The conventional neural network models consisted of a single FFNN-S structure trained with data of measured state variables without the physics loss (*) The hybrid semiparametric models followed the general structure of Figure (1B). The material balance ODEs were inserted directly in the model structure in replacement of the FFNN-S, namely
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Eqs. (8a, b) for case study 1 and Eqs. (9a-e) for case study 2. The reaction kinetics were considered unknown thus described by the FFNN-R similarly to the dual-FFNN PINN structure
+Table 1 shows that the dual-FFNN PINN structure outperforms a single-FFNN
+structure with a comparable number of parameters in terms of predictive power for
+both case studies. The test WMSE was 19.4-fold higher in case study 1 and 33%
+higher in case study 2. The same conclusion can be taken for all structures tested
+without exception (Supplementary File 1, Tables S1 and S2). In most cases, the train
+WMSE levels off at higher values in the case of single-FFNN PINNs compared to the
+dual-FFNN PINNs of the same size. The uncoupling of state parameterization and
+kinetics parameterization seems to be advantageous for the training stability. In what
+follows the analysis of results is focused on the dual-FFNN PINN structure.
+For case study 1, the dual-FFNN PINN, hybrid semiparametric, and conventional
+FFNN models achieved the same final training WMSE (Table 1). Of relevance, both
+the dual-FFNN PINN and semiparametric approaches utilized an equally-sized FFNN
+R to approximate the specific growth rate (μ) as a function of biomass concentration
+(X), with a single hidden layer with 5 tanh nodes. The prediction accuracy of the hybrid
+semiparametric approach was however superior to that of the PINN (~50% lower test
+WMSE). Despite the twofold higher test error, the modified AICc criterion favored the
+PINN over the hybrid semiparametric approach because of the high number of physics
+residuals (parameter K in Eq. (7)). Thus, the AICc criterion appears to be unsuitable
+to fairly discriminate PINN models. The test WMSE of the conventional FFNN model
+is several orders of magnitude higher than the other approaches.
+Figures (8A-B) further detail the prediction profiles for an exemplary test experiment
+(the one with the highest feed rate). The time scale was extended to 166 hours to
+further evaluate the temporal extrapolation capabilities of the models. Both the dual
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+FFNN PINN and semiparametric models effectively approximated the growth curve
+within the scatter of the experimental data. In contrast, the conventional FFNN
+severely failed to predict the true dynamic trajectory. When evaluated under extended
+temporal extrapolation conditions, the hybrid semiparametric model converges to a
+stable final biomass concentration, although with an offset that in this case amounted
+to 8% underprediction of the true value. The PINN exhibits, however, unstable
+behaviour as it diverges from the final biomass concentration over time. This apparent
+disadvantage of the PINN is not circumstantial as the same behaviour was replicated
+in several other experiments. Similar conclusions can be reached in the case of
+volume (V) Figure (8B). The hybrid semiparametric model shows a perfect volume
+prediction because the full physics is embedded in the model, thus the only source of
+error stems from the numerical integration. Conversely, the PINN shows an increasing
+error over time most likely due to limitations in the extrapolation of the learned dV/dt=F
+equation. Of note, the ANN does not predict volume due to the unavailability of volume
+data points to train it. Figures (8C-D) show the extrapolation WMSE for all test batches
+over the extended timeframe confirming that the hybrid semiparametric model is far
+superior to the PINN. It is worth noting that training with a single experiment configures
+an extreme data sparsity scenario. Increasing the number of training batches to two
+significantly reduced the hybrid semiparametric offset and significantly improved the
+PINN extrapolation performance (results not shown).
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Figure 8: Compares the dual-FFNN PINN (FFNN-S: 3x8x8x8x2, FFNN-R: 1x5x1) and
+hybrid semiparametric (ODE(2); FFNN-R: 1x5x) extrapolation capacity for case study
+1. (A) Biomass prediction for the test experiment 10 (highest feed rate) over an
+extended timeframe 0-166 h, (B) Volume prediction for the test experiment 10 (highest
+feed rate) over an extended timeframe 0-166 h, (C) Biomass WMSE distribution
+across all (training + testing) batches for the extended temporal extrapolation (0 - 166
+h), (D) Volume WMSE distribution across all (training + testing) batches for the
+extended temporal extrapolation (0 - 166 h).
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+A similar analysis was performed for case study 2. The FFNN-R structure of the hybrid
+semiparametric model and the FFNN-S structure of the conventional FFNN model
+were systematically evaluated by grid search (Supplementary File 1, Table S2). A
+summary of results for the best structures is given in Table 1. As for case study 1, the
+PINN, hybrid semiparametric, and conventional FFNN models achieved practically the
+same final training WMSE, denoting a comparable descriptive power of the training
+data. The prediction accuracy of the Park & Ramirez optimal experiment is however
+very divergent among the 3 models. The hybrid semiparametric model achieved the
+lowest test WMSE of 0.039, followed by the PINN with a 3.4-fold increase. As
+expected, the conventional FFNN model had the lowest prediction accuracy, showing
+a 13.1-fold increase in the test error in relation to the hybrid semiparametric model.
+Figures (9A-F) depict the predicted profiles of biomass (X), substrate (S), total protein
+(PT), secreted protein (PM), and volume (V) for the optimal Park & Ramirez feed rate
+profile. Figure (9F) shows the piecewise constant optimal feed rate profile (1h step
+size) that delivers optimal protein production (PM(15)V(15)=32.4g at 15h cultivation
+time). The hybrid semiparametric model provides a significantly better fit to the true
+process dynamics. The final prediction of secreted protein production was 32.48 g. In
+contrast, the PINN shows significant underperformance compared to the hybrid
+semiparametric model, particularly in the predictions for (S, PT, PM, V). The final
+prediction of secreted protein was only 28.16 g. The conventional FFNN showed the
+highest deviations from the true profiles. As for case study 1, the FFNN model was not
+trained with volume data thus it is unable to predict volume. Importantly, the FFNN
+model occasionally predicted negative concentration values of S, PT, and PM. This
+problem was largely mitigated in the case of PINN due to the physics regularization
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+during the training except for substrate. Substrate poses a significant challenge
+because it depletes to almost zero concentration in the last 4 cultivation hours. The
+PINN could not cope with negative concentrations most likely to inaccurate material
+balance equations extrapolation (inaccuracies in the learned physics). The hybrid
+semiparametric model practically eliminated the negative concentrations as the
+material balance equations are numerically integrated.
+Figure (9 A - F): Compares the best dual-FFNN PINN, best hybrid semiparametric,
+and best FFNN models (Table 1) for the Park & Ramirez optimal production
+experiment (test data set). (A) Biomass overtime, (B) Substrate overtime, (C) Total
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+protein overtime, (D) Secreted protein overtime, (E) Volume overtime, (F) Optimal
+feed rate profile.
+5. Discussion
+This study presents a comparison of PINNs and hybrid semiparametric modelling for
+bioprocesses, evaluated across two case studies with varying levels of mechanistic
+complexity. The comparative analysis elucidates the strengths and limitations of each
+modelling paradigm, particularly under data-scarce regimes and extrapolative tasks.
+In case study 1, which involved logistic microbial growth governed by relatively simple
+dynamics, both the PINN and hybrid semiparametric models achieved excellent
+predictive performance within the data domain. The PINN effectively inferred
+unobserved volume dynamics using only biomass measurements, showcasing the
+potential of embedding physical knowledge within the loss function to predict
+unobserved target variables. However, as shown in Figure (8), the hybrid
+semiparametric model consistently outperformed the PINN in extended temporal
+extrapolation, benefiting from its direct integration of governing equations within the
+model structure.
+Case study 2 posed a significantly more complex scenario, involving five interacting
+state variables, nonlinear reaction kinetics, and time-varying control inputs. Under
+these conditions, the performance of the PINN deteriorated notably, particularly in
+extrapolating the dynamics of secreted protein (PM) and total protein (PT) for sparse
+data sets. The hybrid semiparametric model again outperformed the PINN model,
+offering lower train and test WMSE values and superior fit across all variables. The
+PINN struggled to generalize effectively to unseen feed profiles, a result that is
+consistent with literature studies that reported PINN shortcomings in capturing
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+nonlinear dynamics due to gradient pathologies and the stiffness in the optimization
+process, where different parts of the solution space vary on different scales (Wang et
+al., (2021); Wang et al., (2022)). Li and Feng (2022) emphasized the importance of
+balancing physics and data losses during training, a challenge that our study
+addressed through manual tuning of the weighting parameter λ as discussed earlier in
+(Section 4.4). By contrast, the hybrid semiparametric model maintained stable and
+accurate performance across both case studies. Its architecture, that incorporates
+differential equations directly in the model structure, enabled transparent integration
+of mechanistic knowledge, reduced training complexity, and improved convergence.
+Similar results were reported by Jul-Rasmussen et al. (2025).
+Unsurprisingly, the conventional FFNN consistently underperformed in both case
+studies due to its lack of mechanistic structure, displaying high variance and poor
+generalization comparatively to the PINN and hybrid semiparametric models. These
+findings are supported by the recent work of Velioglu et al. (2025), who proposed a
+differential-algebraic equation based heuristic to determine whether a PINN can
+estimate hidden states in partially known systems. Their results demonstrated the
+superior extrapolation and state reconstruction capabilities of PINNs compared to
+conventional neural networks, even in the absence of full constitutive equations. This
+aligns with our extrapolation study where the PINN has accurately extrapolated
+beyond the training domain even for unobserved states such as the case of
+unmeasured volume. However, this extrapolative advantage is not guaranteed in more
+complex systems as highlighted in case study 2.
+Recent methodological contributions further insight into PINN limitations.
+Subramanian et al. (2023) proposed adaptive collocation schemes that target high
+error regions to improve physics learning and physics extrapolation. While our study
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+did not adopt adaptive resampling, we employed a stochastic collocation strategy that
+regenerated collocation points at each training epoch across the bounded state space.
+This approach proved effective for enforcing broad physical coverage and stabilizing
+the physics loss. To avoid overfitting, Gaussian Process (GP) smoothening strategies
+were suggested by Bajaj et al. (2023). This study followed conventional approaches,
+for instance, case study 1 employed cross-validation using repeated center-point
+experiments, while case study 2 leveraged stochastic regularization via minibatch size
+data resampling. Furthermore, our reliance on automatic differentiation (AD) aligns
+with conventional PINN formulations, but results from Chiu et al. (2022) suggest that
+hybrid differentiation strategies by coupled automatic-numerical differentiation method
+(Can-PINN) enhance computational efficiency and accuracy in solving complex
+physics systems, an avenue worth exploring in future work.
+Overall, this study highlights the nuanced capabilities of each modelling framework.
+Hybrid semiparametric models offer high accuracy and stability within well-defined
+process regimes. This is particularly true when the backbone of the model is precisely
+defined by a mechanistic equation, such as Eqs. (1a,b) for bioreactor problems. A key
+advantage is that the extrapolation of physics is not endangered by training limitations.
+The requirement of numerical integration may, however, constitute a limitation,
+particularly for stiff ODE systems. PINNs also have high potential to learn from data
+and physics simultaneously and may be more flexible for problems with partially known
+physics. They show a clear advantage over conventional ANNs, but their multi
+objective training is far more complex. PINNs do not suffer from the ODEs stiffness
+limitations of hybrid semiparametric models. Their critical disadvantage respects the
+extrapolation of physics, which is not guaranteed for the case of PINNs. The choice
+between these paradigms should thus be dictated by the modelling objective whether
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+high-fidelity interpolation or robust extrapolation is required, by the nature of available
+process knowledge and encountered numeric implementation hurdles.
+6. Conclusion
+This study compared PINN, hybrid semiparametric, and conventional ANN modelling
+for generic bioreactor modelling illustrated with 2 case studies. The results highlight
+that PINNs, through their incorporation of physics in the loss function, exhibit stronger
+extrapolation capabilities than conventional ANNs, particularly in scenarios of high
+data sparsity. Hybrid semiparametric models, which embed the physics equations
+directly in the model structure, tend to deliver superior predictive accuracy and
+convergence stability than PINNs for highly nonlinear dynamical systems. The findings
+emphasize that while PINNs provide a flexible framework for integrating partial prior
+knowledge, their performance is sensitive to system complexity, hyperparameter
+tuning, and training instabilities. Hybrid models, in contrast, offer interpretability and
+robustness but may be less adaptable in extrapolative scenarios where physics may
+also change. ANN models, lacking any form of physical constraint, consistently
+underperform in both predictive accuracy and generalization. This study underscores
+the importance of a problem-driven modelling strategy. PINNs are well-suited for
+model development under data limitations and structural uncertainty, while hybrid
+semiparametric models are preferable for process domains with broader mechanistic
+insights without numerical hurdles.
+Abbreviations
+FFNN-S, State variables neural network; FFNN-R, Reaction kinetics neural network;
+NW, Number of network weight; K, Number of collocation points; SiLU, Sigmoid
+weighted linear unit; tanh, hyperbolic tangent; ADAM, Adaptive Moment Estimation;
+WMSE, Weighted mean squared error
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+CRediT authorship contribution statement
+Monesh kumar Thirugnanasambandam: Writing – review & editing, Writing 
+original draft, Visualization, Validation, Software, Methodology, Investigation, Formal
+analysis, Data curation, Conceptualization. José Pinto: Writing – review & editing,
+Methodology, Investigation, Supervision, Conceptualization. Ekaterina
+Moskovkina: Writing – review & editing, Investigation. Rafael S. Costa: Writing 
+review & editing, Methodology, Conceptualization, Supervision. Rui Oliveira: Writing
+– review & editing, Supervision, Project administration, Funding acquisition,
+Conceptualization.
+Declaration of Competing Interest
+The authors declare that they have no known competing financial interests or personal
+relationships that could have appeared to influence the work reported in this paper.
+Acknowledgments
+This work is financed by national funds from FCT - Fundação para a Ciência e a Tecnologia, I.P., in the scope of the project UIDP/04378/2020 (DOI: 10.54499/UIDP/04378/2020) and UIDB/04378/2020 (DOI: 10.54499/UIDB/04378/2020) of the Research Unit on Applied Molecular Biosciences - UCIBIO and the project LA/P/0140/2020 (DOI: 10.54499/LA/P/0140/2020) of the Associate Laboratory Institute for Health and Bioeconomy - i4HB. This work received funding from the European Union’s Horizon 2020 research and innovation program under grant agreement no.101099487—BioLaMer-HORIZON-EIC-2022PATHFINDEROPEN-01 (BioLaMer).
+References
+Akiba, T., Sano, S., Yanase, T., Ohta, T. and Koyama, M., 2019, July. Optuna: A nextgeneration hyperparameter optimization framework. In Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining (pp. 26232631). https://doi.org/10.1145/3292500.3330701
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Adebar, N., Arnold, S., Herrera, L. M., Emenike, V. N., Wucherpfennig, T., Smiatek, J., 2024. Physics-informed neural networks for biopharmaceutical cultivation processes: Consideration of varying process parameter settings. Biotechnol. Bioeng. https://doi.org/10.1002/bit.28851
+Baydin, A. G., Pearlmutter, B. A., Radul, A. A., Siskind, J. M., 2018. Automatic differentiation in machine learning: A survey. J. Mach. Learn. Res. 18 (153), 1–43. http://jmlr.org/papers/v18/17-468.html
+Bangi, M.S.F., Kao, K., Kwon, J.S., 2022. Physics-informed neural networks for hybrid modeling of lab-scale batch fermentation for β-carotene production using Saccharomyces cerevisiae. Chem. Eng. Res. Des. 179, 415–423. https://doi.org/10.1016/j.cherd.2022.01.041
+Bajaj, C., McLennan, L., Andeen, T. and Roy, A., 2023. Recipes for when physics fails:recovering robust learning of physics informed neural networks. Machine learning: science and technology, 4(1), p.015013. https://doi.org/10.1088/26322153/acb416
+Bayer, B., Duerkop, M., Pörtner, R., Möller, J., 2023. Comparison of mechanistic and hybrid modeling approaches for characterization of a CHO cultivation process: Requirements, pitfalls and solution paths. Biotechnol. J. 18 (1), 2200381. https://doi.org/10.1002/biot.202200381
+Chiu, P.H., Wong, J.C., Ooi, C., Dao, M.H. and Ong, Y.S., 2022. CAN-PINN: A fast physics-informed neural network based on coupled-automatic–numerical differentiation method. Computer Methods in Applied Mechanics and Engineering, 395, p.114909. https://doi.org/10.1016/j.cma.2022.114909
+Cui, T., Bertalan, T., Ndahiro, N., Khare, P., Betenbaugh, M., Maranas, C., Kevrekidis, I. G., 2024. Data-driven and physics-informed modeling of Chinese Hamster Ovary cell bioreactors. Comput. Chem. Eng. 183, 108594. https://doi.org/10.1016/j.compchemeng.2024.108594
+Cruz-Bournazou, M.N., Narayanan, H., Fagnani, A. and Butté, A., 2022. Hybrid Gaussian Process Models for continuous time series in bolus fed-batch cultures. IFAC-Papers OnLine, 55(7), pp.204-209. https://linkinghub.elsevier.com/retrieve/pii/S2405896322008461
+Glassey, J., Gernaey, K. V., Clemens, C., 2011. Process analytical technology (PAT) for biopharmaceuticals. Biotechnol. J. 6 (4), 369–377. https://doi.org/10.1002/biot.201000356
+Hong, M. S., Braatz, R. D., 2021. Mechanistic modeling and parameter-adaptive nonlinear model predictive control of a microbioreactor. Comput. Chem. Eng. 147, 107255. https://doi.org/10.1016/j.compchemeng.2021.107255
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Kadlec, P., Gabrys, B., Strandt, S., 2009. Data-driven soft sensors in the process industry. Comput. Chem. Eng. 33 (4), 795–814. https://doi.org/10.1016/j.compchemeng.2008.12.012
+Kingma, D.P. and Ba, J., 2014. Adam: A method for stochastic optimization. CoRR, abs/1412.6980.
+Kipf, T. N., Fetaya, E., Wang, K. C., Welling, M., Zemel, R., 2018. Neural relational inference for interacting systems. https://dx.doi.org/10.48550/arXiv.1802.04687
+Li S, Feng X. Dynamic Weight Strategy of Physics-Informed Neural Networks for the 2D Navier-Stokes Equations. Entropy (Basel). 2022 Sep 6;24(9):1254. PMID: 36141140; PMCID: PMC9497516. https://doi.org/10.3390/e24091254
+Li, Q., Zhang, J., Wan, H., Zhao, Z., Liu, F., 2024. Physics-informed neural networks for multi-stage Koopman modeling of microbial fermentation processes. J. Process Control 143, 103315. https://doi.org/10.1016/j.jprocont.2024.103315
+Moayedi, F., Chandrasekar, A., Rasmussen, S., Sarna, S., Corbett, B., Mhaskar, P., 2024. Physics-informed neural networks for process systems: Handling plant-model mismatch. Ind. Eng. Chem. Res. 63 (31), 13650–13659. https://doi.org/10.1021/acs.iecr.4c00690
+Narayanan, H., von Stosch, M., Feidl, F., Sokolov, M., Morbidelli, M., Butté, A., 2023. Hybrid modeling for biopharmaceutical processes: Advantages, opportunities, and implementation. Front. Chem. Eng. 5, 1157889. https://doi.org/10.3389/fceng.2023.1157889
+Oliveira, R., 2004. Combining first principles modelling and artificial neural networks: A general framework. Comput. Chem. Eng. 28 (5), 755–766. https://doi.org/10.1016/j.compchemeng.2004.02.014
+Park, S., Ramirez, W. F., 1988. Optimal production of secreted protein in fed-batch reactors. AIChE J. 34 (9), 1559–1568. https://doi.org/10.1002/aic.690340917
+Psichogios, D. C., Ungar, L. H., 1992. A hybrid neural network-first principles approach to process modeling. AIChE J. 38 (10), 1499–1511. https://doi.org/10.1002/aic.690381003
+Pinto, J., Mestre, M., Ramos, J., Costa, R. S., Striedner, G., Oliveira, R., 2022. A general deep hybrid model for bioreactor systems: Combining first principles with deep neural networks. Comput. Chem. Eng. 165, 107952. https://doi.org/10.1016/j.compchemeng.2022.107952
+Jul-Rasmussen, P., Kumar, M., Pinto, J., Oliveira, R., Liang, X. and Huusom, J.K., 2025. Incorporating first-principles information into hybrid modeling structures:
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Comparing hybrid semi-parametric models with Physics-Informed Recurrent Neural Networks. Computers & Chemical Engineering, p.109119. https://doi.org/10.1016/j.compchemeng.2025.109119
+Raissi, M., Perdikaris, P., Karniadakis, G. E., 2019. Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. J. Comput. Phys. 378, 686–707. https://doi.org/10.1016/j.jcp.2018.10.045
+Ramos, J.R., Pinto, J., Poiares‐Oliveira, G., Peeters, L., Dumas, P. and Oliveira, R.,
+2024. Deep hybrid modeling of a HEK293 process: Combining long short‐term memory networks with first principles equations. Biotechnology and bioengineering, 121(5), pp.1554-1568. https://doi.org/10.1002/bit.28668
+Schubert, J., Simutis, R., Dors, M., Havlík, I., Lübbert, A., 1994. Hybrid modelling of yeast production processes—Combination of a priori knowledge on different levels of sophistication. Chem. Eng. Technol. 17, 10–20. https://doi.org/10.1002/ceat.270170103
+Smiatek, J., Jung, A., Bluhmki, E., 2020. Towards a digital bioprocess replica: Computational approaches in biopharmaceutical development and manufacturing. Trends Biotechnol. 38 (10), 1141–1153. https://doi.org/10.1016/j.tibtech.2020.05.008.
+Subramanian, S., Kirby, R.M., Mahoney, M.W. and Gholami, A., 2023. Adaptive selfsupervision algorithms for physics-informed neural networks. https://dx.doi.org/10.3233/FAIA230521
+Thompson, M. L., Kramer, M. A., 1994. Modeling chemical processes using prior knowledge and neural networks. AIChE J. 40. https://doi.org/10.1002/aic.690400806
+Van Impe, J. F., Vanderleyden, J., Versyck, K. J., et al., 2013. Quantitative analysis of microbial metabolism: Probing and modeling as driving forces in biotechnology. Biotechnol. Adv. 31 (1), 1–19. http://dx.doi.org/10.1016/j.foodcont.2012.06.019
+Von Stosch, M., Davy, S., Francois, K., Galvanauskas, V., Hamelink, J.-M., Luebbert, A., Mayer, M., Oliveira, R., O'Kennedy, R., Rice, P., Glassey, J., 2014. Hybrid modeling for quality by design and PAT—Benefits and challenges of applications in biopharmaceutical industry. Biotechnol. J. 9 (6), 719–726. https://doi.org/10.1002/biot.201300385
+Von Stosch, M., Oliveira, R., Peres, J., de Azevedo, S. F., 2014. Hybrid semiparametric modeling in process systems engineering: Past, present and future. Comput. Chem. Eng. 60, 86–101. https://doi.org/10.1016/j.compchemeng.2013.08.008
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Velioglu, M., Zhai, S., Rupprecht, S., Mitsos, A., Jupke, A. and Dahmen, M., 2025. Physics-informed neural networks for dynamic process operations with limited physical knowledge and data. Computers & Chemical Engineering, 192, p.108899. https://doi.org/10.1016/j.compchemeng.2024.108899
+Wang, S., Teng, Y. and Perdikaris, P., 2021. Understanding and mitigating gradient flow pathologies in physics-informed neural networks. SIAM Journal on Scientific Computing, 43(5), pp. A3055-A3081. https://doi.org/10.1137/20M1318043
+Wang, S., Yu, X., Perdikaris, P., 2022. When and why PINNs fail to train: A neural tangent kernel perspective. J. Comput. Phys. 449, 110768. https://doi.org/10.1016/j.jcp.2021.110768
+Yang, S., Fahey, W., Truccollo, B., Browning, J., Kamyar, R., Cao, H., 2024. Hybrid modeling of fed-batch cell culture using physics-informed neural network. Ind. Eng. Chem. Res. https://doi.org/10.1021/acs.iecr.4c01459
+Helleckes, L.M., Hemmerich, J., Wiechert, W., von Lieres, E. and Grünberger, A., 2023. Machine learning in bioprocess development: from promise to practice. Trends in biotechnology, 41(6), pp.817-835. https://doi.org/10.1016/j.tibtech.2022.10.010
+This preprint research paper has not been peer reviewed. Electronic copy available at: https://ssrn.com/abstract=5254834
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed
+
+
+Preprintnotpeerreviewed

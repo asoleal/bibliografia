@@ -1,0 +1,452 @@
+RESEARCH ARTICLE
+Dynamic modelling of feed assimilation,
+growth, lipid accumulation, and CO2
+production in black soldier fly larvae
+Niels Thomas EriksenID*
+Department of Chemistry and Bioscience, Aalborg University, Aalborg, Denmark
+* nte@bio.aau.dk
+Abstract
+The black soldier fly (BSF) is becoming a novel farm animal. BSF larvae can be reared on
+different substrates. Their performance is important but highly variable and different models
+have been employed to analyze their growth, so far without considering that metabolic
+rates, growth, and biochemical composition of the larvae are interrelated. This work devel
+ops a dynamic model, which describes general growth patterns of BSF larvae and predicts
+observed variability in larval performances. The model was tested against data from litera
+ture, which combines kinetic growth data with measurements of lipid or dry weight content,
+and CO2 production. The model combines the kinetics of the logistic model with principles
+from differential energy budget models and considers key events in larval life history, moult
+ing and metamorphosis. Larvae are compartmentised into structural biomass, storage lip
+ids, and a pool of assimilates. Feed assimilation is considered the overall rate limiting
+process and is reduced in relation to larval weight by a logistic function. A second logistic
+function further reduces the specific growth rate of structural biomass, causes imbalance
+between and feed assimilation and growth rates, and leaves a surplus of assimilates to be
+stored as lipids. Fluxes between compartments consider cost of synthesis of structural bio
+mass and lipids, as well as maintenance. When assimilation falls below maintenance
+needs, storage lipids are recycled. The model is able to describe growth and lipid contents
+of BSF larvae reared on chicken feed, growth of feed limited BSF larvae, as well as growth,
+dry weight content, and CO2 production of BSF larvae reared on different substrate qualities
+and moisture contents. The model may be used for the analysis of growth and performance
+of BSF larvae under variable rearing conditions. It can deepen the analyses of experimental
+data and provide insight into the causes of variability of larval performances.
+Introduction
+Larvae of the black soldier fly (BSF, Hermetia illucens) are promising candidates for upgrading of organic materials into high quality biomass [1] for use in e.g., animal feed [2] or biodiesel [3], and for reduction of organic waste streams [4–6]. BSF larvae can be reared on a variety of substrates, including organic wastes, sludge, manure, agricultural by-products, and
+PLOS ONE
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 1 / 22
+a1111111111 a1111111111 a1111111111 a1111111111 a1111111111
+OPEN ACCESS
+Citation: Eriksen NT (2022) Dynamic modelling of feed assimilation, growth, lipid accumulation, and CO2 production in black soldier fly larvae. PLoS ONE 17(10): e0276605. https://doi.org/10.1371/ journal.pone.0276605
+Editor: Juan J Loor, University of Illinois, UNITED STATES
+Received: April 22, 2022
+Accepted: October 10, 2022
+Published: October 26, 2022
+Copyright: © 2022 Niels Thomas Eriksen. This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+Data Availability Statement: All relevant data are within the paper and its Supporting information files.
+Funding: The author received no specific funding for this work.
+Competing interests: The authors have declared that no competing interests exist.
+
+
+commercial animal feed blends. Larval performances, in terms of growth, size, biochemical composition, and life span, as well as the efficiency by which substrates are converted into larval biomass vary considerably and are affected by the quality of the substrate [1, 7–9], substrate supply [10], as well as temperature, oxygen availability, and moisture content [11–14]. Larval performances are difficult to compare across studies due to the complexity of the substrates and variations of the physical conditions within and between larval rearing cultures. Growth and development rely on complex processes and growth models are essential tools for the analysis and quantification of animal growth. It has become increasingly popular to apply growth models for the analysis of growth and development of BSF larvae in recent years. Growth of BSF larvae have been described by sigmoidal Gompertz models [15, 16] and logistic Richards and Verhulst models [17]. The logistic models have been found to describe growth of BSF larvae (in terms of increasing body width) most accurately and used to evaluate the quality of different substrates [17]. Verhulst’s logistic model has also been used to estimate specific growth rates and maximal weight of BSF larvae, which combined with measured respiration rates also enabled costs of growth, maintenance, and net growth efficiency to be quantified [9, 14]. Probably the most comprehensive growth model for BSF larvae describes growth as a function of feed assimilation [18]. In this model, a logistic function decreases the feed assimilation rate in relation to the increasing weight of the larvae. The growth rate is determined by the difference between the rate of ingestion and the rates of excretion and metabolic processes, and growth slows down as the larvae approach their maximal weight. The feed assimilation rate was furthermore modelled as a function of limited feed availability, temperature, oxygen availability, or moisture content. One alternative growth model for BSF larvae, not based on logistic functions, was developed by [19]. This model links growth at the culture level to overall substrate reduction but makes little use of physiological data. The biochemical composition of insect larvae varies over their life span, not least their lipid content. Increasing amounts of storage lipids accumulate in the fat body as the larvae become larger, and these can later be re-mobilized to supply energy [20]. This is the case also for BSF larvae, which become increasingly rich in lipids as they grow but loose again most of their lipid reserves when they become prepupae [21–23]. The accumulation of lipids in the fat body of BSF larvae depends, however, on their dietary status [24]. If growth is slow and the weight of the prepupae low, or when nutritionally important substrate components are spent before the larvae are fully grown, the prepupae end up with low lipid contents [25–27]. Lipid contents of BSF larvae and prepupae at time of harvest may thus vary between 8% and 47% per unit of dry biomass [28]. The water content in the larval tissue will presumably show an inverse relationship to lipid content since adipose tissues binds relatively little water [29], and fluctuations in water content have also been observed in growing BSF larvae [9, 14]. These size and age dependent differences in biochemical composition shows that rates of feed uptake and growth are not balanced in growing BSF larvae, something that is not considered in the growth models described above [9, 14–18]. A general model for growth of BSF larvae should be able to describe general growth patterns and be sufficiently dynamic to also encompass the variability in growth rates and larval weights that are observed when BSF larvae are reared on different substrates and at different conditions. The weight of the larvae represents the combined weight of all the components that form their body, but biochemical composition is unaccounted for in the growth models described above, despite apparent links between growth, metabolism, and lipid accumulation. The aim of this paper is therefore to develop a dynamic model for BSF larvae, which combines the kinetics of the logistic model with principles from differential energy budget (DEB) models, which structure the biomass into compartments and predict metabolite fluxes and biochemical composition, across a range of substrates and environmental conditions. Such a
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 2 / 22
+
+
+model may improve and deepen the analyses of data from growth experiments, provide insight into the overall rates of anabolic and catabolic processes responsible for growth and development of BSF larvae, and be used for optimization of the conditions in rearing cultures of BSF larvae.
+Growth model development
+The growth model developed in this study combines the kinetics of the logistic function with a DEB model where larval biomass is compartmentised into structural biomass, B and storage lipids, L. In the model, the structural biomass includes all components of the larvae besides the lipids. Feed components are assumed to enter a pool of assimilates, A from where they are utilized for production of structural biomass, metabolized to CO2 to generate energy for maintenance, or converted into storage lipids. Synthesis of structural biomass and lipids (observable as growth) are energy demanding anabolic processes and parts of the assimilates allocated for structural biomass or storage lipids are metabolized to CO2 via catabolism. In the model, maintenance covers all energy demanding processes that do not lead to net synthesis of structural biomass or lipids. Storage lipids can be recycled to the pool of assimilates. In the model, the pool of assimilates is thus considered to be molecules in transit from they are released into the hemolymph from either the intestinal wall or the fat body and until they undergo energy demanding biochemical modifications. The main structural components and overall metabolic processes are illustrated in Fig 1. The pool of assimilates has probably never been quantified in BSF larvae but is likely small in mass compared to the masses of structural biomass and storage lipids. Potential changes in the mass of assimilates will therefore also be small compared to the fluxes of assimilates passing through. In the model, the pool of assimilates is therefore assumed to be at steady-state. Mass balances of assimilates, structural biomass, and lipids are shown in Eqs 1–3.
+dA
+dt 1⁄4 0 1⁄4 rA rB þ rL þ rCO2;m þ rCO2;B þ rCO2;L
+� ð1Þ
+dB
+dt 1⁄4 rB ð2Þ
+dLtot
+dt 1⁄4 rL þ dL;BrB ð3Þ
+where rA, rB, and rL are rates of feed assimilation, synthesis of structural biomass, and accumulation of storage lipids, while rCO2,m, rCO2,B, and rCO2,L are rates of CO2 production due to energy requirements associated with maintenance, synthesis of structural biomass, and synthesis of storage lipids, respectively. Lipids also make up a fraction, δL,B of the structural biomass which are analytically indistinguishable from storage lipids, and Ltot represents the total lipid content in a larva, i.e. the amount of lipid that can be measured experimentally. The feed assimilation rate is considered the overall rate limiting metabolic process, expressed as the product of the specific feed assimilation rate, a and the weight of structural biomass.
+rA 1⁄4 aB ð4Þ
+Insect larvae show a discontinuous mode of growth where moulting phases separate the different instars, I. The life history of BSF larvae includes 6 instars before they reach maximal size, turn into prepupae, and stop feeding [30]. A 7th instar was also described by [31], which do not grow and here is viewed as part the prepupal stage. When conditions are suitable, BSF
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 3 / 22
+
+
+larvae grow exponentially until they reach a certain weight [9, 14]. The transition from instar 5 to instar 6 marks the end of exponential growth, and when the larvae turn into pupae growth ceases. This growth pattern is due to differences in specific feed uptake rate in the different instars, in the model described by Eq 5.
+a1⁄4
+amax; I < 6
+amax 1 B
+Bmax
+� �a
+��
+; I1⁄46
+0; I > 6
+8 >>><
+>>>:
+ð5Þ
+The maximal specific feed assimilation rate, amax is sustained by instar 1–5. The specific feed assimilation rate decreases in instar 6, following a logistic expression where Bmax is the maximal weight of structural biomass of a BSF larva. The coefficient, α adjusts how rapidly assimilation slows down with increasing structural biomass weight. If α = 1, the expression is the same as in Verhulst’s logistic model, used also in the growth model by [18]. If α is smaller or larger than 1, the decrease in specific assimilation rate is accelerated or decelerated as compared to Verhulst’s logistic model. When the larvae transform into prepupae they stop feeding. This pattern of feed uptake is reflected also in the metabolic rates of BSF larvae. Instars 3 and 4 are
+Fig 1. Differential energy budget model of BSF larva. Larval biomass is compartmentised into structural biomass, B, storage lipids, L, and a pool of assimilates, A. Feed components are assimilated (from the intestine) into the pool of assimilates at rate, rA from where they are metabolized to CO2 to generate energy for maintenance at rate rCO2,m, utilized for structural biomass or converted into storage lipids at rates rB and rL, or metabolized to CO2 to generate energy for the synthesis of structural biomass or storage lipids at rates rCO2,B and rCO2,L. Storage lipids can be recycled to the pool of assimilates.
+https://doi.org/10.1371/journal.pone.0276605.g001
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 4 / 22
+
+
+characterized by a high specific heat production rate, which slows down in instars 5 and 6, to reach minimum in instar 7 [31]. Part of the assimilated feed is metabolized to generate energy for maintenance. Maintenance is considered to be proportional to the mass of structural biomass [32] and the maintenance rate, expressed in terms of CO2 production, is described by Eq 6
+rCO2;m 1⁄4 mB ð6Þ
+where m is the specific rate of CO2 production due to maintenance metabolism. The growth rate of structural biomass will depend on the specific growth rate of this component, μB. When the larvae turn into prepupae, the specific growth rate becomes zero and no more structural biomass is produced.
+rB 1⁄4
+mBB; I � 6
+0; I > 6
+(
+ð7Þ
+If assimilation and growth are balanced, storage lipids will not accumulate, the specific growth rate will correspond to the difference between specific rates of assimilation and respiratory losses and represent the potential for structural growth
+mB 1⁄4 a q ð8Þ
+where q is the specific rate of CO2 production. Assimilates are respired to CO2 to supply energy for growth as well as for maintenance
+q 1⁄4 YBmB þ m ð9Þ
+where YB (dimensionless) represents the cost of growth of structural biomass and depends on the energetic needs for conversion of feed into structural biomass. Growth and feed assimilation is, however, not balanced in BSF larvae because their biochemical composition is size dependent, and their lipid content increases with age [21–23]. This can be interpreted as if late instars produce structural biomass at a lower specific rate than predicted by Eq 8. The specific growth rate is therefore modelled by Eq 10, in which Eqs 8 and 9 are combined to predict the potential for growth of structural biomass (expression within the first parenthesis) multiplied by a second logistic expression (expression within the second parenthesis), forcing the specific growth rate further and further below its potential as the larvae approach maximal weight.
+mB 1⁄4 a m
+1 þ YB
+��
+1B
+Bmax
+� �b!
+ð10Þ
+The coefficient, β adjusts how rapidly the specific growth rate is decreasing with body weight, in addition to the decrease mediated via the decreasing specific assimilation rate. The smaller β is, the larger will the fraction of assimilates, which are guided towards storage lipids, be. The rate of CO2 production due to the energy metabolism associated with production of structural biomass is estimated from Eq 11.
+rCO2;B 1⁄4 YBrB ð11Þ
+Based on the steady-state assumption in Eq 1, accumulation of storage lipids can now be calculated as the difference between the assimilation rate and the processes accounted for in Eqs 4, 6, and 7. In case assimilates are in surplus, these are used for storage lipid synthesis. If
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 5 / 22
+
+
+not, stored lipids will be returned to the pool of assimilates
+rL 1⁄4
+ra rB þ rCO2;m þ rCO2;B
+�
+1 þ YL
+; rL � 0
+ra rB þ rCO2;m þ rCO2;B
+�; rL < 0
+8 ><
+>:
+ð12Þ
+Lipid synthesis takes place via energy demanding biosynthesis processes. The rate of CO2 production stemming from storage lipid synthesis is calculated from Eq 13
+rCO2;L 1⁄4 YLrL; rL � 0
+0; rL < 0
+(
+ð13Þ
+where YL represents the cost of converting assimilates into lipids. The overall CO2 production rate is calculated as the sum of the 3 CO2 producing processes described by Eqs 6, 11, and 13
+rCO2 1⁄4 rCO2;m þ rCO2;B þ rCO2;L ð14Þ
+In order to use Eqs 5 and 7, the instar number must be predicted. Insect larvae grow to critical weights at which they initiate a hormone response that gradually terminates feeding and growth and leads to metamorphosis [33]. In fruit flies, the critical weight seems unaffected by nutritional conditions while slow growth prolongs the periods in between moulting phases. Similar hormone responses also initiate the moulting phases [33] and the relative increase in weight is about the same for each instar [34]. The critical weight is hardly ever identified in studies on BSF larvae. Instead, the instar numbers can be related to the maximal weight of structural biomass,
+I1⁄4
+1 5; B < 1
+dI
+Bmax;0
+6; 1
+dI
+Bmax;0 � B < Bmax;0
+7; B � Bmax;0
+8
+>>>>><
+>>>>>:
+ð15Þ
+where δI is the weight ratio between two succeeding moulting phases, and Bmax,0 is the maximal weight of structural biomass under optimal growth conditions. BSF larvae grow to variable weights. Instar 6 is responsible for most of the weight gain and low final weight is related to slow growth and prolonged developmental time of instar 6 [10]. The same is seen in fruit flies, in which the final instar may increase in weight more than 4 times after the critical weight is reached while physical and dietary conditions affect their growth rate as well as their final weight [33]. In order to take into account the negative relationship between final weight and developmental time, the maximal weight of structural biomass is described as a time dependent variable, which decreases linearly (the simplest possible function) with time when the larvae have not developed into prepupae after a certain time, tp,min, which is the shortest time needed for BSF larvae to reach the prepupal stage.
+Bmax 1⁄4
+Bmax;0; t < tp;min
+Bmax;0 r t tp;min
+��
+; t � tp;min
+8 <
+: ð16Þ
+The parameter, ρ describes the daily rate by which the maximal weight of structural biomass then decreases.
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 6 / 22
+
+
+The parameters and variables in Eqs 1–14 and 16 were expressed in terms of carbon equivalents by multiplication with the carbon content of structural biomass, the carbon content of lipids, or the carbon content of CO2. Thereby, each term in the model was expressed in the same unit and made additive.
+Methods
+Simulation of growth curves and lipid contents
+To simulate growth curves and changes in biomass composition, Eqs 2 and 3 were solved numerically using Euler’s method
+Bt 1⁄4 BtþDt þ rB;tDt ð17Þ
+Ltot;t 1⁄4 Ltot;tþDt þ rL;t þ dLrB;t
+�Dt ð18Þ
+at time intervals, Δt = 0.01–0.02 day. The subscripts, t and t+Δt symbolize start- and end-values of each time interval. Eqs 17 and 18 were programmed into Excel in 2,000 time intervals, each represented by a row in the spreadsheet. The rates of feed assimilation, maintenance, formation of structural biomass, storage lipids, and CO2 were subsequently calculated for each time interval using Eqs 4–6 and 10–12, and so the instar number and the maximal weight of structural biomass (Eqs 15 and 16). The model is available as S1 Data.
+Estimation of larval dry weight and weight of lipids
+To compare results of the model to experimental data available in the literature, structural biomass and lipid contents, calculated from Eqs 17 and 18, were converted from carbon equivalents to larval dry weight, DW by Eq 19, which takes into account the carbon content in the structural biomass as well as in the structural lipids, and that the structural biomass contains a fraction of inorganic components.
+XDW 1⁄4 1 dL;B
+�B
+dC;B dO
+þ Ltot
+dC;L
+ð19Þ
+XDW is larval DW and δC,B and δC,L are the fractions of carbon in the organic part of the structural biomass, and in the lipids, respectively, and δO is the organic part of the structural biomass. Modelled lipid contents were converted to lipid DW by Eq 20.
+LDW 1⁄4 Ltot
+dC;L
+ð20Þ
+and the overall lipid fraction of the larval biomass DW, δlipid was calculated from Eq 21
+dlipid 1⁄4 LDW
+XDW
+ð21Þ
+Lipids bind water poorly and high lipid contents will lower the water content and increase the DW content of BSF larvae. This effect was taken into account in Eq 22, which predicts the DW fraction, δDW of the larval wet weight, WW
+dDW 1⁄4 XDW
+XWW
+1⁄4 XDW
+B
+dDW;B þ LDW
+ð22Þ
+where XWW is larval WW and δDW,B is the DW fraction of structural biomass.
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 7 / 22
+
+
+Collection of experimental data from literature
+The literature was searched for information linking experimental data on larval DW or WW, lipid and protein content, CO2 production rate, and DW content, and development time. These data were used for a meta-analysis of the general growth patterns of BSF larvae to elucidate key variables to be included, and the broadness of larval performances, which should be covered by the growth model. The literature was furthermore searched for data combining kinetic and stoichiometric measurements on growing BSF larvae reared under different conditions and on different substrates, to allow the model to be tested against the broadest possible array of larval performances. Data were read from tables or if necessary, from graphical representations using the program Graphreader (www.graphreader.com). In some cases, data were recalculated into new representations because different papers present their results in various formats. All data collected or recalculated from literature are shown in S1 Table.
+Simulation of experimental data
+The model was tested up against all the relevant sets of data combining kinetic and stoichiometric measurements on BSF larvae, identified during the literature search. Parameters and conversion factors, used in Eqs 1–22 were taken from literature when available, predicted from literature data, or estimated by fitting the growth model to experimental measurements as described below. The goodness of fit between model and measured data was evaluated as the average mean error, AME between model and measurement
+AME 1⁄4 jzi;obs zi;modelj
+ni
+ð23Þ
+where zi,obs and zi,model represent measured and modelled values of DW, lipid content, DW content, or CO2 production rate, respectively, and ni is the number of measurements of each variable. Due to differences in what data is available in different papers, the modelling procedure was adjusted according to the available data. In general, the model was fitted to data by using the solver function, build into Excel, to predict the smallest AME between modelled and measured DW and lipid content. If lipid content had not been measured in the paper, the model was fitted to predict the smallest AME between modelled and measured DW and CO2 production rate, and the ability of the model to then predict larval DW content was used to verify that model predictions were meaningful. Further details and exceptions regarding estimation of parameters and simulation of individual sets of data are described in Results and Discussion.
+Results and discussion
+General growth patterns
+General growth patterns of BSF larvae were examined using experimental data from literature. Fig 2A and 2B show WW and DW of BSF larvae and prepupae as function of the time it took for them to reach either the prepupal stage, tp or their maximal weight. The maximal weight is reached shortly before the individuals can be identified as prepupae [9] and these larvae are here denoted full-grown. There is a tendency for the BSF larvae and prepupae to grow heavier the shorter their development time is. Fig 2C and 2D show that the larvae also tend to obtain higher lipid contents the heavier they become (r2 = 0.42), and their DW content is positively related to their lipid content. In contrast seems there to be no apparent relationships between protein content and DW (r2 = 0.09), protein content and lipid content (r2 = 0.04), nor ash content and DW (r2 = 0.07), see S1 Fig. It was due to these findings that storage lipids were
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 8 / 22
+
+
+partitioned into a separate variable in the growth model, while proteins and inorganics were included in the structural biomass (Fig 1). Lipids, proteins, and inorganics make up most of the larval DW. The average lipid content, based on measurements from 20 of the studies shown in Fig 2, was 27% ± 11% of the larval DW [7, 21, 22, 25–27, 35–47]. The average protein content was 48% ± 10% of larval DW based on 17 of the studies in Fig 2 [7, 21, 22, 25, 26, 3643, 45–47], and the average ash content was 14% ± 10% of larval DW, based on 11 of the studies in Fig 2 [9, 14, 22, 39–43, 45–47]. Not surprisingly, Fig 2 and S1 Fig show considerable variability in the performance and composition of the BSF larvae as the figures combine results from a variety of substrates and a wide spectrum of rearing conditions.
+Estimation of parameters
+Table 1 lists the parameters and variables that are included in the growth model, Eqs 1–22. Some parameters had to be estimated by fitting the model to measured data from individual
+Fig 2. Hermetia illucens. A. Wet weight, W of full grown BSF larvae (�) or prepupae (●) vs. age, tp. B. Dry weight, XDW of full grown BSF larvae (�) or prepupae (●) vs. age. C. Lipid content, δlipid of full grown BSF larvae (�) or prepupae (●) vs. dry weight. Intercept of best straight line indicates minimal lipid content of 10% DW. D. Dry weight content, δDW of full grown BSF larve (�) or prepupae (●) vs. lipid content. Curve modelled by Eq 22. Data collected from larval cultivations in various substrate compositions, different physical conditions, and different experimental protocols [7, 9, 10, 14, 21, 22, 25–27, 35–48]. Data in S1 Table.
+https://doi.org/10.1371/journal.pone.0276605.g002
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 9 / 22
+
+
+Table 1. Variables and parameters used for modelling of growth and biomass composition in BSF larvae by Eqs 1–22.
+Symbol Description Unit Value Source
+Variables included in the growth model
+A Weight of assimilates mg - 
+B Weight of structural biomass mg Variable 
+L Weight of lipids mg Variable 
+I Instar - 5–7 
+a Specific assimilation rate day-1 Variable 
+μB Specific growth rate of structural biomass day-1 Variable 
+Bmax Maximal weight of structural biomass mg Variable 
+Ltot Weight of total lipids mg Variable 
+t0 Larval age at beginning of experiment day Variable 
+tp Age where larvae reach maximal weight and become prepupae day Variable 
+Rates included in the growth model
+rA Assimilation rate mg day-1 Variable 
+rB Rate of production of structural biomass mg day-1 Variable 
+rL Rate of production of structural lipids mg day-1 Variable 
+rCO2,m Rate of CO2 production due to maintenance mg day-1 Variable 
+rCO2,B Rate of CO2 production due to synthesis of structural biomass mg day-1 Variable 
+rCO2,L Rate of CO2 production due to synthesis of structural lipids mg day-1 Variable 
+Parameters used in the growth model
+amax Maximal specific assimilation rate day-1 0.25–1.4 This study
+Bmax,0 Maximal weight of structural biomass at optimal conditions mg 65–90 This study
+YB Cost of growth of structural biomass - 0.44� [9]
+YL Cost of synthesis of storage lipids - 0.42 [50]
+m Specific maintenance rate day-1 0.08� [9]
+tp,min Minimal developmental time from neonate to prepupae day 13 [11]
+ρ Rate by which Bmax decreases in period after tp,min mg day-1 1 This study
+Α Coefficient, adjusting specific assimilation rate - 0.26–3.27 This study
+β Coefficient, adjusting specific growth rate - 0.88–3.19 This study
+Δt Time interval used for numerical modeling day 0.01–0.02 This study
+Variables derived from the growth model
+XDW Biomass dry weight mg Variable 
+Ltot,DW Lipid dry weight mg Variable 
+Ratios
+δC,B Carbon fraction of structural biomass - 0.49 [51]
+δC,L Carbon fraction of lipids (based on trilaurin) - 0.79 
+δC,CO2 Carbon fraction of CO2 - 0.27 
+δL,B Lipid fraction of structural biomass - 0.1 Fig 2C
+δO Organic fraction of larval DW - 0.9 S1 Fig
+δDW,B DW fraction of structural biomass - 0,25 Fig 2D
+δDW DW fraction of larval WW - Variable 
+δlipid Lipid fraction of DW . Variable 
+δI Weight ratio between succeeding moulting phases - 5 [41, 52]
+�Simulations in Fig 5 were carried out using different values
+https://doi.org/10.1371/journal.pone.0276605.t001
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 10 / 22
+
+
+cultures for the model to describe these data, while others were used universally, as described below. The maximal specific assimilation rate, amax was estimated by fitting modelled DW to measured values during the part of the growth phase attributed to instar 1–5, where growth was close to being exponential. Graphical plots of ln-transformed DW vs. time were used to provide visual representations of the relationship between model and measurement. The maximal weight of structural biomass at optimal conditions, Bmax,0 is not a well-known quantity, but values of either 65 mg or 90 mg resulted in good fits between modelled and measured DW, and either of these values was used for simulation of individual growth curves, described below. The cost of growth, YG = 0.44 and maintenance, m = 0.08 day-1 for whole larvae have been estimated on chicken feed [9], and here used also as cost of growth and maintenance of the structural part of the biomass. In cases, where experimental measurements were available, simulations were carried out using different cost of growth of structural biomass and maintenance, as discussed in relation to the individual experiments below. The cost of converting assimilates into lipids will depend on the substrate. BSF larvae can synthesize lipids de novo or take up lipids from the substrate [49]. In grain-based substrates, lipid synthesis is at the expense of carbohydrates where 240 carbon atoms from carbohydrate are transferred into CO2 and lipid at a molar carbon ratio of 72:168 [50]. This corresponds to YL = 0.42, which is the value used in this work. It is highly variable, how long time BSF larvae need to complete their development from neonate to prepupae (Fig 2A and 2B) but can be as short at 13 days at optimal conditions [11]. Thus, in the model the minimal developmental time, tp,min = 13 days. The rate, ρ by which Bmax decreases in the period following tp,min was set to 1 mg day-1, since this value provided good fits between modelled and measured DW. The coefficient, α downregulating specific assimilation rate was estimated by fitting the Eq 17 to DW measurements. Secondly, the coefficient, β downregulating specific growth rate was estimated by fitting the Eq 18 to measured lipid contents or CO2 production rates, depending on which data were available. The modelled was programmed to allow Eqs 17 and 18 to be evaluated numerically via 2,000 time intervals, Δt. For practical reasons were each time interval adjusted to 0.01–0.02 days (with no effect on results), to end simulations close to the time of the last experimental measurements. Carbon is assumed to make up 49% of the organic fraction of structural biomass [51], why δC,B = 0.49. The carbon content of the lipids was estimated as the carbon content of trilaurin, δC,L = 0.74, since lauric acid is normally dominating the lipids of BSF larvae [35]. CO2 contains 27% carbon, i.e. δC,CO2 = 0.27. The lipid fraction of the structural biomass is likely close to the lowest lipid contents that are observed in BSF larvae, i.e. δL,B � 0.1 [28]. This value agrees well with the regression line in Fig 2C, indicating that the smallest of the full-grown BSF larvae, expected to have only a minimum of lipids stored in reserve, also contained around 10% lipid at time of harvest. The organic fraction (volatile solids) of the structural biomass of BSF larvae is assumed to make up 90% of the DW, i.e. δO = 0.9. The median from 10 independent studies [9, 22, 39–43, 45–47] was 89%, with no apparent relationship to the DW of the full-grown larvae and prepupae (r2 = 0.06), see S1 Fig. BSF larvae contain 20–45% DW (Fig 2D). The DW content of the structural biomass should thus be in the lower end of this interval, and simulations were carried out with δDW,B = 0.25. The expected weight ratio between two succeeding moulting phases depends on the total weight gain and number of instars. Neonate BSF larvae have DW’s of 0.02–0.03 mg [41, 52]
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 11 / 22
+
+
+and may grow above 100 mg [14]. Correspondingly, each instar thus increases four to fivefold in weight, and expertly, δI = 4–5. Best agreement between model and data was obtained with δI = 5, which was the value used in simulations of growth curves.
+Availability of data sets combining stoichiometric and kinetic measurements on BSF larvae
+Four data sets, including 10 different rearing conditions, were identified in the literature, which allow the kinetics of biomass production to be related to lipid accumulation, CO2 production, or changes in DW content of growing BSF larvae. The growth model was tested against all 4 data sets. None of the available data sets include measurements of all variables and detailed kinetic data on lipid accumulation are available from just 2 growth experiments. DW content during growth was therefore included in the model as an indirect measure of larval lipid content (Fig 2D). One set of growth curves from BSF larvae fed different daily rations of substrate was also included to test the ability of the model to describe growth when feed is limited. In combination, the available data sets represent variable substrate compositions (though all are grain based) and rearing conditions and provides the opportunity to test the ability of the model to describe growth and lipid accumulation in various situations and to elucidate potentials and limitations to the model.
+Growth and lipid accumulation
+Two independent studies [21, 22] link growth and lipid content of BSF larvae during most of their growth phase (Fig 3A and 3C). Both studies used chicken feed as substrate. The increase in DW is followed by an increase in lipid content. The lipid content decreases again when the larvae reach maximal weight and transform into prepupae. Measurements from this stage was, however, included only in one of these studies [21], during which the loss of lipids explained the loss of DW (Fig 3A). Proteins were not lost from these larvae when they transformed into prepupae. The growth model was able to describe the sigmoidal increase in biomass as well as the changes in lipid content in the larvae from both studies. All parameters used in simulations are shown in Table 2, as well as predicted developmental times, maximal specific growth rates of structural biomass, and peak values of DW, lipids, and DW content. Cost of growth and maintenance were adopted from [9], and a maximal weight of structural biomass of 65 mg gave good fits between model and data. The specific feed assimilation rates in the two experiments until the larvae reached the instar 6 stage (Eq 5), were estimated to 1.4 and 1.3 day-1, respectively. These values provided the best fit between modelled and measured DW of the larvae during the exponential growth phase, shown most clearly in Fig 3B and 3D, showing lntransformed biomass DW, ln(XDW). Small larvae (instars 1–5) grew exponentially, seen from the linear increase of ln(XDW). The close relationships between model and measured DW’s show that the model predicts growth accurately. The coefficient α was close to 1 in simulations of both experiments, which is similar to the growth model by [18]. The coefficient β, giving the best fit between model and lipid content was 2 and 1, respectively, in the experiments in Fig 3A and 3C. It is this difference in β that make the model predict highest lipid content in the larvae in Fig 3C, indicating that production of structural biomass decreased most rapidly with weight in these larvae, leaving a larger fraction of the assimilates to be accumulated as storage lipids. Fig 3C also includes measured DW contents in the larvae. The model predicts an increase in this variable, based on the increase in larval lipid content, close to what was observed [22]. AME values of 1.8 and 1.0 mg between modelled and measured DW and lipid contents, respectively (Table 2), were small
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 12 / 22
+
+
+compared to the range of the measurements, 0–66 mg DW and 0–18 mg lipid, respectively, which also show that modelled values in general were close to measured ones. Fig 3B and 3D also show the specific lipid contents of the BSF larvae, indicating that the lipid contents increased more rapidly in instar 1–5 than predicted by the model. Since these instars are responsible for just around 20% of the total weight gain in BSF larvae, underestimation of lipid accumulation in these stages will have only minor effects on the predicted lipid content in larvae approaching the prepupal stage where they will normally be harvested.
+Growth under feed limited conditions
+Feed limitation affects growth, demonstrated in a series of growth experiments by [10], in which BSF larvae were provided a daily substrate ration between 12.5 and 200 mg day-1 per individual (Fig 4). Low substrate rations restricted the rate of growth and the weight of the full-grown larvae. The dynamic growth model by [18] described well these experimental growth curves. The same is the case for the model presented here. The maximal feed assimilation rate (Eq 5) was for each feeding regime optimized to provide the best fit between model and DW measurements. In principle, the maximal feed assimilation rate was thereby made variable with respect to daily substrate ration. Other parameters were kept the same for all feeding regimes. Since only DW data is available from this study, it is not possible to make independent predictions of α and β, and both were set equal to 1 (Table 2). As result, the
+Fig 3. Hermetia illucens. A and C. Dry weight, XDW (●), lipid content, Ltot (■), and dry weight fraction of biomass, δDW (△) of BSF larvae reared on chicken feed. B and D. Logarithmic transformed dry weight (●) and lipid to dry weight ratio, δlipid (□) of the BSF larvae. Data points from 2 independent studies [21, 22]. Curves predicted by the growth model. Parameters shown in Table 2.
+https://doi.org/10.1371/journal.pone.0276605.g003
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 13 / 22
+
+
+maximal feed assimilation rate was predicted to increase linearly with substrate ration up to 100 mg day-1 per individual. Above this ration, the BSF larvae seemed to have become feed sufficient (Fig 4A, insert).
+Larval performances on high and low-quality substrates
+Measurements of growth, specific DW content, and respiratory CO2 production from BSF larvae published in [9] were used to evaluate the growth model across substrates of variable quality (Fig 5). The substrates were made from chicken feed (an excellent substrate) mixed with 0–75% degassed sludge (a poor substrate). Degassed sludge alone did not allow the BSF larvae to develop into prepupae. The cost of growth and maintenance were affected by the sludge content in the substrate. Simulation of growth curves were carried out using the costs of growth and maintenance rates determined by [9], as shown in Table 2. Maximal specific assimilation rates of 1.2–1.4 day-1 resulted in best fits to the DW measurements during the exponential growth phase and
+Table 2. Parameters used for modelling of growth of BSF larvae shown in Figs 3–6, and selected variables predicted from the modelled results.
+Unit Fig 3A Fig 3B Fig 4 Fig 4 Fig 4 Fig 4 Fig 4 Fig 5A Fig 5B Fig 5C Fig 5D Fig 6A Fig 6B Fig 6C Fig 6D
+Starter larvae
+XDW,0 mg 0.03 3 2.46 2.46 2.46 2.46 2.46 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6
+Age day 1 5 5.8 5.8 5.8 5.8 5.8 5 5 5 5 5 5 5 5
+Parameter
+Bmax mg 65 65 90 90 90 90 90 90 90 90 90 90 90 90 90
+δC,B - 0.49 0.49 0.49 0.49 0.49 0.49 0.49 0.49 0.49 0.49 0.49 0.49 0.49 0.49 0.49
+δC,L - 0.79 0.79 0.79 0.79 0.79 0.79 0.79 0.79 0.79 0.79 0.79 0.79 0.79 0.79 0.79
+δL,B - 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1
+δO - 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9 0.9
+δDW,B - 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25
+δI - 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2
+amax day-1 1.4 1.4 1.21 1.06 0.60 0.34 0.25 1.2 1.2 1.3 1.4 1.1 1.1 0.9 0.8
+YB - 0.44 0.44 0.44 0.44 0.44 0.44 0.44 0.44 0.59 0.63 0.76 0.44 0.44 0.44 0.44
+YL - 0.42 0.42 0.42 0.42 0.42 0.42 0.42 0.42 0.42 0.42 0.42 0.42 0.42 0.42 0.42
+m day-1 0.08 0.08 0.08 0.08 0.08 0.08 0.08 0.08 0.09 0.15 0.23 0.08 0.08 0.08 0.08
+α - 0,92 1.02 1 1 1 1 1 0.81 0.48 0.26 0.28 1.19 0.92 3.27 2.59
+β - 2,02 1.01 1 1 1 1 1 1.17 0.94 0.90 0.88 3.19 1.66 1.38 1.13
+tp,min day 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13
+ρ day-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+Δt day 0.0105 0.006 0.02 0.02 0.02 0.02 0.02 0.012 0.012 0.012 0.012 0.01 0.01 0.01 0.01
+Predicted variable
+μB,max day-1 0.92 0.92 0.79 0.68 0.36 0.18 0.12 0.78 0.70 0.71 0.66 0.71 0.71 0.57 0.50
+XDW,max mg 68 82 105 97 68 39 27 91 74 45 39 82 84 108 101
+tp day 16 13 20 21 27 34 37 21 25 26 25 18 20 20 22
+Ltot,max % DW 27 43 41 39 32 24 20 35 35 26 25 18 27 39 41
+δDW,max % WW 31 37 30 29 27 25 24 34 34 31 31 29 31 35 36
+Goodness of fit (AME)
+XDW mg 1.8 2.6 5.5 6.1 3.5 1.2 3.7 4.0 4.3 2.8 2.9 2.4 3.4 3.3 3.3
+Ltot mg 1.0 2.1 - - - - - - - - - - - 
+δDW % WW - 1.5 - - - - - 2.6 3.6 3.6 5.5 4.9 2.1 1.5 2.0
+rCO2 mg day-1 - - - - - - - 2,5 1.7 2.1 1.8 3.2 1.7 3.1 3.7
+https://doi.org/10.1371/journal.pone.0276605.t002
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 14 / 22
+
+
+were highest in the lowest quality substrates. Still, growth slowed, and the larvae became smaller the more degassed sludge was included in the substrate, since the higher cost of growth and maintenance resulted in increased CO2 production. The coefficients, α and β were optimized to obtain the best fit (lowest AME) between model and measurements of DW and CO2 production. Most notable did α decrease from 0.81 in chicken feed to 0.28 when the sludge content was 75% (Table 2). This indicates that larvae in the instar 6 stage decreased feed assimilation more rapidly than explained by the logistic model when exposed to the degassed sludge. The specific DW content of the BSF larvae was then predicted with reasonable accuracy, particularly in the larvae reared on only chicken feed (Fig 4A) with no further optimization of parameters. The same was the case with respect to the CO2 production rate although the model indicated that CO2 production would peak earlier than observed. Fluxes of assimilates between the structural compartments shown in Fig 1 are thus predicted in accordance with measurements. Moulting is modelled as an instantaneous process. In reality, moulting delays larval development [34] and the largest discrepancies between modelled and measured larval DW’s and CO2 production rates are seen in the period where the larvae reach the instar 6 stage (Fig 4B, 4D, 4E and 4H). One cause for discrepancies between modelled and measured larval DW contents may be variable ash contents, but since no apparent relationship between ash content and other variables were identified (S1 Fig), the ash content is taken as a parameter rather than a variable in the model.
+Larval performances at different substrate moisture contents
+The growth model was finally tested up against data from [14] on DW, specific DW content, and CO2 production from BSF larvae reared on chicken feed with controlled moisture contents of 45% - 75% (Fig 6). Increasing substrate moisture content resulted in larger larvae but lower specific growth rates while costs of growth and maintenance seemed unaffected. Substrate moisture content affects growth of BSF larvae [13, 18, 53–55] although the reasons behind this are not fully elucidated. Microbial activity played a major role in the experiments in [14] and affected the quality of the substrate within the first week of growth, particularly in the larval cultures with lowest substrate moisture contents.
+Fig 4. Hermetia illucens. A. Dry weight, XDW and B. Logarithmic transformed dry weight of BSF larvae supplied a daily substrate ration of 12.5 (◆), 25
+(◇), 50 (π), 100 (□), or 200 (●) mg day-1 per individual [10]. Growth curves were modelled using identical parameters, except for the maximal specific feed up-take rate, which for each condition was estimated as the value giving the best fit to the data, resulting in amax = 0.25, 0.34, 0.60, 1.06, and 1.21
+day-1, respectively, for larvae fed the daily rations described above (inset A). Parameters shown in Table 2.
+https://doi.org/10.1371/journal.pone.0276605.g004
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 15 / 22
+
+
+Fig 5. Hermetia illucens. A, C, E, G. Dry weight, XDW (●), dry weight fraction of biomass, δDW (△), and CO2 production rate, rCO2 (◆) of BSF larvae reared on chicken feed (A), 75% chicken feed and 25% degassed sludge (B), 50% chicken feed and 50% degassed sludge (D), and 25% chicken feed and 75% degassed sludge (G). Logarithmic transformed dry weight (●) of the BSF larvae. Data points from [9]. Curves predicted by the growth model. Parameters shown in Table 2.
+https://doi.org/10.1371/journal.pone.0276605.g005
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 16 / 22
+
+
+Fig 6. Hermetia illucens. A, C, E, G. Dry weight, XDW (●), dry weight fraction of biomass, δDW (△), and CO2 production rate, rCO2 (◆) of BSF larvae reared on chicken feed with moisture contents of 45% (A), 55% (B), 65% (D), and 75% (G). Logarithmic transformed dry weight (●) of the BSF larvae. Data points from [14]. Curves predicted by the growth model. Parameters shown in Table 2.
+https://doi.org/10.1371/journal.pone.0276605.g006
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 17 / 22
+
+
+Simulation of growth curves were carried out using the costs of growth and maintenance rates determined by [9]. Maximal specific assimilation rates decreased from 1.1 to 0.8 day-1 (Table 2) and α and β were also in this case optimized to provide the best fit between modelled and measured DW and CO2 production. Notably, the highest values of α of 2.6–3.3 was found in the two most moist substrates, indicating that the feed assimilation rates decreased less rapidly with larval weight, compared to the less moist substrates. This prolonged the growth period in the moist substrates. It is also notable that highest value of β was found in the substrate with lowest moisture content, indicating that the specific growth rate decreased slowest with larval weight at this rearing condition, and that these larvae thus accumulated the least amount of storage lipids. The shorter growth period and the comparatively low lipid accumulation meant that these larvae did not attain DW’s as high as those reared at higher substrate moisture content. The differences in α and β are in accordance with the suggestions in [14] that the BSF larvae grew fastest in the less moist substrates but microbial substrate degradation within the first week of cultivation hampered growth thereafter. This is thus an example where highest weight of full-grown larvae were not associated with shortest developmental time. The specific DW content of the BSF larvae was again predicted fairly accurately (Fig 5) with no further optimization of parameters. The same was the case with respect to the CO2 production rate, although the model again indicated that CO2 production would peak earlier than observed.
+Concluding remarks
+The growth model presented in this paper is able to reproduce the data sets available in literature, which link kinetic data on growth to lipid accumulation in BSF larvae. The model predicts reasonably accurately also measured DW contents and rates of CO2 production (Figs 3, 5 and 6). Modelled growth curves are also in compliance with experimental measurements during feed limited growth (Fig 4) and AME values (Table 2) were in all cases small as compared to the range of the measurements. The model is thus able to describe performances of BSF larvae in a variety of situations despite the model provides a simplified representation of the metabolic processes of growing BSF larvae (Fig 1) and the fairly low number of experimental studies available for its development. The assumption that mainly lipids are re-metabolized to provide energy for maintenance is e.g., based on just one study [21], which is however supported by the uniform protein content of BSF larvae of different weights (S1 Fig). Other studies have shown that adult BSF’s weigh 3–4 times less than the prepupae [41]. Such large weight losses implies that other body components than lipids are also re-metabolized, at least after the prepupal stage. The present model is thus restricted to describe growth and development during parts of the BSF life history, from neonate larva to prepupa. One purpose of the present model is to aid cross study comparisons of experimental results. The model fitted the growth curves in Fig 3 best with Bmax, the maximal weight of the structural biomass, at around 65 mg, while this parameter seemed closer to 90 mg in the larvae in Figs 4–6. This difference may suggest that the BSF strains used in these experiments differed in how large they grow, although most of the domesticated BSF populations seems to be genetically related [56]. It is also observed that amax, the maximal specific feed assimilation rate takes values from 1.1–1.4 day-1, unless the larvae were starved or stressed by high substrate moisture contents. These values likely represent the capacity for feed assimilation by BSF larvae, though specific feed assimilation rates have yet been quantified in just a narrow range of substrate types. The present model resembles the dynamic model by [18] to some extent. Both models consider feed assimilation to be the overall rate limiting metabolic process and use a logistic
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 18 / 22
+
+
+function to reduce feed assimilation in relation to the weight of the larvae. In the present model, the assimilation rate is reduced only after the larvae have reached the instar 6 stage since growth of earlier instars are close to being exponential. The present model also reduces the specific growth rate of structural biomass by a second logistic function, affecting all instars. This reduces the need for assimilates for structural biomass synthesis below the rate of assimilation, generates an imbalance between feed assimilation and growth, and provides the surplus of assimilates, which are stored as lipids. It thus combines a kinetic model for uptake of feed and production of structural biomass with a differential energy budget model for accumulation and remobilization of storage lipids. The maximal weight of the structural biomass is made variable (Eq 16) to make the model dynamic for it to cover the wide variation of observed larval and prepupal weights (Fig 2), in combination with the opportunity to optimize the parameter for maximal feed assimilation rate, cost of growth, and maintenance. A weakness to both models, as well as to the static models used to analyze growth of BSF larvae [9, 14, 17], is that the logistic relationships between feed assimilation or growth are based on empirical findings and not directly supported by physiological processes. While the model by [18] allows feed assimilation to be a function of selected environmental variables (temperature, aeration rate, and substrate moisture content), the present model modulates specific feed uptake and growth rates by the coefficients α and β. The former approach could have been employed also in combination with the present model but depends on detailed knowledge on how the larvae respond to the environmental variables. Knowledge, which may not be available and be highly complex. The approach employed in the present model is therefore a practical solution although α and β have no direct functional links to the physiology of the larvae nor their environment. Still, determination of α and β by fitting the model to experimental data may provide useful information. In the example in Fig 5, the substrate dependent differences in α are likely physiological in origin (adverse effects from components in degassed sludge) while the moisture dependent differences of α and β in Fig 6 likely also reflect the effects of deteriorating substrate quality. The present growth model may thus be a useful tool for the analysis of growth and performance of BSF larvae under variable and complex rearing conditions. It can improve and deepen the analyses of data from growth experiments and provide insight into what causes the variability in performances of larvae of the BSF and possibly a wider range of insect species, when reared on different substrates and at different environmental conditions.
+Supporting information
+S1 Data. Dynamic growth model. The model programmed in Excel. Parameters can be modified (other functionalities are locked), and results visualized in ‘Main sheet’. The model itself, and quantitative results of modelling is available in the sheet named ‘Model’, columns E-U and columns W-AD, respectively. (XLSX)
+S1 Fig. Protein, ash, and volatile solids in full-grown black soldier fly (Hermetia illucens) larvae and prepupae. A. Protein convent vs. dry weight, B. Protein content vs. lipid content, C. Ash content vs. dry weight, D. Volatile solids convent vs. dry weight in full-grown BSF larvae (�) or prepupae (●). Data in S1 Table. (TIF)
+S1 Table. Biochemical composition of full-grown black soldier fly (Hermetia illucens) larvae and prepupae. Data collected from literature on developmental time, wet weight, dry weight, and contents of lipid, protein, ash, and volatile solids. (XLSX)
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 19 / 22
+
+
+Author Contributions
+Conceptualization: Niels Thomas Eriksen.
+Data curation: Niels Thomas Eriksen.
+Formal analysis: Niels Thomas Eriksen.
+Investigation: Niels Thomas Eriksen.
+Methodology: Niels Thomas Eriksen.
+Project administration: Niels Thomas Eriksen.
+Resources: Niels Thomas Eriksen.
+Software: Niels Thomas Eriksen.
+Validation: Niels Thomas Eriksen.
+Visualization: Niels Thomas Eriksen.
+Writing – original draft: Niels Thomas Eriksen.
+Writing – review & editing: Niels Thomas Eriksen.
+References
+1. Gold M, Cassar CM, Zurbr  ̈ugg C, Kreuzer M, Boulos S, Diener S, et al. 2020. Biowaste treatment with black soldier fly larvae: Increasing performance through the formulation of biowastes based on protein and carbohydrates. Waste Manage. 2020; 102: 319–329.
+2. Makkar HPS, Tran G, Heuz  ́e V, Ankers P. 2014. State-of-the-art on use of insects as animal feed. Anim Feed Sci Technol. 2014; 197: 1–33.
+3. Li W, Li M, Zheng L, Liu Y, Zhang Y, Yu Z, et al. Simultaneous utilization of glucose and xylose for lipid accumulation in black soldier fly. Biotechnol Biofuel 2015; 8; 11. https://doi.org/10.1186/s13068-0150306-z PMID: 26273321
+4. Scala A, Cammack JA, Salvia R, Scieuzo C, Franco A, Bufo SA, et al. Rearing substrate impacts growth and macronutrient composition of Hermetia illucens (L.) (Diptera: Stratiomyidae) larvae produced at an industrial scale. Sci Rep 2020; 10: 19448.
+5. Miranda CD, Cammack JA. Tomberlin JK. Mass production of the black soldier fly, Hermetia illucens (L.), (Diptera: Stratiomyidae) reared on three manure types. Animals 2020; 10: 1243.
+6. Purkayastha D, Sarkar S. Black soldier fly larvae for treatment and segregation of commingled municipal solid waste at different environmental conditions. J Environ Manage A. 2022; 15: 114060. https:// doi.org/10.1016/j.jenvman.2021.114060 PMID: 34749077
+7. Barrag ́an-Fonseca K, Pineda-Mejia J, Dicke M, van Loon JJA. Performance of the black soldier fly (Diptera: Stratiomyidae) on vegetable residue-based diets formulated based on protein and carbohydrate Contents. J Econ Entomol. 2018; 111: 2676–2683. https://doi.org/10.1093/jee/toy270 PMID: 30239768
+8. Barrag ́an-Fonseca KB, Gort G, Dicke M, van Loon JJA. Effects of dietary protein and carbohydrate on life-history traits and body protein and fat contents of the black soldier fly Hermetia illucens. Physiol Entomol. 2019; 44: 148–159.
+9. Laganaro M, Bahrndorff S, Eriksen NT. Growth and metabolic performance of black soldier fly larvae grown on low and high-quality substrates. Waste Manage. 2021; 121: 198–205. https://doi.org/10. 1016/j.wasman.2020.12.009 PMID: 33360818
+10. Diener S, Zurbr ̈ugg C, Tockner K. Conversion of organic material by black soldier fly larvae: establishing optimal feeding rates. Waste Manage Res. 2009; 27: 603–610. https://doi.org/10.1177/ 0734242X09103838 PMID: 19502252
+11. Chia SY, Tanga CM, Khamis FM, Mohamed SA, Salifu D, Sevgan S, et al. Threshold temperatures and thermal requirements of black soldier fly Hermetia illucens: Implications for mass production. PLoS ONE. 2018; 13: e0206097.
+12. Shumo M, Khamis FM, Tanga CM, Fiaboe KKM, Subramanian S, Ekesi S, et al. Influence of temperature on selected life-history traits of black soldier fly (Hermetia illucens) reared on two common urban organic waste streams in Kenya. Animals 2019; 9: 79.
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 20 / 22
+
+
+13. Cheng JYK, Chiu SLH, Lo IMC. Effects of moisture content of food waste on residue separation, larval growth and larval survival in black soldier fly bioconversion. Waste Manage. 2017; 67: 315–323. https:// doi.org/10.1016/j.wasman.2017.05.046 PMID: 28587803
+14. Bekker NS, Heidelbach S, Vestergaard SZ, Nielsen ME, Riisgaard-Jensen M, Zeuner EJ, et al. Impact of substrate moisture content on growth and metabolic performance of black soldier fly larvae. Waste Manage. 2021; 127: 73–79. https://doi.org/10.1016/j.wasman.2021.04.028 PMID: 33932852
+15. Pamintuan KRS, Cajayon JAB, Dableo CB. Growth Characteristics and Lipid Content of Black Soldier Fly (Hermetia illusions) Larva Reared in Milkfish Offal and Mixed Vegetable Wastes. ICBBE ’19: Proceedings of the 2019 6th International Conference on Biomedical and Bioinformatics Engineering. 2019; 163–168.
+16. Matheka RM, Raude JM, Murunga SI, Riungu JN, Wandera SM. Effect of fecal matter co-digestion with kitchen waste on Hermetia illucens’ larval weight and protein content. J Water Sanit Hyg Dev. 2021; 11: 746–757.
+17. Sripontan Y, Chiu C-I, Tanansathaporn S, Leasen K, Manlong K. Modeling the growth of black soldier fly Hermetia illucens (Diptera: Stratiomyidae): An approach to evaluate diet quality. J Econom Entomol. 2020; 113: 742–751.
+18. Padmanabha M, Kobelski A, Hempel A-J, Streif S. A comprehensive dynamic growth and development model of Hermetia illucens larvae. PLoS ONE. 2020; 15: e0239084. https://doi.org/10.1371/journal. pone.0239084 PMID: 32946462
+19. Prasetya A, Darmawan R, Araujo TLB, Petrus HTBM, Setiawan FA. A growth kinetics model for black soldier fly (Hermetia illucens) larvae. International J Technol. 2021; 12: 207–216.
+20. Arrese EL, Soulages JL. Insect fat body: Energy, metabolism, and regulation. Annu Rev Entomol. 2010; 55: 207–225. https://doi.org/10.1146/annurev-ento-112408-085356 PMID: 19725772
+21. Liu X, Chen X, Wang H, Yang Q, Rehman Ku, Li W, et al. Dynamic changes of nutrient composition throughout the entire life cycle of black soldier fly. PLoS ONE. 2017; 12: e0182601. https://doi.org/10. 1371/journal.pone.0182601 PMID: 28796830
+22. Beniers JJA, Graham RI. Effect of protein and carbohydrate feed concentrations on the growth and composition of black soldier fly (Hermetia illucens) larvae. J Insects Food Feed. 2019; 5: 193–199.
+23. Zhu Z, ur Rehman K, Yu Y, Liu X, Wang H, Tomberlin JK, et al. De novo transcriptome sequencing and analysis revealed the molecular basis of rapid fat accumulation by black soldier fly (Hermetia illucens, L.) for development of insectival biodiesel. Biotechnol Biofuels 2019; 12: 194.
+24. Pimentel AC, Montali A, Bruno D, Tettamanti G. Metabolic adjustment of the larval fat body in Hermetia illucens to dietary conditions. J. Asia. Pac. Entomol. 2017; 20: 1307–1313.
+25. Barragan-Fonseca KB, Dicke M, van Loon JJA. Influence of larval density and dietary nutrient concentration on performance, body protein, and fat contents of black soldier fly larvae (Hermetia illucens). Entomol Exp Appl. 2018; 166: 761–770.
+26. Nguyen TTX, Tomberlin JK, Vanlaerhoven S. Ability of black soldier fly (Diptera: Stratiomyidae) larvae to recycle food. Environ Entomol. 2015; 44: 406–410.
+27. Tschirner M, Simon A. Influence of different growing substrates and processing on the nutrient composition of black soldier fly larvae destined for animal feed. J Insects Food Feed 2015; 1: 249–259.
+28. Surendra KC, Tomberlin JK, van Huis A, Cammack JA, Heckmann L-HL, Khanal SK. Rethinking organic wastes bioconversion: Evaluating the potential of the black soldier fly (Hermetia illucens (L.)) (Diptera: Stratiomyidae) (BSF). Waste Manage. 2020; 117: 58–80.
+29. Digirolamo M, Owens JL. Water content of rat adipose tissue and isolated adipocytes in relation to cell size. Am J Physiol. 1976; 231: 1568–1572. https://doi.org/10.1152/ajplegacy.1976.231.5.1568 PMID: 998803
+30. De Smet J, Wynants E, Cos P, Van Campenhout L. Microbial community dynamics during rearing of black soldier fly larvae (Hermetia illucens) and impact on exploitation potential. Appl Environ Microbiol. 2018; 84: e02722–17.
+31. Gligorescu A, Toft S, Hauggaard-Nielsen H, Axelsen JA, Nielsen SA. Development, growth and metabolic rate of Hermetia illucens larvae. J Appl Entomol 2019; 143: 875–881.
+32. Maino JL, Kearney MR. Testing mechanistic models of growth in insects. Proc. R. Soc. B. 2015; 282: 20151973. https://doi.org/10.1098/rspb.2015.1973 PMID: 26609084
+33. Edgar B. How flies get their size: genetics meets physiology. Nat Rev Genet. 2006; 7: 907–916. https:// doi.org/10.1038/nrg1989 PMID: 17139322
+34. Kivel ̈a SM, Davis RB, Esperk T, Gotthard K, Mutanen M, Valdma D, et al. Comparative analysis of larval growth in Lepidoptera reveals instar-level constraints. Funct Ecol. 2020; 34: 1391–1403.
+35. Knudsen AKS, Jespersen EE, Markwardt MJ, Johansen A, Ortind AP, Terp M, et al. Effects of fish oil on growth kinetics and lipid accumulation in black soldier fly larvae. J Insects Food Feed. 2022; 8: 223–235.
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 21 / 22
+
+
+36. El-Dakar MA, Ramzy RR, Ji H, Plath M. Bioaccumulation of residual omega-3 fatty acids from industrial Schizochytrium microalgal waste using black soldier fly (Hermetia illucens) larvae. J Clean Prod. 2020; 268: 122288.
+37. El-Dakar MA, Ramzy RR, Ji H. Influence of substrate inclusion of quail manure on the growth performance, body composition, fatty acid and amino acid profiles of black soldier fly larvae (Hermetia illucens). J Tot Environ. 2021; 772: 145528.
+38. El-Dakar MA, Ramzy RR, Wang D, Ji H. Sustainable management of Se-rich silkworm residuals by black soldier flies larvae to produce a high nutritional value and accumulate x-3 PUFA. Waste Manage. 2021 124: 72–81.
+39. Liland NS, Biancarosa I, Araujo P, Biemans D, Bruckner CG, Waagbø R, et al. Modulation of nutrient composition of black soldier fly (Hermetia illucens) larvae by feeding seaweed-enriched media. PLoS ONE. 2017; 12: e0183188.
+40. Shumo M, Osuga IM, Khamis FM, Tanga CM, Fiaboe KKM, Subramanian S, et al. The nutritive value of black soldier fly larvae reared on common organic waste streams in Kenya. Sci Rep. 2019; 9: 10110. https://doi.org/10.1038/s41598-019-46603-z PMID: 31300713
+41. Jucker C, Erba D, Leonardi MG, Lupi D, Savoldelli S. Assessment of vegetable and fruit substrates as potential rearing media for Hermetia illucens (Diptera: Stratiomyidae) larvae. Environ Entomol. 2017; 46: 1415–1423. https://doi.org/10.1093/ee/nvx154 PMID: 29040452
+42. Liu Z, Minor M, Morel PCH, Najar-Rodriguez AJ. Bioconversion of three organic wastes by black soldier fly (Diptera: Stratiomyidae) larvae. Environ Entomol. 2018; 47: 1609–1617. https://doi.org/10.1093/ee/ nvy141 PMID: 30371752
+43. Caligiani A, Marseglia A, Leni G, Baldassarre S, Maistrello L, Dossena A, et al. Composition of black soldier fly prepupae and systematic approaches for extraction and fractionation of proteins, lipids and chitin. Food Res Int. 2018: 105: 812–820. https://doi.org/10.1016/j.foodres.2017.12.012 PMID: 29433277
+44. Fischer H, Romano N, Sinha AK. Conversion of spent coffee and donuts by black soldier fly (Hermetia illucens) larvae into potential resources for animal and plant farming. Insects. 2021; 12: 332.
+45. Meneguz M, Schiavone A, Gai F, Dama A, Lussiana C, Renna M, et al. Effect of rearing substrate on growth performance, waste reduction efficiency and chemical composition of black soldier fly (Hermetia illucens) larvae. J Sci Food Agric. 2018; 98: 5776–5784.
+46. Ewald N, Vidakovic A, Langeland M, Kiessling A, Sampels S, Lalander C. Fatty acid composition of black soldier fly larvae (Hermetia illucens)—possibilities and limitations for modification through diet. Waste Manage. 2020; 102: 40–47.
+47. Danieli PP, Lussiana C, Gasco L, Amici A, Ronchi B. The effects of diet formulation on the yield, proximate composition, and fatty acid profile of the black soldier fly (Hermetia illucens L.) prepupae intended for animal feed. Animals. 2019; 9: 178.
+48. Jucker C, Leonardi MG, Rigamonti I, Lupi D, Savoldelli S. Brewery’s waste streams as a valuable substrate for Black Soldier Fly Hermetia illucens (Diptera: Stratiomyidae). J Entomol Acarol Res. 2019; 51: 8876.
+49. Hoc B, Genva M, Fauconnier M-L, Lognay G, Francis F, Megido RC. About lipid metabolism in Hermetia illucens (l. 1758): on the origin of fatty acids in prepupae. Sci Rep. 2020; 10: 11916.
+50. Kok R. Preliminary project design for insect production: part 1—overall mass and energy/heat balances. J Insects Food Feed. 2021; 7: 499–509.
+51. Roels JA. Application of macroscopic principles to microbial metabolism. Biotechnol Bioeng. 1980; 22: 2457–2514.
+52. Macavei LI, Benassi G, Stoian V, Maistrello L (2020) Optimization of Hermetia illucens (L.) egg laying under different nutrition and light conditions. PLoS ONE 15: e0232144.
+53. Palma L, Ceballos SJ, Johnson PC, Niemeier D, Pitesky M, VanderGheynst JS. Cultivation of black soldier fly larvae on almond byproducts: impacts of aeration and moisture on larvae growth and composition. J Sci Food Agricul 2018; 98: 5893–5900. https://doi.org/10.1002/jsfa.9252 PMID: 29999178
+54. Abduh MY, Nadiaa MH, Syaripudina, Manurunga R, Putra RE. Factors affecting the bioconversion of Philippine tung seed by black soldier fly larvae for the production of protein and oil-rich biomass. J AsiaPacific Entomol. 2018; 21: 836–842.
+55. Chen J, Hou D, Pang W, Nowar EE, Tomberlin JK, Hu R, et al. Effect of moisture content on greenhouse gas and NH3 emissions from pig manure converted by black soldier fly. Sci Tot Environ 2019; 697: 133–840.
+56. Kaya C, Generalovic TN, Ståhls G, Hauser M, Samayoa AC, Nunes-Silva CG, et al. Global population genetic structure and demographic trajectories of the black soldier fly, Hermetia illucens. BMC Biol. 2021; 19: 94.
+PLOS ONE Dynamic modelling of growth of black soldier fly larvae
+PLOS ONE | https://doi.org/10.1371/journal.pone.0276605 October 26, 2022 22 / 22
